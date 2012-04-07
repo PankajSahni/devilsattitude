@@ -1,0 +1,20 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [layout.css,reset.css,style-category.css]
+
+  javascripts:    [jquery-1.5.2.js,cufon-yui.js,cufon-replace.js,Terminal_Dosis_300.font.js,atooltip.jquery.js,roundabout.js,roundabout_shapes.js,jquery.easing.1.2.js,script.js]
+
+  has_layout:     true
+  layout:         layout

@@ -29,6 +29,11 @@ Categories:
       primary: false
       notnull: true
       autoincrement: false
+  relations:
+    Products:
+      local: category_id
+      foreign: category_id
+      type: many
 MyDesign:
   connection: doctrine
   tableName: my_design
@@ -161,6 +166,35 @@ Products:
       primary: false
       notnull: true
       autoincrement: false
+    price:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    description:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    order_number:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    featured:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
     created_at:
       type: timestamp(25)
       fixed: false
@@ -175,6 +209,11 @@ Products:
       primary: false
       notnull: true
       autoincrement: false
+  relations:
+    Categories:
+      local: category_id
+      foreign: category_id
+      type: one
 User:
   connection: doctrine
   tableName: user

@@ -1,0 +1,7 @@
+CREATE TABLE categories (category_id BIGINT AUTO_INCREMENT, name VARCHAR(255), created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY(category_id)) ENGINE = INNODB;
+CREATE TABLE my_design (my_design_id BIGINT AUTO_INCREMENT, user_id BIGINT, image VARCHAR(255) NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX user_id_idx (user_id), PRIMARY KEY(my_design_id)) ENGINE = INNODB;
+CREATE TABLE orders (order_id BIGINT AUTO_INCREMENT, user_id BIGINT, size VARCHAR(10) NOT NULL, color VARCHAR(10) NOT NULL, status TINYINT DEFAULT '0' NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX user_id_idx (user_id), PRIMARY KEY(order_id)) ENGINE = INNODB;
+CREATE TABLE products (product_id BIGINT AUTO_INCREMENT, category_id BIGINT, name VARCHAR(50) NOT NULL, image VARCHAR(255) NOT NULL, order_number BIGINT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY(product_id)) ENGINE = INNODB;
+CREATE TABLE user (user_id BIGINT AUTO_INCREMENT, name VARCHAR(50) NOT NULL, email VARCHAR(50) NOT NULL, mobile VARCHAR(13) NOT NULL, address TINYINT DEFAULT '0' NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY(user_id)) ENGINE = INNODB;
+ALTER TABLE my_design ADD CONSTRAINT my_design_user_id_user_user_id FOREIGN KEY (user_id) REFERENCES user(user_id);
+ALTER TABLE orders ADD CONSTRAINT orders_user_id_user_user_id FOREIGN KEY (user_id) REFERENCES user(user_id);
