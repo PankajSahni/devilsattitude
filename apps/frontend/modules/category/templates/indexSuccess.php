@@ -15,6 +15,18 @@
                         <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/<?php echo $image_url; ?>upgrade.jpg" border="0" alt="" /></a>
                 </div>
         <![endif]-->
+<style>
+#preview{
+	position:absolute;
+	border:1px solid #ccc;
+	background:#333;
+	padding:5px;
+	display:none;
+	color:#fff;
+	}
+
+/*  */
+</style>
     </head>
     <?php
     $host = 'http://' . $_SERVER['HTTP_HOST'];
@@ -63,7 +75,7 @@
                                         <?php foreach ($all_products[0]['Products'] as $product): ?>
                                         <?php //if(($i % 3)==0)?>
                                         <article class="col1">
-                                            <figure><span class="fancy"><img src="<?php echo $designs_url . $product['image']; ?>" alt="" width="270px" height="280px"/></span></figure>
+                                            <figure><li><a href="<?php echo $designs_url . $product['image']; ?>" class="preview" title=""  width="270px" height="280px"><img src="<?php echo $designs_url . $product['image']; ?>" alt="" width="270px" height="280px"/></a></figure>
                                             <div class="pad">
                                                 <p align="center">	
                                             <img src="<?php echo $image_url; ?>order-now.png" alt="" width="140px" height="80px"/>
