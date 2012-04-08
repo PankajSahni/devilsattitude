@@ -18,8 +18,9 @@ abstract class BaseUserForm extends BaseFormDoctrine
       'user_id'    => new sfWidgetFormInputHidden(),
       'name'       => new sfWidgetFormInputText(),
       'email'      => new sfWidgetFormInputText(),
+      'pass'       => new sfWidgetFormInputText(),
       'mobile'     => new sfWidgetFormInputText(),
-      'address'    => new sfWidgetFormInputText(),
+      'address'    => new sfWidgetFormTextarea(),
       'created_at' => new sfWidgetFormDateTime(),
       'updated_at' => new sfWidgetFormDateTime(),
     ));
@@ -28,8 +29,9 @@ abstract class BaseUserForm extends BaseFormDoctrine
       'user_id'    => new sfValidatorChoice(array('choices' => array($this->getObject()->get('user_id')), 'empty_value' => $this->getObject()->get('user_id'), 'required' => false)),
       'name'       => new sfValidatorString(array('max_length' => 50)),
       'email'      => new sfValidatorString(array('max_length' => 50)),
+      'pass'       => new sfValidatorString(array('max_length' => 50)),
       'mobile'     => new sfValidatorString(array('max_length' => 13)),
-      'address'    => new sfValidatorInteger(array('required' => false)),
+      'address'    => new sfValidatorString(array('max_length' => 500)),
       'created_at' => new sfValidatorDateTime(),
       'updated_at' => new sfValidatorDateTime(),
     ));

@@ -131,3 +131,4 @@ a.aToolTipCloseBtn {display:block;height:20px;width:20px;overflow:hidden;backgro
 .picture a.small:hover {text-decoration:none; background-color:#000000; color:#000000;}
 .picture a .large {display:block; position:absolute; width:0; height:0; border:0; top:0; left:0;}
 .picture a.small:hover .large {display:block; position:absolute; top: 90px; left:150px; width:200px; height:200px; }
+.membershipRegister form ol li input {margin-bottom: 6px; width:306px; /*width:320px;*/ height:28px; padding:2px; color:#919191; border:1px solid #ccc; font-size:13px; font-family:"Gotham", Verdana, Geneva, sans-serif; /* for IE */ *line-height:25px; }

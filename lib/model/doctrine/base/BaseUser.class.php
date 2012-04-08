@@ -10,8 +10,9 @@ Doctrine_Manager::getInstance()->bindComponent('User', 'doctrine');
  * @property integer $user_id
  * @property string $name
  * @property string $email
+ * @property string $pass
  * @property string $mobile
- * @property integer $address
+ * @property string $address
  * @property timestamp $created_at
  * @property timestamp $updated_at
  * @property Doctrine_Collection $MyDesign
@@ -20,8 +21,9 @@ Doctrine_Manager::getInstance()->bindComponent('User', 'doctrine');
  * @method integer             getUserId()     Returns the current record's "user_id" value
  * @method string              getName()       Returns the current record's "name" value
  * @method string              getEmail()      Returns the current record's "email" value
+ * @method string              getPass()       Returns the current record's "pass" value
  * @method string              getMobile()     Returns the current record's "mobile" value
- * @method integer             getAddress()    Returns the current record's "address" value
+ * @method string              getAddress()    Returns the current record's "address" value
  * @method timestamp           getCreatedAt()  Returns the current record's "created_at" value
  * @method timestamp           getUpdatedAt()  Returns the current record's "updated_at" value
  * @method Doctrine_Collection getMyDesign()   Returns the current record's "MyDesign" collection
@@ -29,6 +31,7 @@ Doctrine_Manager::getInstance()->bindComponent('User', 'doctrine');
  * @method User                setUserId()     Sets the current record's "user_id" value
  * @method User                setName()       Sets the current record's "name" value
  * @method User                setEmail()      Sets the current record's "email" value
+ * @method User                setPass()       Sets the current record's "pass" value
  * @method User                setMobile()     Sets the current record's "mobile" value
  * @method User                setAddress()    Sets the current record's "address" value
  * @method User                setCreatedAt()  Sets the current record's "created_at" value
@@ -72,6 +75,15 @@ abstract class BaseUser extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 50,
              ));
+        $this->hasColumn('pass', 'string', 50, array(
+             'type' => 'string',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 50,
+             ));
         $this->hasColumn('mobile', 'string', 13, array(
              'type' => 'string',
              'fixed' => 0,
@@ -81,15 +93,14 @@ abstract class BaseUser extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 13,
              ));
-        $this->hasColumn('address', 'integer', 1, array(
-             'type' => 'integer',
+        $this->hasColumn('address', 'string', 500, array(
+             'type' => 'string',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
-             'default' => '0',
              'notnull' => true,
              'autoincrement' => false,
-             'length' => 1,
+             'length' => 500,
              ));
         $this->hasColumn('created_at', 'timestamp', 25, array(
              'type' => 'timestamp',

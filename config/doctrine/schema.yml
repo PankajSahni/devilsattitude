@@ -238,6 +238,13 @@ User:
       primary: false
       notnull: true
       autoincrement: false
+    pass:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
     mobile:
       type: string(13)
       fixed: false
@@ -246,11 +253,10 @@ User:
       notnull: true
       autoincrement: false
     address:
-      type: integer(1)
+      type: string(500)
       fixed: false
       unsigned: false
       primary: false
-      default: '0'
       notnull: true
       autoincrement: false
     created_at:

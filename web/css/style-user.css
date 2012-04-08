@@ -1,0 +1,10 @@
+/* Getting the new tags to behave */
+.membershipRegister form ol li input 
+{margin-bottom: 6px; 
+ width:306px; /*width:320px;*/ 
+ height:28px; 
+ padding:2px; 
+ color:#919191; 
+ border:1px solid #ccc; 
+ font-size:13px; 
+ font-family:"Gotham", Verdana, Geneva, sans-serif; /* for IE */ line-height:25px; }

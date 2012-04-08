@@ -15,6 +15,7 @@
                         <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/<?php echo $image_url; ?>upgrade.jpg" border="0" alt="" /></a>
                 </div>
         <![endif]-->
+        
 <style>
 #preview{
 	position:absolute;
@@ -58,7 +59,7 @@
                                 <div id="gallery">
                                     <ul id="myRoundabout">
                                         <?php foreach ($featured_products[0]['Products'] as $product): ?>    
-                                        <li><span class="fancy"><img src="<?php echo $designs_url . $product['image']; ?>" alt=""/></span></li>
+                                        <li><span class="fancy"><img src="<?php echo $designs_url . $product['image']; ?>" alt="" width="270px" height="280px"/></span></li>
 
                                         <?php endforeach; ?>
                                     </ul>
@@ -75,7 +76,7 @@
                                         <?php foreach ($all_products[0]['Products'] as $product): ?>
                                         <?php //if(($i % 3)==0)?>
                                         <article class="col1">
-                                            <figure><li><a href="<?php echo $designs_url . $product['image']; ?>" class="preview" title=""  width="270px" height="280px"><img src="<?php echo $designs_url . $product['image']; ?>" alt="" width="270px" height="280px"/></a></figure>
+                                            <figure><li><a href="<?php echo $designs_url . $product['image']; ?>" class="preview" title="" width="270px" height="280px"><img src="<?php echo $designs_url . $product['image']; ?>" alt="" width="270px" height="280px"/></a></figure>
                                             <div class="pad">
                                                 <p align="center">	
                                             <img src="<?php echo $image_url; ?>order-now.png" alt="" width="140px" height="80px"/>
