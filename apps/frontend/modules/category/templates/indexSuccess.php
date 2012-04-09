@@ -79,7 +79,7 @@
                                             <figure><li><a href="<?php echo $designs_url . $product['image']; ?>" class="preview" title="" width="270px" height="280px"><img src="<?php echo $designs_url . $product['image']; ?>" alt="" width="270px" height="280px"/></a></figure>
                                             <div class="pad">
                                                 <p align="center">	
-                                            <img src="<?php echo $image_url; ?>order-now.png" alt="" width="140px" height="80px"/>
+                                                    <a href="<?php echo url_for('user/new?product_id='.$product['product_id']);?>"><img src="<?php echo $image_url; ?>order-now.png" alt="" width="140px" height="80px"/></a>
                                                 </p>
                                             </div>
                                         </article>
