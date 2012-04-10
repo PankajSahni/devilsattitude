@@ -4843,3 +4843,822 @@ Apr 09 17:51:54 symfony [info] {sfPatternRouting} Match route "default" (/:modul
 Apr 09 17:51:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
 Apr 09 17:51:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
 Apr 09 17:51:54 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:10:12 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new/product_id/1 with parameters array (  'module' => 'user',  'action' => 'new',  'product_id' => '1',)
+Apr 10 19:10:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:10:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:10:12 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:10:12 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:10:12 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:10:12 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:10:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:10:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:10:12 symfony [info] {sfWebDebugLogger} Configuration 393.69 ms (11)
+Apr 10 19:10:12 symfony [info] {sfWebDebugLogger} Factories 178.31 ms (1)
+Apr 10 19:10:12 symfony [info] {sfWebDebugLogger} Action "user/new" 423.92 ms (1)
+Apr 10 19:10:12 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 57.84 ms (1)
+Apr 10 19:10:12 symfony [info] {sfWebResponse} Send content (37258 o)
+Apr 10 19:12:17 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new/product_id/1 with parameters array (  'module' => 'user',  'action' => 'new',  'product_id' => '1',)
+Apr 10 19:12:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:12:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:12:17 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:12:17 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:12:17 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:12:17 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:12:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:12:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:12:17 symfony [info] {sfWebDebugLogger} Configuration 20.09 ms (9)
+Apr 10 19:12:17 symfony [info] {sfWebDebugLogger} Factories 60.50 ms (1)
+Apr 10 19:12:17 symfony [info] {sfWebDebugLogger} Action "user/new" 55.22 ms (1)
+Apr 10 19:12:17 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 40.97 ms (1)
+Apr 10 19:12:17 symfony [info] {sfWebResponse} Send content (37286 o)
+Apr 10 19:14:23 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new/product_id/1 with parameters array (  'module' => 'user',  'action' => 'new',  'product_id' => '1',)
+Apr 10 19:14:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:14:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:14:23 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:14:23 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:14:23 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:14:23 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:14:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:14:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:14:23 symfony [info] {sfWebDebugLogger} Configuration 16.30 ms (9)
+Apr 10 19:14:23 symfony [info] {sfWebDebugLogger} Factories 59.36 ms (1)
+Apr 10 19:14:23 symfony [info] {sfWebDebugLogger} Action "user/new" 53.22 ms (1)
+Apr 10 19:14:23 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 36.19 ms (1)
+Apr 10 19:14:23 symfony [info] {sfWebResponse} Send content (33799 o)
+Apr 10 19:14:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new/product_id/1 with parameters array (  'module' => 'user',  'action' => 'new',  'product_id' => '1',)
+Apr 10 19:14:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:14:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:14:50 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:14:50 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:14:50 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:14:50 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:14:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:14:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:14:50 symfony [info] {sfWebDebugLogger} Configuration 14.74 ms (9)
+Apr 10 19:14:50 symfony [info] {sfWebDebugLogger} Factories 57.59 ms (1)
+Apr 10 19:14:50 symfony [info] {sfWebDebugLogger} Action "user/new" 49.23 ms (1)
+Apr 10 19:14:50 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 32.15 ms (1)
+Apr 10 19:14:50 symfony [info] {sfWebResponse} Send content (33802 o)
+Apr 10 19:23:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new/product_id/1 with parameters array (  'module' => 'user',  'action' => 'new',  'product_id' => '1',)
+Apr 10 19:23:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:23:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:23:29 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:23:29 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:23:29 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:23:29 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:23:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:23:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:23:29 symfony [info] {sfWebDebugLogger} Configuration 15.87 ms (9)
+Apr 10 19:23:29 symfony [info] {sfWebDebugLogger} Factories 60.35 ms (1)
+Apr 10 19:23:29 symfony [info] {sfWebDebugLogger} Action "user/new" 53.40 ms (1)
+Apr 10 19:23:29 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 36.66 ms (1)
+Apr 10 19:23:29 symfony [info] {sfWebResponse} Send content (33815 o)
+Apr 10 19:27:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/create with parameters array (  'module' => 'user',  'action' => 'create',)
+Apr 10 19:27:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:27:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:27:50 symfony [info] {userActions} Call "userActions->executeCreate()"
+Apr 10 19:27:50 symfony [info] {userActions} Change template to "CURRENT/new"
+Apr 10 19:27:50 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:27:50 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\apps\frontend\modules\user\templates\newSuccess.php on line 28 (Undefined variable: form1)
+Apr 10 19:27:50 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:27:50 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:27:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:27:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:27:50 symfony [info] {sfWebDebugLogger} Configuration 15.31 ms (9)
+Apr 10 19:27:50 symfony [info] {sfWebDebugLogger} Factories 55.16 ms (1)
+Apr 10 19:27:50 symfony [info] {sfWebDebugLogger} Action "user/create" 51.49 ms (1)
+Apr 10 19:27:50 symfony [info] {sfWebDebugLogger} View "Success" for "user/create" 33.13 ms (1)
+Apr 10 19:27:50 symfony [info] {sfWebResponse} Send content (38393 o)
+Apr 10 19:28:11 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/create with parameters array (  'module' => 'user',  'action' => 'create',)
+Apr 10 19:28:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:28:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:28:11 symfony [info] {userActions} Call "userActions->executeCreate()"
+Apr 10 19:28:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:28:11 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO user (email, pass, name, mobile, address) VALUES (?, ?, ?, ?, ?) - (someone@somewhere.com, hamesha, Pankaj, 222222222, Order Will be delivered here)
+Apr 10 19:28:11 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/web/frontend_dev.php/product"
+Apr 10 19:28:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 10 19:28:11 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/web/frontend_dev.php/product"
+Apr 10 19:28:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:28:11 symfony [info] {sfWebDebugLogger} Configuration 9.35 ms (8)
+Apr 10 19:28:11 symfony [info] {sfWebDebugLogger} Factories 57.03 ms (1)
+Apr 10 19:28:11 symfony [info] {sfWebDebugLogger} Action "user/create" 351.71 ms (1)
+Apr 10 19:28:11 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Apr 10 19:28:11 symfony [info] {sfWebResponse} Send content (122 o)
+Apr 10 19:28:11 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 10 19:28:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:28:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:28:12 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 10 19:28:12 symfony [info] {productActions} Forward to action "default/module"
+Apr 10 19:28:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:28:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:28:12 symfony [info] {defaultActions} Call "defaultActions->executeModule()"
+Apr 10 19:28:12 symfony [info] {sfPHPView} Render "C:\wamp\bin\php\php5.3.5\PEAR\symfony/controller/default/templates/moduleSuccess.php"
+Apr 10 19:28:12 symfony [info] {sfPHPView} Decorate content with "C:\wamp\bin\php\php5.3.5\PEAR\symfony\controller\default\templates/defaultLayout.php"
+Apr 10 19:28:12 symfony [info] {sfPHPView} Render "C:\wamp\bin\php\php5.3.5\PEAR\symfony\controller\default\templates/defaultLayout.php"
+Apr 10 19:28:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:28:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:28:12 symfony [info] {sfWebDebugLogger} Configuration 67.91 ms (13)
+Apr 10 19:28:12 symfony [info] {sfWebDebugLogger} Factories 54.61 ms (1)
+Apr 10 19:28:12 symfony [info] {sfWebDebugLogger} Action "product/index" 92.16 ms (1)
+Apr 10 19:28:12 symfony [info] {sfWebDebugLogger} Action "default/module" 0.40 ms (1)
+Apr 10 19:28:12 symfony [info] {sfWebDebugLogger} View "Success" for "default/module" 41.73 ms (1)
+Apr 10 19:28:12 symfony [info] {sfWebResponse} Send content (31423 o)
+Apr 10 19:28:23 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /logout with parameters array (  'module' => 'logout',  'action' => 'index',)
+Apr 10 19:28:23 symfony [info] {sfFrontWebController} Action "logout/index" does not exist
+Apr 10 19:28:23 symfony [err] {sfError404Exception} Action "logout/index" does not exist.
+Apr 10 19:28:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 10 19:28:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:28:23 symfony [info] {sfWebDebugLogger} Configuration 8.35 ms (5)
+Apr 10 19:28:23 symfony [info] {sfWebDebugLogger} Factories 59.31 ms (1)
+Apr 10 19:28:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/logout with parameters array (  'module' => 'user',  'action' => 'logout',)
+Apr 10 19:28:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:28:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:28:31 symfony [info] {userActions} Call "userActions->executeLogout()"
+Apr 10 19:28:31 symfony [info] {myUser} User is not authenticated
+Apr 10 19:28:31 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/web/frontend_dev.php/category"
+Apr 10 19:28:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 10 19:28:31 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/web/frontend_dev.php/category"
+Apr 10 19:28:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:28:31 symfony [info] {sfWebDebugLogger} Configuration 10.81 ms (8)
+Apr 10 19:28:31 symfony [info] {sfWebDebugLogger} Factories 50.74 ms (1)
+Apr 10 19:28:31 symfony [info] {sfWebDebugLogger} Action "user/logout" 2.11 ms (1)
+Apr 10 19:28:31 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 10 19:28:31 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Apr 10 19:28:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:28:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:28:31 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Apr 10 19:28:32 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:28:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.category_id AS c__category_id, c.name AS c__name, c.created_at AS c__created_at, c.updated_at AS c__updated_at, p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM categories c LEFT JOIN products p ON c.category_id = p.category_id WHERE (c.name = ? AND p.featured = ?) - (punjabi, 1)
+Apr 10 19:28:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.category_id AS c__category_id, c.name AS c__name, c.created_at AS c__created_at, c.updated_at AS c__updated_at, p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM categories c LEFT JOIN products p ON c.category_id = p.category_id WHERE (c.name = ?) - (punjabi)
+Apr 10 19:28:32 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/category/templates/indexSuccess.php"
+Apr 10 19:28:32 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\apps\frontend\modules\category\templates\indexSuccess.php on line 15 (Undefined variable: image_url)
+Apr 10 19:28:32 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:28:32 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:28:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:28:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:28:32 symfony [info] {sfWebDebugLogger} Configuration 16.36 ms (9)
+Apr 10 19:28:32 symfony [info] {sfWebDebugLogger} Factories 46.49 ms (1)
+Apr 10 19:28:32 symfony [info] {sfWebDebugLogger} Action "category/index" 127.71 ms (1)
+Apr 10 19:28:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (3)
+Apr 10 19:28:32 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 106.59 ms (1)
+Apr 10 19:28:32 symfony [info] {sfWebResponse} Send content (58579 o)
+Apr 10 19:28:37 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new/product_id/1 with parameters array (  'module' => 'user',  'action' => 'new',  'product_id' => '1',)
+Apr 10 19:28:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:28:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:28:37 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:28:37 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:28:37 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:28:37 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:28:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:28:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:28:37 symfony [info] {sfWebDebugLogger} Configuration 8.67 ms (9)
+Apr 10 19:28:37 symfony [info] {sfWebDebugLogger} Factories 47.50 ms (1)
+Apr 10 19:28:37 symfony [info] {sfWebDebugLogger} Action "user/new" 48.25 ms (1)
+Apr 10 19:28:37 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 32.17 ms (1)
+Apr 10 19:28:37 symfony [info] {sfWebResponse} Send content (33909 o)
+Apr 10 19:33:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:33:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:33:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:33:13 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:33:13 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 22 (Undefined index: email)
+Apr 10 19:33:13 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:33:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:33:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (, )
+Apr 10 19:33:14 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:33:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 10 19:33:14 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:33:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:33:14 symfony [info] {sfWebDebugLogger} Configuration 12.37 ms (8)
+Apr 10 19:33:14 symfony [info] {sfWebDebugLogger} Factories 54.91 ms (1)
+Apr 10 19:33:14 symfony [info] {sfWebDebugLogger} Action "user/login" 72.12 ms (1)
+Apr 10 19:33:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Apr 10 19:33:14 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 10 19:33:14 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:33:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:33:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:33:14 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:33:14 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\apps\frontend\modules\user\actions\actions.class.php on line 31 (Undefined index: product_id)
+Apr 10 19:33:14 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:33:14 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:33:14 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:33:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:33:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:33:14 symfony [info] {sfWebDebugLogger} Configuration 12.20 ms (9)
+Apr 10 19:33:14 symfony [info] {sfWebDebugLogger} Factories 53.69 ms (1)
+Apr 10 19:33:14 symfony [info] {sfWebDebugLogger} Action "user/new" 49.25 ms (1)
+Apr 10 19:33:14 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 33.52 ms (1)
+Apr 10 19:33:14 symfony [info] {sfWebResponse} Send content (33808 o)
+Apr 10 19:33:28 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:33:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:33:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:33:28 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:33:28 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 22 (Undefined index: email)
+Apr 10 19:33:28 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:33:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:33:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (, )
+Apr 10 19:33:28 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:33:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 10 19:33:28 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:33:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:33:28 symfony [info] {sfWebDebugLogger} Configuration 6.93 ms (8)
+Apr 10 19:33:28 symfony [info] {sfWebDebugLogger} Factories 48.33 ms (1)
+Apr 10 19:33:28 symfony [info] {sfWebDebugLogger} Action "user/login" 61.08 ms (1)
+Apr 10 19:33:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Apr 10 19:33:28 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 10 19:33:28 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:33:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:33:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:33:28 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:33:28 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\apps\frontend\modules\user\actions\actions.class.php on line 31 (Undefined index: product_id)
+Apr 10 19:33:28 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:33:28 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:33:28 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:33:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:33:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:33:28 symfony [info] {sfWebDebugLogger} Configuration 8.74 ms (9)
+Apr 10 19:33:28 symfony [info] {sfWebDebugLogger} Factories 46.70 ms (1)
+Apr 10 19:33:28 symfony [info] {sfWebDebugLogger} Action "user/new" 47.87 ms (1)
+Apr 10 19:33:28 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 31.70 ms (1)
+Apr 10 19:33:28 symfony [info] {sfWebResponse} Send content (33785 o)
+Apr 10 19:33:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:33:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:33:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:33:45 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:33:45 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 22 (Undefined index: email)
+Apr 10 19:33:45 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:33:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:33:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (, )
+Apr 10 19:33:45 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:33:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 10 19:33:45 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:33:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:33:45 symfony [info] {sfWebDebugLogger} Configuration 6.46 ms (8)
+Apr 10 19:33:45 symfony [info] {sfWebDebugLogger} Factories 46.77 ms (1)
+Apr 10 19:33:45 symfony [info] {sfWebDebugLogger} Action "user/login" 68.87 ms (1)
+Apr 10 19:33:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Apr 10 19:33:45 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 10 19:33:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:33:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:33:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:33:46 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:33:46 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\apps\frontend\modules\user\actions\actions.class.php on line 31 (Undefined index: product_id)
+Apr 10 19:33:46 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:33:46 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:33:46 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:33:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:33:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:33:46 symfony [info] {sfWebDebugLogger} Configuration 8.56 ms (9)
+Apr 10 19:33:46 symfony [info] {sfWebDebugLogger} Factories 47.22 ms (1)
+Apr 10 19:33:46 symfony [info] {sfWebDebugLogger} Action "user/new" 48.29 ms (1)
+Apr 10 19:33:46 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 32.57 ms (1)
+Apr 10 19:33:46 symfony [info] {sfWebResponse} Send content (33785 o)
+Apr 10 19:38:35 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:38:35 symfony [info] {myUser} Flag old flash messages ("message")
+Apr 10 19:38:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:38:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:38:35 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:38:35 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 22 (Undefined index: email)
+Apr 10 19:38:35 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:38:35 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:38:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (, )
+Apr 10 19:38:35 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:38:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 10 19:38:35 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:38:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:38:35 symfony [info] {sfWebDebugLogger} Configuration 12.67 ms (8)
+Apr 10 19:38:35 symfony [info] {sfWebDebugLogger} Factories 58.92 ms (1)
+Apr 10 19:38:35 symfony [info] {sfWebDebugLogger} Action "user/login" 71.97 ms (1)
+Apr 10 19:38:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Apr 10 19:38:35 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 10 19:38:35 symfony [info] {myUser} Remove old flash messages ("message")
+Apr 10 19:38:35 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:38:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:38:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:38:35 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:38:35 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\apps\frontend\modules\user\actions\actions.class.php on line 31 (Undefined index: product_id)
+Apr 10 19:38:35 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:38:35 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:38:35 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:38:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:38:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:38:35 symfony [info] {sfWebDebugLogger} Configuration 13.40 ms (9)
+Apr 10 19:38:35 symfony [info] {sfWebDebugLogger} Factories 56.85 ms (1)
+Apr 10 19:38:35 symfony [info] {sfWebDebugLogger} Action "user/new" 51.74 ms (1)
+Apr 10 19:38:35 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 34.95 ms (1)
+Apr 10 19:38:35 symfony [info] {sfWebResponse} Send content (33934 o)
+Apr 10 19:38:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:38:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:38:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:38:51 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:38:51 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 22 (Undefined index: email)
+Apr 10 19:38:51 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:38:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:38:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (, )
+Apr 10 19:38:51 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:38:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 10 19:38:51 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:38:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:38:51 symfony [info] {sfWebDebugLogger} Configuration 10.76 ms (8)
+Apr 10 19:38:51 symfony [info] {sfWebDebugLogger} Factories 56.46 ms (1)
+Apr 10 19:38:51 symfony [info] {sfWebDebugLogger} Action "user/login" 73.73 ms (1)
+Apr 10 19:38:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Apr 10 19:38:51 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 10 19:38:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:38:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:38:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:38:51 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:38:51 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\apps\frontend\modules\user\actions\actions.class.php on line 31 (Undefined index: product_id)
+Apr 10 19:38:51 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:38:51 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:38:51 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:38:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:38:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:38:51 symfony [info] {sfWebDebugLogger} Configuration 11.93 ms (9)
+Apr 10 19:38:51 symfony [info] {sfWebDebugLogger} Factories 56.03 ms (1)
+Apr 10 19:38:51 symfony [info] {sfWebDebugLogger} Action "user/new" 51.81 ms (1)
+Apr 10 19:38:51 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 31.32 ms (1)
+Apr 10 19:38:51 symfony [info] {sfWebResponse} Send content (33934 o)
+Apr 10 19:41:33 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:41:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:41:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:41:33 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:41:33 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 22 (Undefined index: email)
+Apr 10 19:41:33 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:41:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:41:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (, )
+Apr 10 19:41:33 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:41:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 10 19:41:33 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:41:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:41:33 symfony [info] {sfWebDebugLogger} Configuration 12.85 ms (8)
+Apr 10 19:41:33 symfony [info] {sfWebDebugLogger} Factories 57.74 ms (1)
+Apr 10 19:41:33 symfony [info] {sfWebDebugLogger} Action "user/login" 74.50 ms (1)
+Apr 10 19:41:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Apr 10 19:41:33 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 10 19:41:33 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:41:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:41:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:41:33 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:41:33 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\apps\frontend\modules\user\actions\actions.class.php on line 31 (Undefined index: product_id)
+Apr 10 19:41:33 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:41:33 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:41:33 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:41:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:41:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:41:33 symfony [info] {sfWebDebugLogger} Configuration 13.03 ms (9)
+Apr 10 19:41:33 symfony [info] {sfWebDebugLogger} Factories 55.57 ms (1)
+Apr 10 19:41:33 symfony [info] {sfWebDebugLogger} Action "user/new" 51.94 ms (1)
+Apr 10 19:41:33 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 34.43 ms (1)
+Apr 10 19:41:33 symfony [info] {sfWebResponse} Send content (33934 o)
+Apr 10 19:43:54 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:43:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:43:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:43:54 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:43:54 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 22 (Undefined index: email)
+Apr 10 19:43:54 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:43:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:43:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (, )
+Apr 10 19:44:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:44:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:44:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:44:22 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:44:22 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\apps\frontend\modules\user\actions\actions.class.php on line 31 (Undefined index: product_id)
+Apr 10 19:44:22 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:44:22 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:44:22 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:44:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:44:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:44:22 symfony [info] {sfWebDebugLogger} Configuration 14.86 ms (9)
+Apr 10 19:44:22 symfony [info] {sfWebDebugLogger} Factories 55.03 ms (1)
+Apr 10 19:44:22 symfony [info] {sfWebDebugLogger} Action "user/new" 52.17 ms (1)
+Apr 10 19:44:22 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 34.55 ms (1)
+Apr 10 19:44:22 symfony [info] {sfWebResponse} Send content (33902 o)
+Apr 10 19:44:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:44:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:44:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:44:22 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:44:22 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\apps\frontend\modules\user\actions\actions.class.php on line 31 (Undefined index: product_id)
+Apr 10 19:44:23 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:44:23 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:44:23 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:44:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:44:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:44:23 symfony [info] {sfWebDebugLogger} Configuration 22.28 ms (9)
+Apr 10 19:44:23 symfony [info] {sfWebDebugLogger} Factories 55.86 ms (1)
+Apr 10 19:44:23 symfony [info] {sfWebDebugLogger} Action "user/new" 50.75 ms (1)
+Apr 10 19:44:23 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 32.74 ms (1)
+Apr 10 19:44:23 symfony [info] {sfWebResponse} Send content (33902 o)
+Apr 10 19:44:27 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:44:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:44:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:44:27 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:44:27 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 22 (Undefined index: email)
+Apr 10 19:44:27 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:44:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:44:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (, )
+Apr 10 19:44:44 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:44:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:44:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:44:44 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:44:44 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\apps\frontend\modules\user\actions\actions.class.php on line 31 (Undefined index: product_id)
+Apr 10 19:44:44 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:44:44 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:44:44 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:44:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:44:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:44:44 symfony [info] {sfWebDebugLogger} Configuration 11.55 ms (9)
+Apr 10 19:44:44 symfony [info] {sfWebDebugLogger} Factories 53.36 ms (1)
+Apr 10 19:44:44 symfony [info] {sfWebDebugLogger} Action "user/new" 50.99 ms (1)
+Apr 10 19:44:44 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 32.30 ms (1)
+Apr 10 19:44:44 symfony [info] {sfWebResponse} Send content (33902 o)
+Apr 10 19:44:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:44:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:44:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:44:52 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:44:52 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 22 (Undefined index: email)
+Apr 10 19:44:52 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:44:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:44:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (, )
+Apr 10 19:46:44 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:46:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:46:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:46:44 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:46:44 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\apps\frontend\modules\user\actions\actions.class.php on line 31 (Undefined index: product_id)
+Apr 10 19:46:44 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:46:45 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:46:45 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:46:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:46:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:46:45 symfony [info] {sfWebDebugLogger} Configuration 14.69 ms (9)
+Apr 10 19:46:45 symfony [info] {sfWebDebugLogger} Factories 55.55 ms (1)
+Apr 10 19:46:45 symfony [info] {sfWebDebugLogger} Action "user/new" 51.22 ms (1)
+Apr 10 19:46:45 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 32.78 ms (1)
+Apr 10 19:46:45 symfony [info] {sfWebResponse} Send content (33902 o)
+Apr 10 19:46:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:46:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:46:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:46:51 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:46:51 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:46:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:46:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (dropmail.pankaj@yahoo.co.in, )
+Apr 10 19:46:51 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:46:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 10 19:46:51 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:46:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:46:51 symfony [info] {sfWebDebugLogger} Configuration 11.86 ms (8)
+Apr 10 19:46:51 symfony [info] {sfWebDebugLogger} Factories 56.19 ms (1)
+Apr 10 19:46:51 symfony [info] {sfWebDebugLogger} Action "user/login" 62.34 ms (1)
+Apr 10 19:46:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Apr 10 19:46:51 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 10 19:46:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:46:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:46:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:46:51 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:46:51 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\apps\frontend\modules\user\actions\actions.class.php on line 31 (Undefined index: product_id)
+Apr 10 19:46:52 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:46:52 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:46:52 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:46:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:46:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:46:52 symfony [info] {sfWebDebugLogger} Configuration 12.72 ms (9)
+Apr 10 19:46:52 symfony [info] {sfWebDebugLogger} Factories 51.90 ms (1)
+Apr 10 19:46:52 symfony [info] {sfWebDebugLogger} Action "user/new" 49.35 ms (1)
+Apr 10 19:46:52 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 33.74 ms (1)
+Apr 10 19:46:52 symfony [info] {sfWebResponse} Send content (33934 o)
+Apr 10 19:47:54 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:47:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:47:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:47:54 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:47:54 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:47:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:47:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (dropmail.pankaj@yahoo.co.in, )
+Apr 10 19:47:54 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:47:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 10 19:47:54 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:47:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:47:54 symfony [info] {sfWebDebugLogger} Configuration 13.43 ms (8)
+Apr 10 19:47:54 symfony [info] {sfWebDebugLogger} Factories 55.44 ms (1)
+Apr 10 19:47:54 symfony [info] {sfWebDebugLogger} Action "user/login" 71.94 ms (1)
+Apr 10 19:47:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Apr 10 19:47:54 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 10 19:47:54 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:47:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:47:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:47:54 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:47:54 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\apps\frontend\modules\user\actions\actions.class.php on line 29 (Undefined index: product_id)
+Apr 10 19:47:54 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:47:54 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:47:54 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:47:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:47:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:47:54 symfony [info] {sfWebDebugLogger} Configuration 12.82 ms (9)
+Apr 10 19:47:54 symfony [info] {sfWebDebugLogger} Factories 51.77 ms (1)
+Apr 10 19:47:54 symfony [info] {sfWebDebugLogger} Action "user/new" 51.69 ms (1)
+Apr 10 19:47:54 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 33.41 ms (1)
+Apr 10 19:47:54 symfony [info] {sfWebResponse} Send content (33934 o)
+Apr 10 19:48:36 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:48:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:48:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:48:36 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:48:36 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:48:36 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:48:36 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:48:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:48:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:48:36 symfony [info] {sfWebDebugLogger} Configuration 14.52 ms (9)
+Apr 10 19:48:36 symfony [info] {sfWebDebugLogger} Factories 53.77 ms (1)
+Apr 10 19:48:36 symfony [info] {sfWebDebugLogger} Action "user/new" 50.16 ms (1)
+Apr 10 19:48:36 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 39.86 ms (1)
+Apr 10 19:48:36 symfony [info] {sfWebResponse} Send content (33934 o)
+Apr 10 19:48:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:48:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:48:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:48:40 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:48:40 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:48:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:48:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (dropmail.pankaj@yahoo.co.in, )
+Apr 10 19:48:40 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:48:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 10 19:48:40 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:48:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:48:40 symfony [info] {sfWebDebugLogger} Configuration 10.20 ms (8)
+Apr 10 19:48:40 symfony [info] {sfWebDebugLogger} Factories 53.31 ms (1)
+Apr 10 19:48:40 symfony [info] {sfWebDebugLogger} Action "user/login" 62.42 ms (1)
+Apr 10 19:48:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Apr 10 19:48:40 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 10 19:48:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:48:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:48:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:48:40 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:48:40 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:48:40 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:48:40 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:48:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:48:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:48:40 symfony [info] {sfWebDebugLogger} Configuration 12.46 ms (9)
+Apr 10 19:48:40 symfony [info] {sfWebDebugLogger} Factories 53.00 ms (1)
+Apr 10 19:48:40 symfony [info] {sfWebDebugLogger} Action "user/new" 47.23 ms (1)
+Apr 10 19:48:40 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 34.23 ms (1)
+Apr 10 19:48:40 symfony [info] {sfWebResponse} Send content (33934 o)
+Apr 10 19:49:04 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:49:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:49:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:49:04 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:49:05 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:49:05 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:49:05 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:49:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:49:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:49:05 symfony [info] {sfWebDebugLogger} Configuration 15.03 ms (9)
+Apr 10 19:49:05 symfony [info] {sfWebDebugLogger} Factories 56.23 ms (1)
+Apr 10 19:49:05 symfony [info] {sfWebDebugLogger} Action "user/new" 50.99 ms (1)
+Apr 10 19:49:05 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 36.05 ms (1)
+Apr 10 19:49:05 symfony [info] {sfWebResponse} Send content (33934 o)
+Apr 10 19:49:09 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:49:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:49:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:49:09 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:49:09 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:49:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:49:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (dropmail.pankaj@yahoo.co.in, )
+Apr 10 19:50:25 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:50:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:50:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:50:25 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:50:25 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:50:25 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:50:25 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:50:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:50:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:50:25 symfony [info] {sfWebDebugLogger} Configuration 12.62 ms (9)
+Apr 10 19:50:25 symfony [info] {sfWebDebugLogger} Factories 54.85 ms (1)
+Apr 10 19:50:25 symfony [info] {sfWebDebugLogger} Action "user/new" 51.46 ms (1)
+Apr 10 19:50:25 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 33.08 ms (1)
+Apr 10 19:50:25 symfony [info] {sfWebResponse} Send content (33902 o)
+Apr 10 19:50:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:50:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:50:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:50:29 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:50:29 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:50:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:50:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (dropmail.pankaj@yahoo.co.in, )
+Apr 10 19:50:29 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:50:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 10 19:50:29 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:50:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:50:29 symfony [info] {sfWebDebugLogger} Configuration 8.45 ms (8)
+Apr 10 19:50:29 symfony [info] {sfWebDebugLogger} Factories 55.01 ms (1)
+Apr 10 19:50:29 symfony [info] {sfWebDebugLogger} Action "user/login" 72.36 ms (1)
+Apr 10 19:50:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Apr 10 19:50:29 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 10 19:50:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:50:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:50:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:50:30 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:50:30 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:50:30 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:50:30 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:50:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:50:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:50:30 symfony [info] {sfWebDebugLogger} Configuration 10.57 ms (9)
+Apr 10 19:50:30 symfony [info] {sfWebDebugLogger} Factories 53.63 ms (1)
+Apr 10 19:50:30 symfony [info] {sfWebDebugLogger} Action "user/new" 48.90 ms (1)
+Apr 10 19:50:30 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 33.28 ms (1)
+Apr 10 19:50:30 symfony [info] {sfWebResponse} Send content (33934 o)
+Apr 10 19:50:38 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:50:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:50:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:50:38 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:50:38 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:50:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:50:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (dropmail.pankaj@yahoo.co.in, )
+Apr 10 19:50:38 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:50:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 10 19:50:38 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:50:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:50:38 symfony [info] {sfWebDebugLogger} Configuration 8.67 ms (8)
+Apr 10 19:50:38 symfony [info] {sfWebDebugLogger} Factories 53.85 ms (1)
+Apr 10 19:50:38 symfony [info] {sfWebDebugLogger} Action "user/login" 71.31 ms (1)
+Apr 10 19:50:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Apr 10 19:50:38 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 10 19:50:38 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:50:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:50:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:50:38 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:50:38 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:50:38 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:50:38 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:50:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:50:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:50:38 symfony [info] {sfWebDebugLogger} Configuration 10.67 ms (9)
+Apr 10 19:50:38 symfony [info] {sfWebDebugLogger} Factories 53.58 ms (1)
+Apr 10 19:50:38 symfony [info] {sfWebDebugLogger} Action "user/new" 47.80 ms (1)
+Apr 10 19:50:38 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 32.53 ms (1)
+Apr 10 19:50:38 symfony [info] {sfWebResponse} Send content (33934 o)
+Apr 10 19:51:06 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:51:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:51:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:51:06 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:51:06 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:51:06 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:51:06 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:51:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:51:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:51:06 symfony [info] {sfWebDebugLogger} Configuration 14.95 ms (9)
+Apr 10 19:51:06 symfony [info] {sfWebDebugLogger} Factories 54.49 ms (1)
+Apr 10 19:51:06 symfony [info] {sfWebDebugLogger} Action "user/new" 49.49 ms (1)
+Apr 10 19:51:06 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 33.20 ms (1)
+Apr 10 19:51:06 symfony [info] {sfWebResponse} Send content (33853 o)
+Apr 10 19:51:10 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:51:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:51:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:51:10 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:51:10 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:51:10 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:51:10 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:51:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:51:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:51:10 symfony [info] {sfWebDebugLogger} Configuration 9.94 ms (9)
+Apr 10 19:51:10 symfony [info] {sfWebDebugLogger} Factories 48.83 ms (1)
+Apr 10 19:51:10 symfony [info] {sfWebDebugLogger} Action "user/new" 47.93 ms (1)
+Apr 10 19:51:10 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 32.86 ms (1)
+Apr 10 19:51:10 symfony [info] {sfWebResponse} Send content (33875 o)
+Apr 10 19:51:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:51:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:51:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:51:18 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:51:18 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:51:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:51:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (dropmail.pankaj@gmail.com, )
+Apr 10 19:51:18 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:51:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 10 19:51:18 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/web/frontend_dev.php/user/new"
+Apr 10 19:51:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:51:18 symfony [info] {sfWebDebugLogger} Configuration 11.09 ms (8)
+Apr 10 19:51:18 symfony [info] {sfWebDebugLogger} Factories 51.51 ms (1)
+Apr 10 19:51:18 symfony [info] {sfWebDebugLogger} Action "user/login" 68.23 ms (1)
+Apr 10 19:51:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Apr 10 19:51:18 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 10 19:51:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:51:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:51:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:51:18 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:51:18 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:51:18 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:51:18 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:51:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:51:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:51:18 symfony [info] {sfWebDebugLogger} Configuration 8.88 ms (9)
+Apr 10 19:51:18 symfony [info] {sfWebDebugLogger} Factories 46.91 ms (1)
+Apr 10 19:51:18 symfony [info] {sfWebDebugLogger} Action "user/new" 46.88 ms (1)
+Apr 10 19:51:18 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 30.85 ms (1)
+Apr 10 19:51:18 symfony [info] {sfWebResponse} Send content (33933 o)
+Apr 10 19:51:38 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:51:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:51:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:51:38 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:51:38 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:51:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:51:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (dropmail.pankaj@yahoo.co.in, )
+Apr 10 19:52:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:52:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:52:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:52:41 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:52:41 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:52:41 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:52:41 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:52:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:52:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:52:41 symfony [info] {sfWebDebugLogger} Configuration 10.82 ms (9)
+Apr 10 19:52:41 symfony [info] {sfWebDebugLogger} Factories 48.98 ms (1)
+Apr 10 19:52:41 symfony [info] {sfWebDebugLogger} Action "user/new" 46.74 ms (1)
+Apr 10 19:52:41 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 34.14 ms (1)
+Apr 10 19:52:41 symfony [info] {sfWebResponse} Send content (33902 o)
+Apr 10 19:52:44 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:52:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:52:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:52:44 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:52:44 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\UserTable.class.php on line 23 (Undefined index: pass)
+Apr 10 19:52:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:52:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (dropmail.pankaj@yahoo.co.in, )
+Apr 10 19:53:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Apr 10 19:53:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:53:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:53:52 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:53:52 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Apr 10 19:53:52 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:53:52 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:53:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:53:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:53:52 symfony [info] {sfWebDebugLogger} Configuration 14.87 ms (9)
+Apr 10 19:53:52 symfony [info] {sfWebDebugLogger} Factories 55.90 ms (1)
+Apr 10 19:53:52 symfony [info] {sfWebDebugLogger} Action "user/new" 50.21 ms (1)
+Apr 10 19:53:52 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 34.58 ms (1)
+Apr 10 19:53:52 symfony [info] {sfWebResponse} Send content (33902 o)
+Apr 10 19:54:00 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Apr 10 19:54:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:54:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:54:00 symfony [info] {userActions} Call "userActions->executeLogin()"
+Apr 10 19:54:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:54:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (dropmail.pankaj@yahoo.co.in, hamesha)
+Apr 10 19:54:00 symfony [info] {myUser} Add credential(s) "user"
+Apr 10 19:54:00 symfony [info] {myUser} User is authenticated
+Apr 10 19:54:00 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/web/frontend_dev.php/category"
+Apr 10 19:54:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 10 19:54:00 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/web/frontend_dev.php/category"
+Apr 10 19:54:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:54:00 symfony [info] {sfWebDebugLogger} Configuration 11.04 ms (8)
+Apr 10 19:54:00 symfony [info] {sfWebDebugLogger} Factories 54.91 ms (1)
+Apr 10 19:54:00 symfony [info] {sfWebDebugLogger} Action "user/login" 70.90 ms (1)
+Apr 10 19:54:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Apr 10 19:54:00 symfony [info] {sfWebResponse} Send content (123 o)
+Apr 10 19:54:00 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Apr 10 19:54:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:54:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:54:00 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Apr 10 19:54:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 10 19:54:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.category_id AS c__category_id, c.name AS c__name, c.created_at AS c__created_at, c.updated_at AS c__updated_at, p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM categories c LEFT JOIN products p ON c.category_id = p.category_id WHERE (c.name = ? AND p.featured = ?) - (punjabi, 1)
+Apr 10 19:54:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.category_id AS c__category_id, c.name AS c__name, c.created_at AS c__created_at, c.updated_at AS c__updated_at, p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM categories c LEFT JOIN products p ON c.category_id = p.category_id WHERE (c.name = ?) - (punjabi)
+Apr 10 19:54:00 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/category/templates/indexSuccess.php"
+Apr 10 19:54:00 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\apps\frontend\modules\category\templates\indexSuccess.php on line 15 (Undefined variable: image_url)
+Apr 10 19:54:00 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:54:00 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 10 19:54:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:54:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:54:00 symfony [info] {sfWebDebugLogger} Configuration 12.49 ms (9)
+Apr 10 19:54:00 symfony [info] {sfWebDebugLogger} Factories 58.14 ms (1)
+Apr 10 19:54:00 symfony [info] {sfWebDebugLogger} Action "category/index" 84.64 ms (1)
+Apr 10 19:54:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (3)
+Apr 10 19:54:00 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 31.35 ms (1)
+Apr 10 19:54:00 symfony [info] {sfWebResponse} Send content (58826 o)
+Apr 10 19:54:11 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new/product_id/9 with parameters array (  'module' => 'user',  'action' => 'new',  'product_id' => '9',)
+Apr 10 19:54:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:54:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:54:11 symfony [info] {userActions} Call "userActions->executeNew()"
+Apr 10 19:54:11 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/web/frontend_dev.php/product"
+Apr 10 19:54:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 10 19:54:11 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/web/frontend_dev.php/product"
+Apr 10 19:54:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:54:11 symfony [info] {sfWebDebugLogger} Configuration 11.56 ms (8)
+Apr 10 19:54:11 symfony [info] {sfWebDebugLogger} Factories 53.63 ms (1)
+Apr 10 19:54:11 symfony [info] {sfWebDebugLogger} Action "user/new" 2.01 ms (1)
+Apr 10 19:54:11 symfony [info] {sfWebResponse} Send content (122 o)
+Apr 10 19:54:11 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 10 19:54:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:54:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:54:11 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 10 19:54:11 symfony [info] {productActions} Forward to action "default/module"
+Apr 10 19:54:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 10 19:54:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 10 19:54:11 symfony [info] {defaultActions} Call "defaultActions->executeModule()"
+Apr 10 19:54:11 symfony [info] {sfPHPView} Render "C:\wamp\bin\php\php5.3.5\PEAR\symfony/controller/default/templates/moduleSuccess.php"
+Apr 10 19:54:11 symfony [info] {sfPHPView} Decorate content with "C:\wamp\bin\php\php5.3.5\PEAR\symfony\controller\default\templates/defaultLayout.php"
+Apr 10 19:54:11 symfony [info] {sfPHPView} Render "C:\wamp\bin\php\php5.3.5\PEAR\symfony\controller\default\templates/defaultLayout.php"
+Apr 10 19:54:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 10 19:54:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 10 19:54:11 symfony [info] {sfWebDebugLogger} Configuration 14.65 ms (12)
+Apr 10 19:54:11 symfony [info] {sfWebDebugLogger} Factories 51.92 ms (1)
+Apr 10 19:54:11 symfony [info] {sfWebDebugLogger} Action "product/index" 36.53 ms (1)
+Apr 10 19:54:11 symfony [info] {sfWebDebugLogger} Action "default/module" 0.30 ms (1)
+Apr 10 19:54:11 symfony [info] {sfWebDebugLogger} View "Success" for "default/module" 24.23 ms (1)
+Apr 10 19:54:11 symfony [info] {sfWebResponse} Send content (31539 o)

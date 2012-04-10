@@ -26,7 +26,7 @@ class userActions extends sfActions
   public function executeNew(sfWebRequest $request)
   {
     $this->post_array = $request->getParameterHolder()->getAll();
-    if($this->post_array != "")
+    if(isset ($this->post_array['product_id']))
     {
       $this->getUser()->setAttribute('product_id', $this->post_array['product_id']);
     }
@@ -35,6 +35,7 @@ class userActions extends sfActions
     } 
     else{
     $this->form = new UserForm();
+    $this->form1 = new UsersLoginForm();
     }
   }
 
@@ -96,6 +97,7 @@ $this->getUser()->setAttribute('user_id', $user->getUserId());
     $this->post_array = $request->getParameterHolder()->getAll();
     if(count($this->post_array)){
     $this->login_result = Doctrine::getTable('User')->func_checkLogin($this->post_array);
+    //echo "<pre>";    print_r($this->post_array); die;
     if(count($this->login_result))
     {
         $this->getUser()->addCredential('user');

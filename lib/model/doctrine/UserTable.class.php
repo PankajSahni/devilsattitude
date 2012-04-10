@@ -19,8 +19,8 @@ class UserTable extends Doctrine_Table
         public function func_checkLogin($post_values)
     {
                           $q = $this->createQuery('u')
-                            ->where('u.email = ?  ', $post_values['email'])
-                            ->andWhere('u.pass = ?', $post_values['pass'])
+                            ->where('u.email = ?  ', $post_values['users']['email'])
+                            ->andWhere('u.pass = ?', $post_values['users']['password'])
                             ->fetchArray();
 							return $q; 
     }

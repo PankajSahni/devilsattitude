@@ -8,7 +8,7 @@
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
   </head>
-  <body>
+  <body class="body">
     <?php echo $sf_content ?>
   </body>
 </html>
