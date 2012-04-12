@@ -5662,3 +5662,271 @@ Apr 10 19:54:11 symfony [info] {sfWebDebugLogger} Action "product/index" 36.53 m
 Apr 10 19:54:11 symfony [info] {sfWebDebugLogger} Action "default/module" 0.30 ms (1)
 Apr 10 19:54:11 symfony [info] {sfWebDebugLogger} View "Success" for "default/module" 24.23 ms (1)
 Apr 10 19:54:11 symfony [info] {sfWebResponse} Send content (31539 o)
+Apr 12 17:19:42 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 17:19:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 17:19:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 17:19:42 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 17:19:42 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 17:19:42 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 17:19:42 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 17:19:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 17:19:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 17:19:42 symfony [info] {sfWebDebugLogger} Configuration 856.26 ms (9)
+Apr 12 17:19:42 symfony [info] {sfWebDebugLogger} Factories 342.36 ms (1)
+Apr 12 17:19:42 symfony [info] {sfWebDebugLogger} Action "product/index" 0.27 ms (1)
+Apr 12 17:19:42 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 39.94 ms (1)
+Apr 12 17:19:42 symfony [info] {sfWebResponse} Send content (27994 o)
+Apr 12 17:27:01 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 17:27:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 17:27:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 17:27:01 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 17:27:01 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 17:27:01 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 17:27:01 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 17:27:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 17:27:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 17:27:01 symfony [info] {sfWebDebugLogger} Configuration 13.33 ms (9)
+Apr 12 17:27:01 symfony [info] {sfWebDebugLogger} Factories 55.97 ms (1)
+Apr 12 17:27:01 symfony [info] {sfWebDebugLogger} Action "product/index" 0.28 ms (1)
+Apr 12 17:27:01 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 23.22 ms (1)
+Apr 12 17:27:01 symfony [info] {sfWebResponse} Send content (28063 o)
+Apr 12 17:29:19 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 17:29:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 17:29:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 17:29:19 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 17:29:19 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 17:29:19 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 17:29:19 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 17:29:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 17:29:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 17:29:19 symfony [info] {sfWebDebugLogger} Configuration 13.50 ms (9)
+Apr 12 17:29:19 symfony [info] {sfWebDebugLogger} Factories 56.80 ms (1)
+Apr 12 17:29:19 symfony [info] {sfWebDebugLogger} Action "product/index" 0.25 ms (1)
+Apr 12 17:29:19 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 21.38 ms (1)
+Apr 12 17:29:19 symfony [info] {sfWebResponse} Send content (28063 o)
+Apr 12 17:33:37 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 17:33:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 17:33:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 17:33:37 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 17:33:37 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 17:33:37 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 17:33:37 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 17:33:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 17:33:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 17:33:37 symfony [info] {sfWebDebugLogger} Configuration 376.96 ms (9)
+Apr 12 17:33:37 symfony [info] {sfWebDebugLogger} Factories 228.81 ms (1)
+Apr 12 17:33:37 symfony [info] {sfWebDebugLogger} Action "product/index" 0.27 ms (1)
+Apr 12 17:33:37 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 33.99 ms (1)
+Apr 12 17:33:37 symfony [info] {sfWebResponse} Send content (28167 o)
+Apr 12 17:33:52 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 17:33:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 17:33:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 17:33:52 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 17:33:52 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 17:33:52 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 17:33:52 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 17:33:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 17:33:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 17:33:52 symfony [info] {sfWebDebugLogger} Configuration 17.49 ms (9)
+Apr 12 17:33:52 symfony [info] {sfWebDebugLogger} Factories 53.54 ms (1)
+Apr 12 17:33:52 symfony [info] {sfWebDebugLogger} Action "product/index" 0.27 ms (1)
+Apr 12 17:33:52 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 20.26 ms (1)
+Apr 12 17:33:53 symfony [info] {sfWebResponse} Send content (28165 o)
+Apr 12 17:34:50 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 17:34:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 17:34:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 17:34:50 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 17:34:50 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 17:34:50 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 17:34:50 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 17:34:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 17:34:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 17:34:50 symfony [info] {sfWebDebugLogger} Configuration 13.22 ms (9)
+Apr 12 17:34:50 symfony [info] {sfWebDebugLogger} Factories 59.67 ms (1)
+Apr 12 17:34:50 symfony [info] {sfWebDebugLogger} Action "product/index" 0.27 ms (1)
+Apr 12 17:34:50 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 25.08 ms (1)
+Apr 12 17:34:50 symfony [info] {sfWebResponse} Send content (28158 o)
+Apr 12 18:57:16 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 18:57:16 symfony [info] {myUser} Automatic user logout due to timeout
+Apr 12 18:57:16 symfony [info] {myUser} User is not authenticated
+Apr 12 18:57:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 18:57:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 18:57:16 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 18:57:16 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 18:57:16 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 18:57:16 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 18:57:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 18:57:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 18:57:16 symfony [info] {sfWebDebugLogger} Configuration 13.14 ms (9)
+Apr 12 18:57:16 symfony [info] {sfWebDebugLogger} Factories 87.24 ms (1)
+Apr 12 18:57:16 symfony [info] {sfWebDebugLogger} Action "product/index" 0.33 ms (1)
+Apr 12 18:57:16 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 24.66 ms (1)
+Apr 12 18:57:16 symfony [info] {sfWebResponse} Send content (28888 o)
+Apr 12 18:57:23 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 18:57:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 18:57:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 18:57:23 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 18:57:23 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 18:57:23 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 18:57:23 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 18:57:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 18:57:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 18:57:23 symfony [info] {sfWebDebugLogger} Configuration 11.73 ms (9)
+Apr 12 18:57:23 symfony [info] {sfWebDebugLogger} Factories 53.84 ms (1)
+Apr 12 18:57:23 symfony [info] {sfWebDebugLogger} Action "product/index" 0.42 ms (1)
+Apr 12 18:57:23 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 21.04 ms (1)
+Apr 12 18:57:23 symfony [info] {sfWebResponse} Send content (28160 o)
+Apr 12 18:57:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 18:57:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 18:57:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 18:57:55 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 18:57:55 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 18:57:55 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 18:57:55 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 18:57:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 18:57:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 18:57:55 symfony [info] {sfWebDebugLogger} Configuration 11.66 ms (9)
+Apr 12 18:57:55 symfony [info] {sfWebDebugLogger} Factories 55.23 ms (1)
+Apr 12 18:57:55 symfony [info] {sfWebDebugLogger} Action "product/index" 0.26 ms (1)
+Apr 12 18:57:55 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 18.54 ms (1)
+Apr 12 18:57:55 symfony [info] {sfWebResponse} Send content (28160 o)
+Apr 12 18:58:32 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 18:58:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 18:58:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 18:58:32 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 18:58:32 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 18:58:33 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 18:58:33 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 18:58:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 18:58:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 18:58:33 symfony [info] {sfWebDebugLogger} Configuration 18.18 ms (9)
+Apr 12 18:58:33 symfony [info] {sfWebDebugLogger} Factories 54.12 ms (1)
+Apr 12 18:58:33 symfony [info] {sfWebDebugLogger} Action "product/index" 0.26 ms (1)
+Apr 12 18:58:33 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 21.33 ms (1)
+Apr 12 18:58:33 symfony [info] {sfWebResponse} Send content (28161 o)
+Apr 12 18:59:31 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 18:59:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 18:59:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 18:59:31 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 18:59:31 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 18:59:31 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 18:59:31 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 18:59:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 18:59:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 18:59:31 symfony [info] {sfWebDebugLogger} Configuration 39.89 ms (10)
+Apr 12 18:59:31 symfony [info] {sfWebDebugLogger} Factories 56.71 ms (1)
+Apr 12 18:59:31 symfony [info] {sfWebDebugLogger} Action "product/index" 0.25 ms (1)
+Apr 12 18:59:31 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 53.54 ms (1)
+Apr 12 18:59:31 symfony [info] {sfWebResponse} Send content (28259 o)
+Apr 12 19:00:11 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 19:00:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 19:00:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 19:00:11 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 19:00:11 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 19:00:11 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 19:00:11 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 19:00:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 19:00:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 19:00:11 symfony [info] {sfWebDebugLogger} Configuration 13.88 ms (9)
+Apr 12 19:00:11 symfony [info] {sfWebDebugLogger} Factories 54.96 ms (1)
+Apr 12 19:00:11 symfony [info] {sfWebDebugLogger} Action "product/index" 0.25 ms (1)
+Apr 12 19:00:11 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 22.06 ms (1)
+Apr 12 19:00:11 symfony [info] {sfWebResponse} Send content (28257 o)
+Apr 12 19:01:08 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 19:01:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 19:01:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 19:01:08 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 19:01:08 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 19:01:08 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 19:01:08 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 19:01:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 19:01:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 19:01:08 symfony [info] {sfWebDebugLogger} Configuration 12.30 ms (9)
+Apr 12 19:01:08 symfony [info] {sfWebDebugLogger} Factories 50.57 ms (1)
+Apr 12 19:01:08 symfony [info] {sfWebDebugLogger} Action "product/index" 0.25 ms (1)
+Apr 12 19:01:08 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 18.25 ms (1)
+Apr 12 19:01:08 symfony [info] {sfWebResponse} Send content (28257 o)
+Apr 12 19:01:40 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 19:01:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 19:01:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 19:01:41 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 19:01:41 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 19:01:41 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 19:01:41 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 19:01:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 19:01:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 19:01:41 symfony [info] {sfWebDebugLogger} Configuration 12.76 ms (9)
+Apr 12 19:01:41 symfony [info] {sfWebDebugLogger} Factories 50.61 ms (1)
+Apr 12 19:01:41 symfony [info] {sfWebDebugLogger} Action "product/index" 0.39 ms (1)
+Apr 12 19:01:41 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 19.57 ms (1)
+Apr 12 19:01:41 symfony [info] {sfWebResponse} Send content (28257 o)
+Apr 12 19:02:09 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 19:02:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 19:02:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 19:02:09 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 19:02:09 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 19:02:09 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 19:02:09 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 19:02:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 19:02:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 19:02:09 symfony [info] {sfWebDebugLogger} Configuration 13.36 ms (9)
+Apr 12 19:02:09 symfony [info] {sfWebDebugLogger} Factories 57.58 ms (1)
+Apr 12 19:02:09 symfony [info] {sfWebDebugLogger} Action "product/index" 0.27 ms (1)
+Apr 12 19:02:09 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 23.33 ms (1)
+Apr 12 19:02:10 symfony [info] {sfWebResponse} Send content (28257 o)
+Apr 12 19:07:11 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 19:07:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 19:07:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 19:07:11 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 19:07:11 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 19:07:11 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 19:07:11 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 19:07:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 19:07:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 19:07:11 symfony [info] {sfWebDebugLogger} Configuration 13.41 ms (9)
+Apr 12 19:07:11 symfony [info] {sfWebDebugLogger} Factories 53.49 ms (1)
+Apr 12 19:07:11 symfony [info] {sfWebDebugLogger} Action "product/index" 0.25 ms (1)
+Apr 12 19:07:11 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 22.64 ms (1)
+Apr 12 19:07:11 symfony [info] {sfWebResponse} Send content (28257 o)
+Apr 12 19:09:42 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 19:09:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 19:09:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 19:09:42 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 19:09:42 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 19:09:42 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 19:09:42 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 19:09:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 19:09:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 19:09:42 symfony [info] {sfWebDebugLogger} Configuration 12.83 ms (9)
+Apr 12 19:09:42 symfony [info] {sfWebDebugLogger} Factories 55.77 ms (1)
+Apr 12 19:09:42 symfony [info] {sfWebDebugLogger} Action "product/index" 0.25 ms (1)
+Apr 12 19:09:42 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 21.96 ms (1)
+Apr 12 19:09:42 symfony [info] {sfWebResponse} Send content (28257 o)
+Apr 12 19:16:14 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 19:16:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 19:16:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 19:16:14 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 19:16:14 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 19:16:14 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 19:16:14 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 19:16:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 19:16:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 19:16:14 symfony [info] {sfWebDebugLogger} Configuration 13.40 ms (9)
+Apr 12 19:16:14 symfony [info] {sfWebDebugLogger} Factories 54.26 ms (1)
+Apr 12 19:16:14 symfony [info] {sfWebDebugLogger} Action "product/index" 0.27 ms (1)
+Apr 12 19:16:14 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 22.45 ms (1)
+Apr 12 19:16:14 symfony [info] {sfWebResponse} Send content (28257 o)
+Apr 12 19:27:26 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Apr 12 19:27:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 19:27:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 19:27:26 symfony [info] {productActions} Call "productActions->executeIndex()"
+Apr 12 19:27:26 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/product/templates/indexSuccess.php"
+Apr 12 19:27:26 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 19:27:26 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Apr 12 19:27:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 19:27:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 19:27:26 symfony [info] {sfWebDebugLogger} Configuration 13.40 ms (9)
+Apr 12 19:27:26 symfony [info] {sfWebDebugLogger} Factories 56.41 ms (1)
+Apr 12 19:27:26 symfony [info] {sfWebDebugLogger} Action "product/index" 0.36 ms (1)
+Apr 12 19:27:26 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 22.26 ms (1)
+Apr 12 19:27:26 symfony [info] {sfWebResponse} Send content (28306 o)
