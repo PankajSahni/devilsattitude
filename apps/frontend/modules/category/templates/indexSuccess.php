@@ -1,34 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Home</title>
-        <meta charset="utf-8">
-
-        <!--[if lt IE 9]>
-                <script type="text/javascript" src="js/html5.js"></script>
-                <style type="text/css">
-                        .bg {behavior:url(js/PIE.htc)}
-                </style>
-        <![endif]-->
-        <!--[if lt IE 7]>
-                <div style='clear:both;text-align:center;position:relative'>
-                        <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/<?php echo $image_url; ?>upgrade.jpg" border="0" alt="" /></a>
-                </div>
-        <![endif]-->
-        
-<style>
-#preview{
-	position:absolute;
-	border:1px solid #ccc;
-	background:#333;
-	padding:5px;
-	display:none;
-	color:#fff;
-	}
-
-/*  */
-</style>
-    </head>
     <?php
     $host = 'http://' . $_SERVER['HTTP_HOST'];
     $website_link = $host . public_path('/');
@@ -76,10 +45,15 @@
                                         <?php foreach ($all_products[0]['Products'] as $product): ?>
                                         <?php //if(($i % 3)==0)?>
                                         <article class="col1">
-                                            <figure><li><a href="<?php echo $designs_url . $product['image']; ?>" class="preview" title="" width="270px" height="280px"><img src="<?php echo $designs_url . $product['image']; ?>" alt="" width="270px" height="280px"/></a></figure>
-                                            <div class="pad">
+                                            <figure>
+                                                <a href="<?php echo $designs_url . $product['image']; ?>" class="preview" title="" width="70px" height="80px">
+                                                        <img src="<?php echo $designs_url . $product['image']; ?>" alt="" width="270px" height="280px"/></a>
+                                            </figure>
+                                            <div class="buynow">
                                                 <p align="center">	
-                                                    <a href="<?php echo url_for('user/new?product_id='.$product['product_id']);?>"><img src="<?php echo $image_url; ?>order-now.png" alt="" width="140px" height="80px"/></a>
+                                                    <a href="<?php echo url_for('user/new?product='.$product['name']);?>" >
+                                                        <img src="<?php echo $image_url; ?>button_buyNow.png" alt=""/>
+                                                    </a>
                                                 </p>
                                             </div>
                                         </article>
@@ -185,6 +159,5 @@
                 });
             });
         </script>
-    </body>
-</html>
+
 

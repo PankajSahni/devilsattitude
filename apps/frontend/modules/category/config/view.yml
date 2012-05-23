@@ -14,7 +14,7 @@ default:
 
   stylesheets:    [layout.css,reset.css,style-category.css]
 
-  javascripts:    [jquery-1.5.2.js,cufon-yui.js,cufon-replace.js,Terminal_Dosis_300.font.js,atooltip.jquery.js,roundabout.js,roundabout_shapes.js,jquery.easing.1.2.js,script.js,main.js]
+  javascripts:    [jquery-1.5.2.js,cufon-yui.js,cufon-replace.js,Terminal_Dosis_300.font.js,atooltip.jquery.js,roundabout.js,roundabout_shapes.js,jquery.easing.1.2.js,script.js,main.js,jquery.popup.js]
 
   has_layout:     true
   layout:         layout

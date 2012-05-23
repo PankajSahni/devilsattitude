@@ -17,6 +17,7 @@ abstract class BaseOrdersForm extends BaseFormDoctrine
     $this->setWidgets(array(
       'order_id'   => new sfWidgetFormInputHidden(),
       'user_id'    => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('User'), 'add_empty' => true)),
+      'product_id' => new sfWidgetFormInputText(),
       'size'       => new sfWidgetFormInputText(),
       'color'      => new sfWidgetFormInputText(),
       'status'     => new sfWidgetFormInputText(),
@@ -27,6 +28,7 @@ abstract class BaseOrdersForm extends BaseFormDoctrine
     $this->setValidators(array(
       'order_id'   => new sfValidatorChoice(array('choices' => array($this->getObject()->get('order_id')), 'empty_value' => $this->getObject()->get('order_id'), 'required' => false)),
       'user_id'    => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('User'), 'required' => false)),
+      'product_id' => new sfValidatorInteger(),
       'size'       => new sfValidatorString(array('max_length' => 10)),
       'color'      => new sfValidatorString(array('max_length' => 10)),
       'status'     => new sfValidatorInteger(array('required' => false)),

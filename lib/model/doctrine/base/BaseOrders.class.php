@@ -9,6 +9,7 @@ Doctrine_Manager::getInstance()->bindComponent('Orders', 'doctrine');
  * 
  * @property integer $order_id
  * @property integer $user_id
+ * @property integer $product_id
  * @property string $size
  * @property string $color
  * @property integer $status
@@ -18,6 +19,7 @@ Doctrine_Manager::getInstance()->bindComponent('Orders', 'doctrine');
  * 
  * @method integer   getOrderId()    Returns the current record's "order_id" value
  * @method integer   getUserId()     Returns the current record's "user_id" value
+ * @method integer   getProductId()  Returns the current record's "product_id" value
  * @method string    getSize()       Returns the current record's "size" value
  * @method string    getColor()      Returns the current record's "color" value
  * @method integer   getStatus()     Returns the current record's "status" value
@@ -26,6 +28,7 @@ Doctrine_Manager::getInstance()->bindComponent('Orders', 'doctrine');
  * @method User      getUser()       Returns the current record's "User" value
  * @method Orders    setOrderId()    Sets the current record's "order_id" value
  * @method Orders    setUserId()     Sets the current record's "user_id" value
+ * @method Orders    setProductId()  Sets the current record's "product_id" value
  * @method Orders    setSize()       Sets the current record's "size" value
  * @method Orders    setColor()      Sets the current record's "color" value
  * @method Orders    setStatus()     Sets the current record's "status" value
@@ -57,6 +60,15 @@ abstract class BaseOrders extends sfDoctrineRecord
              'unsigned' => false,
              'primary' => false,
              'notnull' => false,
+             'autoincrement' => false,
+             'length' => 8,
+             ));
+        $this->hasColumn('product_id', 'integer', 8, array(
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
              'autoincrement' => false,
              'length' => 8,
              ));

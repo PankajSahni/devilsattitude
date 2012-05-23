@@ -26,9 +26,9 @@ class userActions extends sfActions
   public function executeNew(sfWebRequest $request)
   {
     $this->post_array = $request->getParameterHolder()->getAll();
-    if(isset ($this->post_array['product_id']))
+    if(isset ($this->post_array['product']))
     {
-      $this->getUser()->setAttribute('product_id', $this->post_array['product_id']);
+     $this->getUser()->setAttribute('product', $this->post_array['product']);
     }
     if($this->getUser()->getAttribute('user_id') != ""){
         $this->redirect('product/index');
@@ -84,7 +84,7 @@ class userActions extends sfActions
     {
       $user = $form->save();
 $this->getUser()->setAttribute('user_id', $user->getUserId());
-          if($this->getUser()->getAttribute('product_id') == ""){
+          if($this->getUser()->getAttribute('product') == ""){
         $this->redirect('category/index');
     } 
     else{
@@ -103,7 +103,7 @@ $this->getUser()->setAttribute('user_id', $user->getUserId());
         $this->getUser()->addCredential('user');
         $this->getUser()->setAuthenticated(TRUE);
         $this->getUser()->setAttribute('user_id', $this->login_result[0]['user_id']);
-                  if($this->getUser()->getAttribute('product_id') == ""){
+                  if($this->getUser()->getAttribute('product') == ""){
         $this->redirect('category/index');
     } 
     else{

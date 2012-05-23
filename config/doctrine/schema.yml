@@ -94,6 +94,13 @@ Orders:
       primary: false
       notnull: false
       autoincrement: false
+    product_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
     size:
       type: string(10)
       fixed: false
