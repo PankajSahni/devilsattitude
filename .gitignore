@@ -10,3 +10,4 @@
 /cache/backend/dev/config/modules_user_config_module.yml.php
 /cache/backend/dev/config/modules_user_config_security.yml.php
 /cache/backend/dev/config/modules_user_config_view.yml.php
+/apps/backend/config/app.yml
