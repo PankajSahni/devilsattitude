@@ -9391,3 +9391,21 @@ May 23 17:49:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilt
 May 23 17:49:57 symfony [info] {productActions} Call "productActions->executeIndex()"
 May 23 17:49:57 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
 May 23 17:49:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM products p WHERE (p.name = ?) - (PunjabiDilApnaPunjabi)
+May 23 17:58:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/index with parameters array (  'module' => 'product',  'action' => 'index',)
+May 23 17:58:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 23 17:58:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 23 17:58:47 symfony [info] {productActions} Call "productActions->executeIndex()"
+May 23 17:58:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 23 17:58:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM products p WHERE (p.name = ?) - (PunjabiDilApnaPunjabi)
+May 23 17:59:00 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/index with parameters array (  'module' => 'product',  'action' => 'index',)
+May 23 17:59:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 23 17:59:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 23 17:59:00 symfony [info] {productActions} Call "productActions->executeIndex()"
+May 23 17:59:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 23 17:59:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM products p WHERE (p.name = ?) - (PunjabiDilApnaPunjabi)
+May 23 17:59:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/index with parameters array (  'module' => 'product',  'action' => 'index',)
+May 23 17:59:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 23 17:59:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 23 17:59:15 symfony [info] {productActions} Call "productActions->executeIndex()"
+May 23 17:59:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 23 17:59:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM products p WHERE (p.name = ?) - (PunjabiDilApnaPunjabi)
