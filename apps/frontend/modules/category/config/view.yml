@@ -14,7 +14,7 @@ default:
 
   stylesheets:    [layout.css,reset.css,style-category.css,style-user.css]
 
-  javascripts:    [jquery-1.7.1.min.js,slidercarousel.js,jquery.anythingslider.js,account_setting_1.js,jquery.popup.js]
+  javascripts:    [jquery-1.7.1.min.js,slidercarousel.js,jquery.anythingslider.js,account_setting.js,jquery.popup.js]
 
   has_layout:     true
   layout:         layout

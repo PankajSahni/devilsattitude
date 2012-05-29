@@ -742,15 +742,15 @@ Footer
 Popup
 ****************************************************************************************/
 #popupBackground-top { position:absolute; left:-700em; top:-700em;}
-#popupBackground-top {width:635px; background:url(../images/popup/popup_top_bg.png) no-repeat left top; padding-top:44px; min-height:400px; }
+#popupBackground-top {width:635px; background:url(../images/popup/popup_top_bg.png) no-repeat left top; padding-top:24px; height:50px; }
 #popupBackground-bottom { background: url(../images/popup/popup_bottom_bg.png) no-repeat left bottom; padding-bottom:53px;}
 
-#popUp { background:url(../images/popup/popup_center_bg.png) repeat-y; min-height:300px; padding:0 30px;}
+#popUp { background:url(../images/popup/popup_center_bg.png) repeat-y; min-height:80px; padding:0 30px;}
 
 #popUp h2 {font-size:24px; text-align:center; padding:0; }
 #popUp a.bClose { float:right; width:27px; height:30px; position:absolute; right:20px; top:10px; background:url(../images/button_prevnextClose.png) right top; text-indent:-9999px; cursor:pointer;}
 
-#popUp li { margin-top:20px; }
+#popUp li { margin-top:20px;margin-left:100px; }
 #popUp li.first-Child { width:336px; height:159px; background:url(../images/popup/libraryCard_label_bg.png) no-repeat; /* for IE */ *display:inline; *float:left}
 
 #popUp li label {display:block; line-height:20px; color:#404040;  }
