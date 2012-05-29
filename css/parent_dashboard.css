@@ -1,0 +1,25 @@
+div.sidebar
+{
+width:120px;
+height:580px;
+padding:1px;
+border:5px solid gray;
+margin:0px;
+float: left;
+}
+div.block
+{
+width:80px;
+height:80px;
+padding:1px;
+border:5px solid gray;
+margin:5px;
+}
+div.container
+{
+width:680px;
+height:580px;
+padding:1px;
+border:5px solid gray;
+margin-left:200px;
+}

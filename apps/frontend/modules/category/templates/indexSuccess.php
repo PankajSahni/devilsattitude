@@ -24,16 +24,7 @@
                                     </ul>
                                 </nav>
                             </div>
-                            <div class="relative">
-                                <div id="gallery">
-                                    <ul id="myRoundabout">
-                                        <?php foreach ($featured_products[0]['Products'] as $product): ?>    
-                                        <li><span class="fancy"><img src="<?php echo $designs_url . $product['image']; ?>" alt="" width="270px" height="280px"/></span></li>
-
-                                        <?php endforeach; ?>
-                                    </ul>
-                                </div>
-                            </div>
+     
                         </header><div class="ic">More Website Templates at TemplateMonster.com!</div>	
                         <!-- / header-->
                         <!-- content -->
@@ -51,7 +42,7 @@
                                             </figure>
                                             <div class="buynow">
                                                 <p align="center">	
-                                                    <a href="<?php echo url_for('user/new?product='.$product['name']);?>" >
+                                                    <a class="add popup" href="<?php echo url_for('category/size') ?>">
                                                         <img src="<?php echo $image_url; ?>button_buyNow.png" alt=""/>
                                                     </a>
                                                 </p>
@@ -159,5 +150,9 @@
                 });
             });
         </script>
+        
+<div id="popupBackground-top" class="popUp01">
+
+</div>
 
 

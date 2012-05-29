@@ -24,4 +24,8 @@ class categoryActions extends sfActions
       //echo "<pre>";      print_r($this->featured_products); die;
      
   }
+    public function executeSize(sfWebRequest $request)
+  {
+     
+  }
 }

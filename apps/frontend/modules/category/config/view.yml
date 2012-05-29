@@ -12,9 +12,9 @@ default:
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [layout.css,reset.css,style-category.css]
+  stylesheets:    [layout.css,reset.css,style-category.css,style-user.css]
 
-  javascripts:    [jquery-1.5.2.js,cufon-yui.js,cufon-replace.js,Terminal_Dosis_300.font.js,atooltip.jquery.js,roundabout.js,roundabout_shapes.js,jquery.easing.1.2.js,script.js,main.js,jquery.popup.js]
+  javascripts:    [jquery-1.7.1.min.js,slidercarousel.js,jquery.anythingslider.js,account_setting_1.js,jquery.popup.js]
 
   has_layout:     true
   layout:         layout
