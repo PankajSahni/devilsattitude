@@ -18,29 +18,32 @@ Doctrine_Manager::getInstance()->bindComponent('Products', 'doctrine');
  * @property timestamp $created_at
  * @property timestamp $updated_at
  * @property Categories $Categories
+ * @property Doctrine_Collection $OrderSessions
  * 
- * @method integer    getProductId()    Returns the current record's "product_id" value
- * @method integer    getCategoryId()   Returns the current record's "category_id" value
- * @method string     getName()         Returns the current record's "name" value
- * @method string     getImage()        Returns the current record's "image" value
- * @method integer    getPrice()        Returns the current record's "price" value
- * @method string     getDescription()  Returns the current record's "description" value
- * @method integer    getOrderNumber()  Returns the current record's "order_number" value
- * @method integer    getFeatured()     Returns the current record's "featured" value
- * @method timestamp  getCreatedAt()    Returns the current record's "created_at" value
- * @method timestamp  getUpdatedAt()    Returns the current record's "updated_at" value
- * @method Categories getCategories()   Returns the current record's "Categories" value
- * @method Products   setProductId()    Sets the current record's "product_id" value
- * @method Products   setCategoryId()   Sets the current record's "category_id" value
- * @method Products   setName()         Sets the current record's "name" value
- * @method Products   setImage()        Sets the current record's "image" value
- * @method Products   setPrice()        Sets the current record's "price" value
- * @method Products   setDescription()  Sets the current record's "description" value
- * @method Products   setOrderNumber()  Sets the current record's "order_number" value
- * @method Products   setFeatured()     Sets the current record's "featured" value
- * @method Products   setCreatedAt()    Sets the current record's "created_at" value
- * @method Products   setUpdatedAt()    Sets the current record's "updated_at" value
- * @method Products   setCategories()   Sets the current record's "Categories" value
+ * @method integer             getProductId()     Returns the current record's "product_id" value
+ * @method integer             getCategoryId()    Returns the current record's "category_id" value
+ * @method string              getName()          Returns the current record's "name" value
+ * @method string              getImage()         Returns the current record's "image" value
+ * @method integer             getPrice()         Returns the current record's "price" value
+ * @method string              getDescription()   Returns the current record's "description" value
+ * @method integer             getOrderNumber()   Returns the current record's "order_number" value
+ * @method integer             getFeatured()      Returns the current record's "featured" value
+ * @method timestamp           getCreatedAt()     Returns the current record's "created_at" value
+ * @method timestamp           getUpdatedAt()     Returns the current record's "updated_at" value
+ * @method Categories          getCategories()    Returns the current record's "Categories" value
+ * @method Doctrine_Collection getOrderSessions() Returns the current record's "OrderSessions" collection
+ * @method Products            setProductId()     Sets the current record's "product_id" value
+ * @method Products            setCategoryId()    Sets the current record's "category_id" value
+ * @method Products            setName()          Sets the current record's "name" value
+ * @method Products            setImage()         Sets the current record's "image" value
+ * @method Products            setPrice()         Sets the current record's "price" value
+ * @method Products            setDescription()   Sets the current record's "description" value
+ * @method Products            setOrderNumber()   Sets the current record's "order_number" value
+ * @method Products            setFeatured()      Sets the current record's "featured" value
+ * @method Products            setCreatedAt()     Sets the current record's "created_at" value
+ * @method Products            setUpdatedAt()     Sets the current record's "updated_at" value
+ * @method Products            setCategories()    Sets the current record's "Categories" value
+ * @method Products            setOrderSessions() Sets the current record's "OrderSessions" collection
  * 
  * @package    devil
  * @subpackage model
@@ -150,5 +153,9 @@ abstract class BaseProducts extends sfDoctrineRecord
         $this->hasOne('Categories', array(
              'local' => 'category_id',
              'foreign' => 'category_id'));
+
+        $this->hasMany('OrderSessions', array(
+             'local' => 'product_id',
+             'foreign' => 'product_id'));
     }
 }

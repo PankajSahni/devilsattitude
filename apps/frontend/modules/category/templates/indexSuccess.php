@@ -2,7 +2,7 @@
     $host = 'http://' . $_SERVER['HTTP_HOST'];
     $website_link = $host . public_path('/');
     $image_url = $host . public_path('/images/');
-    echo $designs_url = $host . public_path('/uploads/designs/');
+    $designs_url = $host . public_path('/uploads/designs/');
     ?>
     <body id="page1">
         <div class="body1">
@@ -42,7 +42,7 @@
                                             </figure>
                                             <div class="buynow">
                                                 <p align="center">	
-                                                    <a class="add popup" href="<?php echo url_for('category/size') ?>">
+                                                    <a class="add popup" href="<?php echo url_for('category/size?product_id='.$product['product_id']) ?>">
                                                         <img src="<?php echo $image_url; ?>button_buyNow.png" alt=""/>
                                                     </a>
                                                 </p>

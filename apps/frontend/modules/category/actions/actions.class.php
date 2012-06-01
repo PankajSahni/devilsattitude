@@ -17,6 +17,7 @@ class categoryActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
+      echo session_id();
     //$this->forward('default', 'module');
       $this->name = 'gujrati';
       $this->featured_products = Doctrine::getTable('Categories')->func_getProductsByCategoryNameFeatured($this->name = 'punjabi');
@@ -26,6 +27,6 @@ class categoryActions extends sfActions
   }
     public function executeSize(sfWebRequest $request)
   {
-     
+     $this->data = $request->getParameterHolder()->getAll();
   }
 }
