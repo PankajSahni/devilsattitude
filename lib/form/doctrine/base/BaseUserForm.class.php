@@ -31,7 +31,7 @@ abstract class BaseUserForm extends BaseFormDoctrine
       'email'      => new sfValidatorString(array('max_length' => 50)),
       'pass'       => new sfValidatorString(array('max_length' => 50)),
       'mobile'     => new sfValidatorString(array('max_length' => 13)),
-      'address'    => new sfValidatorString(array('max_length' => 500)),
+      'address'    => new sfValidatorString(),
       'created_at' => new sfValidatorDateTime(),
       'updated_at' => new sfValidatorDateTime(),
     ));

@@ -23,6 +23,7 @@ class UserTable extends Doctrine_Table {
                 ->fetchArray();
         return $q;
     }
+    
 
     public function func_getUser($user_id) {
         $q = $this->createQuery('u')

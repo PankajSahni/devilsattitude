@@ -29,7 +29,7 @@ abstract class BaseOrderSessionsForm extends BaseFormDoctrine
       'session_id' => new sfValidatorString(array('max_length' => 225)),
       'product_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Products'))),
       'nos'        => new sfValidatorInteger(),
-      'size'       => new sfValidatorString(array('max_length' => 5)),
+      'size'       => new sfValidatorString(array('max_length' => 50)),
       'created_at' => new sfValidatorDateTime(),
       'updated_at' => new sfValidatorDateTime(),
     ));

@@ -23,16 +23,24 @@ class userActions extends sfActions {
 
     public function executeNew(sfWebRequest $request) {
         $post_array = $request->getParameterHolder()->getAll();
+        $go_to = 'product/index';
         if (isset($post_array['product_id'])) {
-            $order_sessions = new OrderSessions();
-            $order_sessions->setSessionId(session_id());
-            $order_sessions->setProductId($post_array['product_id']);
-            $order_sessions->setNos(1);
-            $order_sessions->setSize($post_array['size']);
-            $order_sessions->save();
+            $go_to = 'order/index';
+            $this->getUser()->setAttribute('product_in_cart', 1);
+            $if_product = Doctrine::getTable('OrderSessions')->func_checkProductAndSize($post_array);
+            if (count($if_product)) {
+             $if_product = Doctrine::getTable('OrderSessions')->func_updateProductAndSize($if_product);   
+            } else {
+                $order_sessions = new OrderSessions();
+                $order_sessions->setSessionId(session_id());
+                $order_sessions->setProductId($post_array['product_id']);
+                $order_sessions->setNos(1);
+                $order_sessions->setSize($post_array['size']);
+                $order_sessions->save();
+            }
         }
         if ($this->getUser()->getAttribute('user_id') != "") {
-            $this->redirect('product/index');
+            $this->redirect($go_to);
         } else {
             $this->form = new UserForm();
             $this->form1 = new UsersLoginForm();
@@ -95,10 +103,10 @@ class userActions extends sfActions {
                 $this->getUser()->addCredential('user');
                 $this->getUser()->setAuthenticated(TRUE);
                 $this->getUser()->setAttribute('user_id', $this->login_result[0]['user_id']);
-                if ($this->getUser()->getAttribute('product') == "") {
+                if ($this->getUser()->getAttribute('product_in_cart') == "") {
                     $this->redirect('category/index');
                 } else {
-                    $this->redirect('product/index');
+                    $this->redirect('order/index');
                 }
             } else {
                 $this->redirect('user/new');

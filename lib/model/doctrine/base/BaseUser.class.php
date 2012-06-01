@@ -93,14 +93,14 @@ abstract class BaseUser extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 13,
              ));
-        $this->hasColumn('address', 'string', 500, array(
+        $this->hasColumn('address', 'string', null, array(
              'type' => 'string',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => true,
              'autoincrement' => false,
-             'length' => 500,
+             'length' => '',
              ));
         $this->hasColumn('created_at', 'timestamp', 25, array(
              'type' => 'timestamp',

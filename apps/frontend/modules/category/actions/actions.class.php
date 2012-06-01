@@ -21,7 +21,7 @@ class categoryActions extends sfActions
     //$this->forward('default', 'module');
       $this->name = 'gujrati';
       $this->featured_products = Doctrine::getTable('Categories')->func_getProductsByCategoryNameFeatured($this->name = 'punjabi');
-      $this->all_products = Doctrine::getTable('Categories')->func_getProductsByCategoryName($this->name = 'punjabi');
+      $this->all_products = Doctrine::getTable('OrderSessions')->func_getProductsByCategoryName($this->name = 'punjabi');
       //echo "<pre>";      print_r($this->featured_products); die;
      
   }

@@ -11297,3 +11297,557 @@ May 30 20:29:55 symfony [info] {sfWebDebugLogger} Action "user/new" 168.78 ms (1
 May 30 20:29:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
 May 30 20:29:55 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 33.65 ms (1)
 May 30 20:29:55 symfony [info] {sfWebResponse} Send content (36199 o)
+Jun 01 17:59:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /category/index with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 01 17:59:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 17:59:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 17:59:49 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 01 17:59:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 17:59:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.category_id AS c__category_id, c.name AS c__name, c.created_at AS c__created_at, c.updated_at AS c__updated_at, p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM categories c LEFT JOIN products p ON c.category_id = p.category_id WHERE (c.name = ? AND p.featured = ?) - (punjabi, 1)
+Jun 01 17:59:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.category_id AS c__category_id, c.name AS c__name, c.created_at AS c__created_at, c.updated_at AS c__updated_at, p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM categories c LEFT JOIN products p ON c.category_id = p.category_id WHERE (c.name = ?) - (punjabi)
+Jun 01 17:59:50 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/category/templates/indexSuccess.php"
+Jun 01 17:59:50 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 17:59:50 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 17:59:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 17:59:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 17:59:50 symfony [info] {sfWebDebugLogger} Configuration 246.86 ms (10)
+Jun 01 17:59:50 symfony [info] {sfWebDebugLogger} Factories 486.06 ms (1)
+Jun 01 17:59:50 symfony [info] {sfWebDebugLogger} Action "category/index" 1102.52 ms (1)
+Jun 01 17:59:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (3)
+Jun 01 17:59:50 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 144.11 ms (1)
+Jun 01 17:59:50 symfony [info] {sfWebResponse} Send content (51736 o)
+Jun 01 18:53:38 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /category/size/product_id/1 with parameters array (  'module' => 'category',  'action' => 'size',  'product_id' => '1',)
+Jun 01 18:53:38 symfony [info] {myUser} Automatic user logout due to timeout
+Jun 01 18:53:38 symfony [info] {myUser} User is not authenticated
+Jun 01 18:53:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 18:53:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 18:53:38 symfony [info] {categoryActions} Call "categoryActions->executeSize()"
+Jun 01 18:53:38 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/category/templates/sizeSuccess.php"
+Jun 01 18:53:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 18:53:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 18:53:38 symfony [info] {sfWebDebugLogger} Configuration 23.96 ms (9)
+Jun 01 18:53:38 symfony [info] {sfWebDebugLogger} Factories 86.05 ms (1)
+Jun 01 18:53:38 symfony [info] {sfWebDebugLogger} Action "category/size" 0.40 ms (1)
+Jun 01 18:53:38 symfony [info] {sfWebDebugLogger} View "Success" for "category/size" 33.61 ms (1)
+Jun 01 18:53:38 symfony [info] {sfWebResponse} Send content (600 o)
+Jun 01 18:53:43 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Jun 01 18:53:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 18:53:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 18:53:43 symfony [info] {userActions} Call "userActions->executeNew()"
+Jun 01 18:53:43 symfony [err] {Doctrine_Query_Exception} Unknown column email
+Jun 01 18:53:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 01 18:53:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 18:53:43 symfony [info] {sfWebDebugLogger} Configuration 17.10 ms (8)
+Jun 01 18:53:43 symfony [info] {sfWebDebugLogger} Factories 81.28 ms (1)
+Jun 01 18:53:43 symfony [info] {sfWebDebugLogger} Action "user/new" 379.33 ms (1)
+Jun 01 18:54:36 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Jun 01 18:54:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 18:54:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 18:54:36 symfony [info] {userActions} Call "userActions->executeNew()"
+Jun 01 18:54:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 18:54:36 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id AS o__id, o.session_id AS o__session_id, o.product_id AS o__product_id, o.nos AS o__nos, o.size AS o__size, o.created_at AS o__created_at, o.updated_at AS o__updated_at FROM order_sessions o WHERE (o.product_id = ? AND o.size = ? AND o.session_id = ?) - (1, medium, 7e3hm7425jctnbq1o97h1i4th2)
+Jun 01 18:54:36 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO order_sessions (session_id, product_id, nos, size) VALUES (?, ?, ?, ?) - (7e3hm7425jctnbq1o97h1i4th2, 1, 1, medium)
+Jun 01 18:54:37 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Jun 01 18:54:37 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 18:54:37 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 18:54:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 18:54:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 18:54:37 symfony [info] {sfWebDebugLogger} Configuration 22.96 ms (9)
+Jun 01 18:54:37 symfony [info] {sfWebDebugLogger} Factories 80.83 ms (1)
+Jun 01 18:54:37 symfony [info] {sfWebDebugLogger} Action "user/new" 593.84 ms (1)
+Jun 01 18:54:37 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.07 ms (3)
+Jun 01 18:54:37 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 90.90 ms (1)
+Jun 01 18:54:37 symfony [info] {sfWebResponse} Send content (38245 o)
+Jun 01 18:55:20 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Jun 01 18:55:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 18:55:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 18:55:20 symfony [info] {userActions} Call "userActions->executeNew()"
+Jun 01 18:55:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 18:55:20 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id AS o__id, o.session_id AS o__session_id, o.product_id AS o__product_id, o.nos AS o__nos, o.size AS o__size, o.created_at AS o__created_at, o.updated_at AS o__updated_at FROM order_sessions o WHERE (o.product_id = ? AND o.size = ? AND o.session_id = ?) - (1, medium, 7e3hm7425jctnbq1o97h1i4th2)
+Jun 01 18:55:20 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO order_sessions (session_id, product_id, nos, size) VALUES (?, ?, ?, ?) - (7e3hm7425jctnbq1o97h1i4th2, 1, 1, medium)
+Jun 01 18:55:20 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Jun 01 18:55:20 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 18:55:20 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 18:55:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 18:55:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 18:55:20 symfony [info] {sfWebDebugLogger} Configuration 28.37 ms (9)
+Jun 01 18:55:20 symfony [info] {sfWebDebugLogger} Factories 87.96 ms (1)
+Jun 01 18:55:20 symfony [info] {sfWebDebugLogger} Action "user/new" 208.82 ms (1)
+Jun 01 18:55:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (3)
+Jun 01 18:55:20 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 53.68 ms (1)
+Jun 01 18:55:20 symfony [info] {sfWebResponse} Send content (38247 o)
+Jun 01 18:55:37 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Jun 01 18:55:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 18:55:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 18:55:37 symfony [info] {userActions} Call "userActions->executeNew()"
+Jun 01 18:55:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 18:55:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id AS o__id, o.session_id AS o__session_id, o.product_id AS o__product_id, o.nos AS o__nos, o.size AS o__size, o.created_at AS o__created_at, o.updated_at AS o__updated_at FROM order_sessions o WHERE (o.product_id = ? AND o.size = ? AND o.session_id = ?) - (1, medium, 7e3hm7425jctnbq1o97h1i4th2)
+Jun 01 18:55:38 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE order_sessions SET nos = ? WHERE (id = ?) - (1, 6)
+Jun 01 18:55:38 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Jun 01 18:55:38 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 18:55:38 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 18:55:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 18:55:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 18:55:38 symfony [info] {sfWebDebugLogger} Configuration 18.88 ms (9)
+Jun 01 18:55:38 symfony [info] {sfWebDebugLogger} Factories 81.93 ms (1)
+Jun 01 18:55:38 symfony [info] {sfWebDebugLogger} Action "user/new" 235.45 ms (1)
+Jun 01 18:55:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (3)
+Jun 01 18:55:38 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 50.63 ms (1)
+Jun 01 18:55:38 symfony [info] {sfWebResponse} Send content (38108 o)
+Jun 01 18:56:04 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Jun 01 18:56:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 18:56:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 18:56:04 symfony [info] {userActions} Call "userActions->executeNew()"
+Jun 01 18:56:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 18:56:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id AS o__id, o.session_id AS o__session_id, o.product_id AS o__product_id, o.nos AS o__nos, o.size AS o__size, o.created_at AS o__created_at, o.updated_at AS o__updated_at FROM order_sessions o WHERE (o.product_id = ? AND o.size = ? AND o.session_id = ?) - (1, medium, 7e3hm7425jctnbq1o97h1i4th2)
+Jun 01 18:56:04 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE order_sessions SET nos = ? WHERE (id = ?) - (2, 6)
+Jun 01 18:56:04 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Jun 01 18:56:04 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 18:56:04 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 18:56:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 18:56:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 18:56:04 symfony [info] {sfWebDebugLogger} Configuration 23.98 ms (9)
+Jun 01 18:56:04 symfony [info] {sfWebDebugLogger} Factories 82.76 ms (1)
+Jun 01 18:56:04 symfony [info] {sfWebDebugLogger} Action "user/new" 245.55 ms (1)
+Jun 01 18:56:04 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.06 ms (3)
+Jun 01 18:56:04 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 49.80 ms (1)
+Jun 01 18:56:04 symfony [info] {sfWebResponse} Send content (38108 o)
+Jun 01 18:56:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Jun 01 18:56:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 18:56:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 18:56:18 symfony [info] {userActions} Call "userActions->executeNew()"
+Jun 01 18:56:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 18:56:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id AS o__id, o.session_id AS o__session_id, o.product_id AS o__product_id, o.nos AS o__nos, o.size AS o__size, o.created_at AS o__created_at, o.updated_at AS o__updated_at FROM order_sessions o WHERE (o.product_id = ? AND o.size = ? AND o.session_id = ?) - (1, medium, 7e3hm7425jctnbq1o97h1i4th2)
+Jun 01 18:56:18 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE order_sessions SET nos = ? WHERE (id = ?) - (3, 6)
+Jun 01 18:56:18 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Jun 01 18:56:18 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 18:56:18 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 18:56:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 18:56:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 18:56:18 symfony [info] {sfWebDebugLogger} Configuration 17.10 ms (9)
+Jun 01 18:56:18 symfony [info] {sfWebDebugLogger} Factories 78.30 ms (1)
+Jun 01 18:56:18 symfony [info] {sfWebDebugLogger} Action "user/new" 204.32 ms (1)
+Jun 01 18:56:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (3)
+Jun 01 18:56:18 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 47.20 ms (1)
+Jun 01 18:56:19 symfony [info] {sfWebResponse} Send content (38109 o)
+Jun 01 19:07:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Jun 01 19:07:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:07:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:07:52 symfony [info] {userActions} Call "userActions->executeNew()"
+Jun 01 19:07:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:07:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id AS o__id, o.session_id AS o__session_id, o.product_id AS o__product_id, o.nos AS o__nos, o.size AS o__size, o.created_at AS o__created_at, o.updated_at AS o__updated_at FROM order_sessions o WHERE (o.product_id = ? AND o.size = ? AND o.session_id = ?) - (1, medium, 7e3hm7425jctnbq1o97h1i4th2)
+Jun 01 19:07:52 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE order_sessions SET nos = ? WHERE (id = ?) - (4, 6)
+Jun 01 19:07:53 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Jun 01 19:07:53 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:07:53 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:07:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 19:07:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:07:53 symfony [info] {sfWebDebugLogger} Configuration 614.18 ms (9)
+Jun 01 19:07:53 symfony [info] {sfWebDebugLogger} Factories 343.80 ms (1)
+Jun 01 19:07:53 symfony [info] {sfWebDebugLogger} Action "user/new" 239.28 ms (1)
+Jun 01 19:07:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (3)
+Jun 01 19:07:53 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 78.86 ms (1)
+Jun 01 19:07:53 symfony [info] {sfWebResponse} Send content (38112 o)
+Jun 01 19:21:43 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Jun 01 19:21:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:21:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:21:43 symfony [info] {userActions} Call "userActions->executeNew()"
+Jun 01 19:21:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:21:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id AS o__id, o.session_id AS o__session_id, o.product_id AS o__product_id, o.nos AS o__nos, o.size AS o__size, o.created_at AS o__created_at, o.updated_at AS o__updated_at FROM order_sessions o WHERE (o.product_id = ? AND o.size = ? AND o.session_id = ?) - (1, medium, 7e3hm7425jctnbq1o97h1i4th2)
+Jun 01 19:21:43 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE order_sessions SET nos = ? WHERE (id = ?) - (5, 6)
+Jun 01 19:21:43 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Jun 01 19:21:43 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:21:43 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:21:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 19:21:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:21:43 symfony [info] {sfWebDebugLogger} Configuration 19.97 ms (9)
+Jun 01 19:21:43 symfony [info] {sfWebDebugLogger} Factories 101.48 ms (1)
+Jun 01 19:21:43 symfony [info] {sfWebDebugLogger} Action "user/new" 416.51 ms (1)
+Jun 01 19:21:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.06 ms (3)
+Jun 01 19:21:43 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 47.65 ms (1)
+Jun 01 19:21:43 symfony [info] {sfWebResponse} Send content (38161 o)
+Jun 01 19:22:02 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Jun 01 19:22:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:22:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:22:02 symfony [info] {userActions} Call "userActions->executeLogin()"
+Jun 01 19:22:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:22:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (dropmail.pankaj@gmail.com, hamesha)
+Jun 01 19:22:03 symfony [info] {myUser} Add credential(s) "user"
+Jun 01 19:22:03 symfony [info] {myUser} User is authenticated
+Jun 01 19:22:03 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/frontend_dev.php/order"
+Jun 01 19:22:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jun 01 19:22:03 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/frontend_dev.php/order"
+Jun 01 19:22:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:22:03 symfony [info] {sfWebDebugLogger} Configuration 16.53 ms (8)
+Jun 01 19:22:03 symfony [info] {sfWebDebugLogger} Factories 79.64 ms (1)
+Jun 01 19:22:03 symfony [info] {sfWebDebugLogger} Action "user/login" 86.65 ms (1)
+Jun 01 19:22:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 01 19:22:03 symfony [info] {sfWebResponse} Send content (116 o)
+Jun 01 19:22:03 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /order with parameters array (  'module' => 'order',  'action' => 'index',)
+Jun 01 19:22:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:22:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:22:03 symfony [info] {orderActions} Call "orderActions->executeIndex()"
+Jun 01 19:22:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:22:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.order_id AS o__order_id, o.order_sessions_id AS o__order_sessions_id, o.user_id AS o__user_id, o.status AS o__status, o.created_at AS o__created_at, o.updated_at AS o__updated_at FROM orders o - ()
+Jun 01 19:22:03 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/order/templates/indexSuccess.php"
+Jun 01 19:22:03 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:22:03 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:22:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 19:22:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:22:03 symfony [info] {sfWebDebugLogger} Configuration 83.09 ms (10)
+Jun 01 19:22:03 symfony [info] {sfWebDebugLogger} Factories 78.15 ms (1)
+Jun 01 19:22:03 symfony [info] {sfWebDebugLogger} Action "order/index" 97.06 ms (1)
+Jun 01 19:22:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 01 19:22:03 symfony [info] {sfWebDebugLogger} View "Success" for "order/index" 54.30 ms (1)
+Jun 01 19:22:03 symfony [info] {sfWebResponse} Send content (31318 o)
+Jun 01 19:22:12 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /order/new with parameters array (  'module' => 'order',  'action' => 'new',)
+Jun 01 19:22:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:22:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:22:12 symfony [info] {orderActions} Call "orderActions->executeNew()"
+Jun 01 19:22:12 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/order/templates/newSuccess.php"
+Jun 01 19:22:12 symfony [info] {sfPartialView} Render "C:\wamp\www\devil\apps\frontend\modules/order/templates/_form.php"
+Jun 01 19:22:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:22:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id AS o__id, o.session_id AS o__session_id, o.product_id AS o__product_id, o.nos AS o__nos, o.size AS o__size, o.created_at AS o__created_at, o.updated_at AS o__updated_at FROM order_sessions o - ()
+Jun 01 19:22:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u - ()
+Jun 01 19:22:13 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:22:13 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:22:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 19:22:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:22:13 symfony [info] {sfWebDebugLogger} Configuration 23.12 ms (9)
+Jun 01 19:22:13 symfony [info] {sfWebDebugLogger} Factories 81.14 ms (1)
+Jun 01 19:22:13 symfony [info] {sfWebDebugLogger} Action "order/new" 109.01 ms (1)
+Jun 01 19:22:13 symfony [info] {sfWebDebugLogger} View "Success" for "order/new" 351.60 ms (1)
+Jun 01 19:22:13 symfony [info] {sfWebDebugLogger} Partial "order/_form" 287.70 ms (1)
+Jun 01 19:22:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (3)
+Jun 01 19:22:13 symfony [info] {sfWebResponse} Send content (48623 o)
+Jun 01 19:22:19 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /order with parameters array (  'module' => 'order',  'action' => 'index',)
+Jun 01 19:22:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:22:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:22:19 symfony [info] {orderActions} Call "orderActions->executeIndex()"
+Jun 01 19:22:19 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:22:19 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.order_id AS o__order_id, o.order_sessions_id AS o__order_sessions_id, o.user_id AS o__user_id, o.status AS o__status, o.created_at AS o__created_at, o.updated_at AS o__updated_at FROM orders o - ()
+Jun 01 19:22:19 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/order/templates/indexSuccess.php"
+Jun 01 19:22:19 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:22:19 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:22:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 19:22:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:22:19 symfony [info] {sfWebDebugLogger} Configuration 20.18 ms (9)
+Jun 01 19:22:19 symfony [info] {sfWebDebugLogger} Factories 82.10 ms (1)
+Jun 01 19:22:19 symfony [info] {sfWebDebugLogger} Action "order/index" 66.87 ms (1)
+Jun 01 19:22:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 01 19:22:19 symfony [info] {sfWebDebugLogger} View "Success" for "order/index" 26.78 ms (1)
+Jun 01 19:22:19 symfony [info] {sfWebResponse} Send content (31283 o)
+Jun 01 19:26:18 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /order with parameters array (  'module' => 'order',  'action' => 'index',)
+Jun 01 19:26:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:26:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:26:19 symfony [info] {orderActions} Call "orderActions->executeIndex()"
+Jun 01 19:26:19 symfony [info] {orderActions} Forward to action "default/module"
+Jun 01 19:26:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:26:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:26:19 symfony [info] {defaultActions} Call "defaultActions->executeModule()"
+Jun 01 19:26:19 symfony [info] {sfPHPView} Render "C:\wamp\bin\php\php5.3.5\PEAR\symfony/controller/default/templates/moduleSuccess.php"
+Jun 01 19:26:19 symfony [info] {sfPHPView} Decorate content with "C:\wamp\bin\php\php5.3.5\PEAR\symfony\controller\default\templates/defaultLayout.php"
+Jun 01 19:26:19 symfony [info] {sfPHPView} Render "C:\wamp\bin\php\php5.3.5\PEAR\symfony\controller\default\templates/defaultLayout.php"
+Jun 01 19:26:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 19:26:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:26:19 symfony [info] {sfWebDebugLogger} Configuration 102.24 ms (13)
+Jun 01 19:26:19 symfony [info] {sfWebDebugLogger} Factories 77.43 ms (1)
+Jun 01 19:26:19 symfony [info] {sfWebDebugLogger} Action "order/index" 160.06 ms (1)
+Jun 01 19:26:19 symfony [info] {sfWebDebugLogger} Action "default/module" 0.36 ms (1)
+Jun 01 19:26:19 symfony [info] {sfWebDebugLogger} View "Success" for "default/module" 77.20 ms (1)
+Jun 01 19:26:19 symfony [info] {sfWebResponse} Send content (31435 o)
+Jun 01 19:26:21 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Jun 01 19:26:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:26:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:26:21 symfony [info] {userActions} Call "userActions->executeNew()"
+Jun 01 19:26:21 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:26:21 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id AS o__id, o.session_id AS o__session_id, o.product_id AS o__product_id, o.nos AS o__nos, o.size AS o__size, o.created_at AS o__created_at, o.updated_at AS o__updated_at FROM order_sessions o WHERE (o.product_id = ? AND o.size = ? AND o.session_id = ?) - (1, medium, bp44fs92lgpia2u611b9104u85)
+Jun 01 19:26:21 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO order_sessions (session_id, product_id, nos, size) VALUES (?, ?, ?, ?) - (bp44fs92lgpia2u611b9104u85, 1, 1, medium)
+Jun 01 19:26:21 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/frontend_dev.php/order"
+Jun 01 19:26:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jun 01 19:26:21 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/frontend_dev.php/order"
+Jun 01 19:26:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:26:21 symfony [info] {sfWebDebugLogger} Configuration 17.26 ms (8)
+Jun 01 19:26:21 symfony [info] {sfWebDebugLogger} Factories 80.56 ms (1)
+Jun 01 19:26:21 symfony [info] {sfWebDebugLogger} Action "user/new" 208.14 ms (1)
+Jun 01 19:26:21 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (3)
+Jun 01 19:26:21 symfony [info] {sfWebResponse} Send content (116 o)
+Jun 01 19:26:21 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /order with parameters array (  'module' => 'order',  'action' => 'index',)
+Jun 01 19:26:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:26:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:26:22 symfony [info] {orderActions} Call "orderActions->executeIndex()"
+Jun 01 19:26:22 symfony [info] {orderActions} Forward to action "default/module"
+Jun 01 19:26:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:26:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:26:22 symfony [info] {defaultActions} Call "defaultActions->executeModule()"
+Jun 01 19:26:22 symfony [info] {sfPHPView} Render "C:\wamp\bin\php\php5.3.5\PEAR\symfony/controller/default/templates/moduleSuccess.php"
+Jun 01 19:26:22 symfony [info] {sfPHPView} Decorate content with "C:\wamp\bin\php\php5.3.5\PEAR\symfony\controller\default\templates/defaultLayout.php"
+Jun 01 19:26:22 symfony [info] {sfPHPView} Render "C:\wamp\bin\php\php5.3.5\PEAR\symfony\controller\default\templates/defaultLayout.php"
+Jun 01 19:26:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 19:26:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:26:22 symfony [info] {sfWebDebugLogger} Configuration 26.51 ms (12)
+Jun 01 19:26:22 symfony [info] {sfWebDebugLogger} Factories 85.67 ms (1)
+Jun 01 19:26:22 symfony [info] {sfWebDebugLogger} Action "order/index" 46.97 ms (1)
+Jun 01 19:26:22 symfony [info] {sfWebDebugLogger} Action "default/module" 0.60 ms (1)
+Jun 01 19:26:22 symfony [info] {sfWebDebugLogger} View "Success" for "default/module" 28.59 ms (1)
+Jun 01 19:26:22 symfony [info] {sfWebResponse} Send content (31326 o)
+Jun 01 19:26:23 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /category/index with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 01 19:26:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:26:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:26:23 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 01 19:26:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:26:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.category_id AS c__category_id, c.name AS c__name, c.created_at AS c__created_at, c.updated_at AS c__updated_at, p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM categories c LEFT JOIN products p ON c.category_id = p.category_id WHERE (c.name = ? AND p.featured = ?) - (punjabi, 1)
+Jun 01 19:26:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.category_id AS c__category_id, c.name AS c__name, c.created_at AS c__created_at, c.updated_at AS c__updated_at, p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM categories c LEFT JOIN products p ON c.category_id = p.category_id WHERE (c.name = ?) - (punjabi)
+Jun 01 19:26:23 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/category/templates/indexSuccess.php"
+Jun 01 19:26:23 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:26:23 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:26:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 19:26:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:26:23 symfony [info] {sfWebDebugLogger} Configuration 126.69 ms (10)
+Jun 01 19:26:23 symfony [info] {sfWebDebugLogger} Factories 81.59 ms (1)
+Jun 01 19:26:23 symfony [info] {sfWebDebugLogger} Action "category/index" 209.93 ms (1)
+Jun 01 19:26:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (3)
+Jun 01 19:26:23 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 84.32 ms (1)
+Jun 01 19:26:23 symfony [info] {sfWebResponse} Send content (52140 o)
+Jun 01 19:26:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/logout with parameters array (  'module' => 'user',  'action' => 'logout',)
+Jun 01 19:26:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:26:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:26:41 symfony [info] {userActions} Call "userActions->executeLogout()"
+Jun 01 19:26:41 symfony [info] {myUser} Remove credential "user"
+Jun 01 19:26:41 symfony [info] {myUser} User is not authenticated
+Jun 01 19:26:41 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/frontend_dev.php/category"
+Jun 01 19:26:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jun 01 19:26:41 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/frontend_dev.php/category"
+Jun 01 19:26:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:26:41 symfony [info] {sfWebDebugLogger} Configuration 16.84 ms (8)
+Jun 01 19:26:41 symfony [info] {sfWebDebugLogger} Factories 79.75 ms (1)
+Jun 01 19:26:41 symfony [info] {sfWebDebugLogger} Action "user/logout" 3.24 ms (1)
+Jun 01 19:26:41 symfony [info] {sfWebResponse} Send content (119 o)
+Jun 01 19:26:41 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 01 19:26:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:26:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:26:41 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 01 19:26:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:26:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.category_id AS c__category_id, c.name AS c__name, c.created_at AS c__created_at, c.updated_at AS c__updated_at, p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM categories c LEFT JOIN products p ON c.category_id = p.category_id WHERE (c.name = ? AND p.featured = ?) - (punjabi, 1)
+Jun 01 19:26:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.category_id AS c__category_id, c.name AS c__name, c.created_at AS c__created_at, c.updated_at AS c__updated_at, p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM categories c LEFT JOIN products p ON c.category_id = p.category_id WHERE (c.name = ?) - (punjabi)
+Jun 01 19:26:41 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/category/templates/indexSuccess.php"
+Jun 01 19:26:41 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:26:41 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:26:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 19:26:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:26:41 symfony [info] {sfWebDebugLogger} Configuration 17.54 ms (9)
+Jun 01 19:26:41 symfony [info] {sfWebDebugLogger} Factories 74.57 ms (1)
+Jun 01 19:26:41 symfony [info] {sfWebDebugLogger} Action "category/index" 114.91 ms (1)
+Jun 01 19:26:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (3)
+Jun 01 19:26:41 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 35.93 ms (1)
+Jun 01 19:26:42 symfony [info] {sfWebResponse} Send content (52096 o)
+Jun 01 19:26:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /category/size/product_id/1 with parameters array (  'module' => 'category',  'action' => 'size',  'product_id' => '1',)
+Jun 01 19:26:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:26:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:26:47 symfony [info] {categoryActions} Call "categoryActions->executeSize()"
+Jun 01 19:26:47 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/category/templates/sizeSuccess.php"
+Jun 01 19:26:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 19:26:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:26:47 symfony [info] {sfWebDebugLogger} Configuration 17.29 ms (9)
+Jun 01 19:26:47 symfony [info] {sfWebDebugLogger} Factories 79.35 ms (1)
+Jun 01 19:26:47 symfony [info] {sfWebDebugLogger} Action "category/size" 0.45 ms (1)
+Jun 01 19:26:47 symfony [info] {sfWebDebugLogger} View "Success" for "category/size" 25.31 ms (1)
+Jun 01 19:26:47 symfony [info] {sfWebResponse} Send content (600 o)
+Jun 01 19:26:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Jun 01 19:26:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:26:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:26:50 symfony [info] {userActions} Call "userActions->executeNew()"
+Jun 01 19:26:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:26:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id AS o__id, o.session_id AS o__session_id, o.product_id AS o__product_id, o.nos AS o__nos, o.size AS o__size, o.created_at AS o__created_at, o.updated_at AS o__updated_at FROM order_sessions o WHERE (o.product_id = ? AND o.size = ? AND o.session_id = ?) - (1, xl, f5uhe1tf7nmkeavgq5kb8qgai7)
+Jun 01 19:26:50 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO order_sessions (session_id, product_id, nos, size) VALUES (?, ?, ?, ?) - (f5uhe1tf7nmkeavgq5kb8qgai7, 1, 1, xl)
+Jun 01 19:26:51 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Jun 01 19:26:51 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:26:51 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:26:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 19:26:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:26:51 symfony [info] {sfWebDebugLogger} Configuration 17.37 ms (9)
+Jun 01 19:26:51 symfony [info] {sfWebDebugLogger} Factories 74.65 ms (1)
+Jun 01 19:26:51 symfony [info] {sfWebDebugLogger} Action "user/new" 224.39 ms (1)
+Jun 01 19:26:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.06 ms (3)
+Jun 01 19:26:51 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 43.81 ms (1)
+Jun 01 19:26:51 symfony [info] {sfWebResponse} Send content (38411 o)
+Jun 01 19:26:56 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Jun 01 19:26:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:26:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:26:56 symfony [info] {userActions} Call "userActions->executeLogin()"
+Jun 01 19:26:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:26:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (szfsdsf, Password)
+Jun 01 19:26:56 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/frontend_dev.php/user/new"
+Jun 01 19:26:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jun 01 19:26:56 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/frontend_dev.php/user/new"
+Jun 01 19:26:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:26:56 symfony [info] {sfWebDebugLogger} Configuration 15.28 ms (8)
+Jun 01 19:26:56 symfony [info] {sfWebDebugLogger} Factories 75.13 ms (1)
+Jun 01 19:26:56 symfony [info] {sfWebDebugLogger} Action "user/login" 84.55 ms (1)
+Jun 01 19:26:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 01 19:26:56 symfony [info] {sfWebResponse} Send content (119 o)
+Jun 01 19:26:56 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Jun 01 19:26:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:26:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:26:56 symfony [info] {userActions} Call "userActions->executeNew()"
+Jun 01 19:26:56 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Jun 01 19:26:56 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:26:56 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:26:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 19:26:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:26:56 symfony [info] {sfWebDebugLogger} Configuration 18.36 ms (9)
+Jun 01 19:26:56 symfony [info] {sfWebDebugLogger} Factories 75.08 ms (1)
+Jun 01 19:26:56 symfony [info] {sfWebDebugLogger} Action "user/new" 68.13 ms (1)
+Jun 01 19:26:56 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 42.82 ms (1)
+Jun 01 19:26:56 symfony [info] {sfWebResponse} Send content (33802 o)
+Jun 01 19:27:27 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Jun 01 19:27:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:27:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:27:27 symfony [info] {userActions} Call "userActions->executeNew()"
+Jun 01 19:27:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:27:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id AS o__id, o.session_id AS o__session_id, o.product_id AS o__product_id, o.nos AS o__nos, o.size AS o__size, o.created_at AS o__created_at, o.updated_at AS o__updated_at FROM order_sessions o WHERE (o.product_id = ? AND o.size = ? AND o.session_id = ?) - (1, xl, f5uhe1tf7nmkeavgq5kb8qgai7)
+Jun 01 19:27:27 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE order_sessions SET nos = ? WHERE (id = ?) - (2, 8)
+Jun 01 19:27:27 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Jun 01 19:27:27 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:27:27 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:27:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 19:27:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:27:27 symfony [info] {sfWebDebugLogger} Configuration 17.70 ms (9)
+Jun 01 19:27:27 symfony [info] {sfWebDebugLogger} Factories 78.48 ms (1)
+Jun 01 19:27:27 symfony [info] {sfWebDebugLogger} Action "user/new" 274.22 ms (1)
+Jun 01 19:27:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (3)
+Jun 01 19:27:27 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 51.19 ms (1)
+Jun 01 19:27:27 symfony [info] {sfWebResponse} Send content (38281 o)
+Jun 01 19:27:29 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 01 19:27:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:27:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:27:29 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 01 19:27:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:27:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.category_id AS c__category_id, c.name AS c__name, c.created_at AS c__created_at, c.updated_at AS c__updated_at, p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM categories c LEFT JOIN products p ON c.category_id = p.category_id WHERE (c.name = ? AND p.featured = ?) - (punjabi, 1)
+Jun 01 19:27:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.category_id AS c__category_id, c.name AS c__name, c.created_at AS c__created_at, c.updated_at AS c__updated_at, p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM categories c LEFT JOIN products p ON c.category_id = p.category_id WHERE (c.name = ?) - (punjabi)
+Jun 01 19:27:29 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/category/templates/indexSuccess.php"
+Jun 01 19:27:29 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:27:29 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:27:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 19:27:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:27:29 symfony [info] {sfWebDebugLogger} Configuration 19.23 ms (9)
+Jun 01 19:27:29 symfony [info] {sfWebDebugLogger} Factories 81.57 ms (1)
+Jun 01 19:27:29 symfony [info] {sfWebDebugLogger} Action "category/index" 121.96 ms (1)
+Jun 01 19:27:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (3)
+Jun 01 19:27:29 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 35.33 ms (1)
+Jun 01 19:27:29 symfony [info] {sfWebResponse} Send content (52096 o)
+Jun 01 19:27:37 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /category/size/product_id/2 with parameters array (  'module' => 'category',  'action' => 'size',  'product_id' => '2',)
+Jun 01 19:27:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:27:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:27:37 symfony [info] {categoryActions} Call "categoryActions->executeSize()"
+Jun 01 19:27:37 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/category/templates/sizeSuccess.php"
+Jun 01 19:27:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 19:27:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:27:37 symfony [info] {sfWebDebugLogger} Configuration 18.47 ms (9)
+Jun 01 19:27:37 symfony [info] {sfWebDebugLogger} Factories 82.59 ms (1)
+Jun 01 19:27:37 symfony [info] {sfWebDebugLogger} Action "category/size" 0.50 ms (1)
+Jun 01 19:27:37 symfony [info] {sfWebDebugLogger} View "Success" for "category/size" 26.35 ms (1)
+Jun 01 19:27:37 symfony [info] {sfWebResponse} Send content (600 o)
+Jun 01 19:27:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Jun 01 19:27:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:27:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:27:39 symfony [info] {userActions} Call "userActions->executeNew()"
+Jun 01 19:27:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:27:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id AS o__id, o.session_id AS o__session_id, o.product_id AS o__product_id, o.nos AS o__nos, o.size AS o__size, o.created_at AS o__created_at, o.updated_at AS o__updated_at FROM order_sessions o WHERE (o.product_id = ? AND o.size = ? AND o.session_id = ?) - (2, large, f5uhe1tf7nmkeavgq5kb8qgai7)
+Jun 01 19:27:39 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO order_sessions (session_id, product_id, nos, size) VALUES (?, ?, ?, ?) - (f5uhe1tf7nmkeavgq5kb8qgai7, 2, 1, large)
+Jun 01 19:27:39 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\modules/user/templates/newSuccess.php"
+Jun 01 19:27:39 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:27:39 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\frontend\templates/layout.php"
+Jun 01 19:27:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 19:27:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:27:39 symfony [info] {sfWebDebugLogger} Configuration 17.37 ms (9)
+Jun 01 19:27:39 symfony [info] {sfWebDebugLogger} Factories 72.89 ms (1)
+Jun 01 19:27:39 symfony [info] {sfWebDebugLogger} Action "user/new" 212.51 ms (1)
+Jun 01 19:27:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (3)
+Jun 01 19:27:39 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 42.71 ms (1)
+Jun 01 19:27:39 symfony [info] {sfWebResponse} Send content (38435 o)
+Jun 01 19:27:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Jun 01 19:27:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:27:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:27:45 symfony [info] {userActions} Call "userActions->executeLogin()"
+Jun 01 19:27:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:27:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.user_id AS u__user_id, u.name AS u__name, u.email AS u__email, u.pass AS u__pass, u.mobile AS u__mobile, u.address AS u__address, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.email = ? AND u.pass = ?) - (dropmail.pankaj@gmail.com, hamesha)
+Jun 01 19:27:45 symfony [info] {myUser} Add credential(s) "user"
+Jun 01 19:27:45 symfony [info] {myUser} User is authenticated
+Jun 01 19:27:45 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/frontend_dev.php/order"
+Jun 01 19:27:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jun 01 19:27:45 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/frontend_dev.php/order"
+Jun 01 19:27:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:27:45 symfony [info] {sfWebDebugLogger} Configuration 13.77 ms (8)
+Jun 01 19:27:45 symfony [info] {sfWebDebugLogger} Factories 77.48 ms (1)
+Jun 01 19:27:45 symfony [info] {sfWebDebugLogger} Action "user/login" 84.90 ms (1)
+Jun 01 19:27:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 01 19:27:45 symfony [info] {sfWebResponse} Send content (116 o)
+Jun 01 19:27:45 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /order with parameters array (  'module' => 'order',  'action' => 'index',)
+Jun 01 19:27:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:27:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:27:45 symfony [info] {orderActions} Call "orderActions->executeIndex()"
+Jun 01 19:27:45 symfony [info] {orderActions} Forward to action "default/module"
+Jun 01 19:27:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:27:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:27:45 symfony [info] {defaultActions} Call "defaultActions->executeModule()"
+Jun 01 19:27:45 symfony [info] {sfPHPView} Render "C:\wamp\bin\php\php5.3.5\PEAR\symfony/controller/default/templates/moduleSuccess.php"
+Jun 01 19:27:45 symfony [info] {sfPHPView} Decorate content with "C:\wamp\bin\php\php5.3.5\PEAR\symfony\controller\default\templates/defaultLayout.php"
+Jun 01 19:27:45 symfony [info] {sfPHPView} Render "C:\wamp\bin\php\php5.3.5\PEAR\symfony\controller\default\templates/defaultLayout.php"
+Jun 01 19:27:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 01 19:27:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:27:45 symfony [info] {sfWebDebugLogger} Configuration 22.48 ms (12)
+Jun 01 19:27:45 symfony [info] {sfWebDebugLogger} Factories 74.69 ms (1)
+Jun 01 19:27:45 symfony [info] {sfWebDebugLogger} Action "order/index" 48.10 ms (1)
+Jun 01 19:27:45 symfony [info] {sfWebDebugLogger} Action "default/module" 0.73 ms (1)
+Jun 01 19:27:45 symfony [info] {sfWebDebugLogger} View "Success" for "default/module" 29.70 ms (1)
+Jun 01 19:27:45 symfony [info] {sfWebResponse} Send content (31431 o)
+Jun 01 19:34:06 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /order with parameters array (  'module' => 'order',  'action' => 'index',)
+Jun 01 19:34:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:34:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:34:06 symfony [info] {orderActions} Call "orderActions->executeIndex()"
+Jun 01 19:34:06 symfony [err] {Doctrine_Table_Exception} Unknown method CategoriesTable::func_getCurrentSessionOrder
+Jun 01 19:34:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 01 19:34:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:34:06 symfony [info] {sfWebDebugLogger} Configuration 16.45 ms (8)
+Jun 01 19:34:06 symfony [info] {sfWebDebugLogger} Factories 76.76 ms (1)
+Jun 01 19:34:06 symfony [info] {sfWebDebugLogger} Action "order/index" 128.67 ms (1)
+Jun 01 19:34:27 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /order with parameters array (  'module' => 'order',  'action' => 'index',)
+Jun 01 19:34:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:34:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:34:27 symfony [info] {orderActions} Call "orderActions->executeIndex()"
+Jun 01 19:34:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:34:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id AS o__id, o.session_id AS o__session_id, o.product_id AS o__product_id, o.nos AS o__nos, o.size AS o__size, o.created_at AS o__created_at, o.updated_at AS o__updated_at, p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM order_sessions o INNER JOIN products p ON o.product_id = p.product_id WHERE (o.session_id = ?) - (4tb5doo4b36oi7uoseovo80vc7)
+Jun 01 19:34:54 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /order with parameters array (  'module' => 'order',  'action' => 'index',)
+Jun 01 19:34:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:34:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:34:54 symfony [info] {orderActions} Call "orderActions->executeIndex()"
+Jun 01 19:34:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:34:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id AS o__id, o.session_id AS o__session_id, o.product_id AS o__product_id, o.nos AS o__nos, o.size AS o__size, o.created_at AS o__created_at, o.updated_at AS o__updated_at, p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM order_sessions o INNER JOIN products p ON o.product_id = p.product_id WHERE (o.session_id = ?) - (4tb5doo4b36oi7uoseovo80vc7)
+Jun 01 19:35:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Jun 01 19:35:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:35:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:35:23 symfony [info] {userActions} Call "userActions->executeNew()"
+Jun 01 19:35:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:35:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id AS o__id, o.session_id AS o__session_id, o.product_id AS o__product_id, o.nos AS o__nos, o.size AS o__size, o.created_at AS o__created_at, o.updated_at AS o__updated_at FROM order_sessions o WHERE (o.product_id = ? AND o.size = ? AND o.session_id = ?) - (2, large, 4tb5doo4b36oi7uoseovo80vc7)
+Jun 01 19:35:23 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO order_sessions (session_id, product_id, nos, size) VALUES (?, ?, ?, ?) - (4tb5doo4b36oi7uoseovo80vc7, 2, 1, large)
+Jun 01 19:35:23 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/frontend_dev.php/order"
+Jun 01 19:35:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jun 01 19:35:23 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/frontend_dev.php/order"
+Jun 01 19:35:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 01 19:35:23 symfony [info] {sfWebDebugLogger} Configuration 15.68 ms (8)
+Jun 01 19:35:23 symfony [info] {sfWebDebugLogger} Factories 84.95 ms (1)
+Jun 01 19:35:23 symfony [info] {sfWebDebugLogger} Action "user/new" 193.40 ms (1)
+Jun 01 19:35:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (3)
+Jun 01 19:35:23 symfony [info] {sfWebResponse} Send content (116 o)
+Jun 01 19:35:23 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /order with parameters array (  'module' => 'order',  'action' => 'index',)
+Jun 01 19:35:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:35:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:35:23 symfony [info] {orderActions} Call "orderActions->executeIndex()"
+Jun 01 19:35:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:35:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id AS o__id, o.session_id AS o__session_id, o.product_id AS o__product_id, o.nos AS o__nos, o.size AS o__size, o.created_at AS o__created_at, o.updated_at AS o__updated_at, p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM order_sessions o INNER JOIN products p ON o.product_id = p.product_id WHERE (o.session_id = ?) - (4tb5doo4b36oi7uoseovo80vc7)
+Jun 01 19:35:47 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /order with parameters array (  'module' => 'order',  'action' => 'index',)
+Jun 01 19:35:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 01 19:35:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 01 19:35:47 symfony [info] {orderActions} Call "orderActions->executeIndex()"
+Jun 01 19:35:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 01 19:35:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id AS o__id, o.session_id AS o__session_id, o.product_id AS o__product_id, o.nos AS o__nos, o.size AS o__size, o.created_at AS o__created_at, o.updated_at AS o__updated_at, p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM order_sessions o INNER JOIN products p ON o.product_id = p.product_id WHERE (o.session_id = ?) - (4tb5doo4b36oi7uoseovo80vc7)

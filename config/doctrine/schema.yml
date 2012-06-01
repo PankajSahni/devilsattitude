@@ -77,6 +77,67 @@ MyDesign:
       local: user_id
       foreign: user_id
       type: one
+OrderSessions:
+  connection: doctrine
+  tableName: order_sessions
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    session_id:
+      type: string(225)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    product_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nos:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    size:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Products:
+      local: product_id
+      foreign: product_id
+      type: one
+    Orders:
+      local: id
+      foreign: order_sessions_id
+      type: many
 Orders:
   connection: doctrine
   tableName: orders
@@ -87,29 +148,15 @@ Orders:
       unsigned: false
       primary: true
       autoincrement: true
-    user_id:
+    order_sessions_id:
       type: integer(8)
       fixed: false
       unsigned: false
       primary: false
       notnull: false
       autoincrement: false
-    product_id:
+    user_id:
       type: integer(8)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    size:
-      type: string(10)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    color:
-      type: string(10)
       fixed: false
       unsigned: false
       primary: false
@@ -141,6 +188,10 @@ Orders:
     User:
       local: user_id
       foreign: user_id
+      type: one
+    OrderSessions:
+      local: order_sessions_id
+      foreign: id
       type: one
 Products:
   connection: doctrine
@@ -221,6 +272,10 @@ Products:
       local: category_id
       foreign: category_id
       type: one
+    OrderSessions:
+      local: product_id
+      foreign: product_id
+      type: many
 User:
   connection: doctrine
   tableName: user
@@ -260,7 +315,7 @@ User:
       notnull: true
       autoincrement: false
     address:
-      type: string(500)
+      type: string()
       fixed: false
       unsigned: false
       primary: false
@@ -289,60 +344,3 @@ User:
       local: user_id
       foreign: user_id
       type: many
-OrderSessions:
-  connection: doctrine
-  tableName: order_sessions
-  columns:
-    id:
-      type: integer(8)
-      fixed: false
-      unsigned: false
-      primary: true
-      autoincrement: true
-    session_id:
-      type: string(225)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    product_id:
-      type: integer(8)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    nos:
-      type: integer(8)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    size:
-      type: string(5)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    created_at:
-      type: timestamp(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    updated_at:
-      type: timestamp(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-  relations:
-    Products:
-      local: product_id
-      foreign: product_id
-      type: one

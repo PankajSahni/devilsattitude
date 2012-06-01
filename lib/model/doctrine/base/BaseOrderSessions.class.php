@@ -15,23 +15,26 @@ Doctrine_Manager::getInstance()->bindComponent('OrderSessions', 'doctrine');
  * @property timestamp $created_at
  * @property timestamp $updated_at
  * @property Products $Products
+ * @property Doctrine_Collection $Orders
  * 
- * @method integer       getId()         Returns the current record's "id" value
- * @method string        getSessionId()  Returns the current record's "session_id" value
- * @method integer       getProductId()  Returns the current record's "product_id" value
- * @method integer       getNos()        Returns the current record's "nos" value
- * @method string        getSize()       Returns the current record's "size" value
- * @method timestamp     getCreatedAt()  Returns the current record's "created_at" value
- * @method timestamp     getUpdatedAt()  Returns the current record's "updated_at" value
- * @method Products      getProducts()   Returns the current record's "Products" value
- * @method OrderSessions setId()         Sets the current record's "id" value
- * @method OrderSessions setSessionId()  Sets the current record's "session_id" value
- * @method OrderSessions setProductId()  Sets the current record's "product_id" value
- * @method OrderSessions setNos()        Sets the current record's "nos" value
- * @method OrderSessions setSize()       Sets the current record's "size" value
- * @method OrderSessions setCreatedAt()  Sets the current record's "created_at" value
- * @method OrderSessions setUpdatedAt()  Sets the current record's "updated_at" value
- * @method OrderSessions setProducts()   Sets the current record's "Products" value
+ * @method integer             getId()         Returns the current record's "id" value
+ * @method string              getSessionId()  Returns the current record's "session_id" value
+ * @method integer             getProductId()  Returns the current record's "product_id" value
+ * @method integer             getNos()        Returns the current record's "nos" value
+ * @method string              getSize()       Returns the current record's "size" value
+ * @method timestamp           getCreatedAt()  Returns the current record's "created_at" value
+ * @method timestamp           getUpdatedAt()  Returns the current record's "updated_at" value
+ * @method Products            getProducts()   Returns the current record's "Products" value
+ * @method Doctrine_Collection getOrders()     Returns the current record's "Orders" collection
+ * @method OrderSessions       setId()         Sets the current record's "id" value
+ * @method OrderSessions       setSessionId()  Sets the current record's "session_id" value
+ * @method OrderSessions       setProductId()  Sets the current record's "product_id" value
+ * @method OrderSessions       setNos()        Sets the current record's "nos" value
+ * @method OrderSessions       setSize()       Sets the current record's "size" value
+ * @method OrderSessions       setCreatedAt()  Sets the current record's "created_at" value
+ * @method OrderSessions       setUpdatedAt()  Sets the current record's "updated_at" value
+ * @method OrderSessions       setProducts()   Sets the current record's "Products" value
+ * @method OrderSessions       setOrders()     Sets the current record's "Orders" collection
  * 
  * @package    devil
  * @subpackage model
@@ -78,14 +81,14 @@ abstract class BaseOrderSessions extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 8,
              ));
-        $this->hasColumn('size', 'string', 5, array(
+        $this->hasColumn('size', 'string', 50, array(
              'type' => 'string',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => true,
              'autoincrement' => false,
-             'length' => 5,
+             'length' => 50,
              ));
         $this->hasColumn('created_at', 'timestamp', 25, array(
              'type' => 'timestamp',
@@ -113,5 +116,9 @@ abstract class BaseOrderSessions extends sfDoctrineRecord
         $this->hasOne('Products', array(
              'local' => 'product_id',
              'foreign' => 'product_id'));
+
+        $this->hasMany('Orders', array(
+             'local' => 'id',
+             'foreign' => 'order_sessions_id'));
     }
 }
