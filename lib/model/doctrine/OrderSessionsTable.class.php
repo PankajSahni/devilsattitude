@@ -40,5 +40,17 @@ class OrderSessionsTable extends Doctrine_Table {
                 ->fetchArray();
         return $q;
     }
-
+    public function func_updateCart($id , $nos) {
+        Doctrine_Query::create()
+                ->update('OrderSessions os')
+                ->set('os.nos', '?', $nos)
+                ->where('os.id = ?', $id)
+                ->execute();
+    }
+    public function func_deleteProduct($id) {    
+            $q = Doctrine_Query::create()
+                ->delete('OrderSessions os')
+                ->where('os.id = ?', $id)
+                ->execute();
+    }
 }

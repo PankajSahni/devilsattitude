@@ -36,6 +36,8 @@ class userActions extends sfActions {
                 $order_sessions->setProductId($post_array['product_id']);
                 $order_sessions->setNos(1);
                 $order_sessions->setSize($post_array['size']);
+                $order_sessions->setCreatedAt(date('Y-m-d H:i:s', time()));
+                $order_sessions->setUpdatedAt(date('Y-m-d H:i:s', time()));
                 $order_sessions->save();
             }
         }

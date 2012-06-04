@@ -3,8 +3,8 @@
 
 /*********
 Common CSS For All
-*********/
-.body {background:url(../images/bg1.jpg) top center repeat-x;background-attachment: fixed;}
+********
+.body {background:url(../images/bg1.jpg) top center repeat-x;background-attachment: fixed;}*/
 * { margin:0; padding:0; outline:0; }
 @font-face { font-family: "Gotham";	src: url('../font/Gotham.eot');}/* EOT file for IE */
 @font-face { font-family: "GothamBook";	src: url('../font/GothamBook.eot');}/* EOT file for IE */
@@ -749,6 +749,7 @@ Popup
 
 #popUp h2 {font-size:24px; text-align:center; padding:0; }
 #popUp a.bClose { float:right; width:27px; height:30px; position:absolute; right:20px; top:10px; background:url(../images/button_prevnextClose.png) right top; text-indent:-9999px; cursor:pointer;}
+a.bClose { float:right; width:27px; height:30px; position:absolute; background:url(../images/button_prevnextClose.png) right top; text-indent:-9999px; cursor:pointer;}
 
 #popUp li { margin-top:20px;margin-left:100px; }
 #popUp li.first-Child { width:336px; height:159px; background:url(../images/popup/libraryCard_label_bg.png) no-repeat; /* for IE */ *display:inline; *float:left}
@@ -775,8 +776,8 @@ Popup
 .selectpicSlider li img { width:54px; height:54px; }
 .selectpicSlider li:hover { background:url(../images/popup/userPic_hover_bg.png) no-repeat left top; cursor:pointer; }
 .selectpicSlider li.active { background:url(../images/popup/userPic_hover_bg.png) no-repeat left top; cursor:pointer; }
-.selectpicSlider .previous {float:left; width:31px; height:30px; background:url(../images/button_prevnextClose.png) no-repeat left top ; margin:20px 0 0 14px; cursor:pointer; }
-.selectpicSlider .next {float:left; width:31px; height:30px; background:url(../images/button_prevnextClose.png) no-repeat -31px top ; margin:20px 8px 0 0; cursor:pointer; }
+.DSubtract {float:left; width:31px; height:30px; background:url(../images/button_prevnextClose.png) no-repeat left top ; margin:20px 0 0 14px; cursor:pointer; }
+.DAdd {float:left; width:31px; height:30px; background:url(../images/button_prevnextClose.png) no-repeat -31px top ; margin:20px 8px 0 0; cursor:pointer; }
 
 #popUp #selectPic {padding:10px 0; width:575px; }
 #popUp #selectPic li {width:81px; height:80px; display:inline-block; margin:0; padding:10px 0 0 10px; /* for IE */ *display:inline; *float:left}

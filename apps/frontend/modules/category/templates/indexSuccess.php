@@ -20,7 +20,10 @@
                                         <li><a href="Folio.html">Folio</a></li>
                                         <li><a href="Services.html">Services</a></li>
                                         <li><a href="News.html">News</a></li>
-                                        <li class="end"><a href="Contact.html">Contact</a></li>
+                                        <li><a href="Contact.html">Contact</a></li>
+                                        <?php if($activate_cart_button == 1):?>
+                                        <li class="end"><a href="<?php echo url_for('order/index')?>">Cart</a></li>
+                                        <?php endif;?>
                                     </ul>
                                 </nav>
                             </div>
