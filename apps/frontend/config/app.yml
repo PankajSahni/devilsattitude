@@ -1,5 +1,0 @@
-all:
-  globals:
-    merchant_id: M_dro19479_19479
-    working_key: 4yasvbucx9hxdijlc7
-    redirect_url: http://localhost/devil/frontend_dev.php/order/thankyou
