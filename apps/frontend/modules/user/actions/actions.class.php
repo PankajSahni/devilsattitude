@@ -23,24 +23,7 @@ class userActions extends sfActions {
 
     public function executeNew(sfWebRequest $request) {
         $post_array = $request->getParameterHolder()->getAll();
-        $go_to = 'product/index';
-        if (isset($post_array['product_id'])) {
-            $go_to = 'order/index';
-            $this->getUser()->setAttribute('product_in_cart', 1);
-            $if_product = Doctrine::getTable('OrderSessions')->func_checkProductAndSize($post_array);
-            if (count($if_product)) {
-             $if_product = Doctrine::getTable('OrderSessions')->func_updateProductAndSize($if_product);   
-            } else {
-                $order_sessions = new OrderSessions();
-                $order_sessions->setSessionId(session_id());
-                $order_sessions->setProductId($post_array['product_id']);
-                $order_sessions->setNos(1);
-                $order_sessions->setSize($post_array['size']);
-                $order_sessions->setCreatedAt(date('Y-m-d H:i:s', time()));
-                $order_sessions->setUpdatedAt(date('Y-m-d H:i:s', time()));
-                $order_sessions->save();
-            }
-        }
+        $go_to = 'order/index';
         if ($this->getUser()->getAttribute('user_id') != "") {
             $this->redirect($go_to);
         } else {
@@ -88,10 +71,17 @@ class userActions extends sfActions {
         if ($form->isValid()) {
             $user = $form->save();
             $this->getUser()->setAttribute('user_id', $user->getUserId());
-            if ($this->getUser()->getAttribute('product') == "") {
+            $orders = new Orders();
+            $orders->setOrderSessionsId(session_id());
+            $orders->setUserId($user->getUserId());
+            $orders->setStatus('pending');
+            $orders->setCreatedAt(date('Y-m-d H:i:s', time()));
+            $orders->setUpdatedAt(date('Y-m-d H:i:s', time()));
+            $orders->save();
+            if ($this->getUser()->getAttribute('product_in_cart') == "") {
                 $this->redirect('category/index');
             } else {
-                $this->redirect('product/index');
+                $this->redirect('order/index');
             }
         }
     }
@@ -102,9 +92,14 @@ class userActions extends sfActions {
             $this->login_result = Doctrine::getTable('User')->func_checkLogin($this->post_array);
             //echo "<pre>";    print_r($this->post_array); die;
             if (count($this->login_result)) {
-                $this->getUser()->addCredential('user');
-                $this->getUser()->setAuthenticated(TRUE);
                 $this->getUser()->setAttribute('user_id', $this->login_result[0]['user_id']);
+                $orders = new Orders();
+                $orders->setOrderSessionsId(session_id());
+                $orders->setUserId($this->login_result[0]['user_id']);
+                $orders->setStatus('pending');
+                $orders->setCreatedAt(date('Y-m-d H:i:s', time()));
+                $orders->setUpdatedAt(date('Y-m-d H:i:s', time()));
+                $orders->save();
                 if ($this->getUser()->getAttribute('product_in_cart') == "") {
                     $this->redirect('category/index');
                 } else {

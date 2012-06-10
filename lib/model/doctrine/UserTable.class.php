@@ -31,5 +31,13 @@ class UserTable extends Doctrine_Table {
                 ->fetchArray();
         return $q;
     }
+        public function func_getUserAndOrderId($user_id) {
+        $q = $this->createQuery('u')
+                ->leftJoin('u.Orders o')
+                ->where('u.user_id = ?  ', $user_id)
+                ->andWhere('order_sessions_id = ?', session_id())
+                ->fetchArray();
+        return $q;
+    }
 
 }
