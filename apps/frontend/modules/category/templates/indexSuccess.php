@@ -45,7 +45,7 @@
                                             </figure>
                                             <div class="buynow">
                                                 <p align="center">	
-                                                    <a class="add popup" href="<?php echo url_for('product/size?product_id='.$product['product_id']) ?>">
+                                                    <a class="add popup" href="<?php echo url_for('category/size?product_id='.$product['product_id']) ?>">
                                                         <img src="<?php echo $image_url; ?>button_buyNow.png" alt=""/>
                                                     </a>
                                                 </p>
