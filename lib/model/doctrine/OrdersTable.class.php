@@ -15,6 +15,13 @@ class OrdersTable extends Doctrine_Table {
     public static function getInstance() {
         return Doctrine_Core::getTable('Orders');
     }
+        public static function func_confirmOrder($order_id) {
+        Doctrine_Query::create()
+                ->update('Orders o')
+                ->set('o.status', '?', 1)
+                ->where('o.order_id = ?', $order_id)
+                ->execute();
+    }
 
     function getchecksum($MerchantId, $Amount, $OrderId, $URL, $WorkingKey) {
         $str = "$MerchantId|$OrderId|$Amount|$URL|$WorkingKey";

@@ -14,7 +14,7 @@ body {background:#111;border:0;font:14px Arial, Helvetica, sans-serif;color:#0f0
 .main {margin:0 auto;width:916px;}
 /*.body1 {background:url(../images/bg_img2.jpg) center 560px no-repeat #eaeaea}
 .body2 {background:url(../images/bg_top_repeat.jpg) top repeat-x}*/
-.body3 {background:url(../images/bg1.jpg) top center repeat-x;background-attachment: fixed;}
+/*.body3 {background:url(../images/bg1.jpg) top center repeat-x;background-attachment: fixed;}*/
 .body4 {background:url(../images/bg_content.gif) top repeat-x #363636}
 /* main layout */
 .buynow a {float:none !important; margin:0 auto!important; display:block !important; cursor:url(../images/cursor_img.png), pointer;}
@@ -35,7 +35,7 @@ header {height:645px}
 #menu {float:right;padding:40px 19px 0 0}
 #menu li {float:left;padding-right:28px}
 #menu .end {padding-right:0}
-#menu li a {display:block;font-size:16px;color:#fff;text-decoration:none;background:url(../images/menu_marker.png) 0 6px no-repeat;padding-left:20px}
+#menu li a {display:block;font-size:16px;color:#000;text-decoration:none;background:url(../images/menu_marker.png) 0 6px no-repeat;padding-left:20px}
 #menu li a:hover, #menu #active a {color:#13c5ff}
 .roundabout-holder  {height:5em;}
 .roundabout-moveable-item {cursor:pointer;width:370px;height:420px;margin-top:229px;padding-bottom:20px}

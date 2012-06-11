@@ -5,3 +5,4 @@
         </td>
     </tr>
 </table>
+<a href="<?php echo url_for('category/index');?>">Shop More</a>

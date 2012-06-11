@@ -19,7 +19,7 @@ Common CSS For All
 /*********
 Body
 *********/
-body {font-size:13px; font-family:"GothamBook", Arial, Helvetica, sans-serif; color:#575757; background:#e4e4e4; }
+body {font-size:13px; font-family:"GothamBook", Arial, Helvetica, sans-serif; color:#575757; background:#fff; }
 h2, h3, h4 {color:#000; padding-bottom:10px; font-weight:normal; font-family:"Gotham", Arial, Helvetica, sans-serif;}
 li {list-style:none;}
 img {border:0; }

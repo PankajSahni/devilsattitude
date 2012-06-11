@@ -10,7 +10,7 @@
                 <div class="body3">
                     <div class="main">
                         <!-- header -->
-                        <header>
+                        
                             <div class="wrapper">
                                 <h1><a href="index.html" id="logo"></a></h1>
                                 <nav>
@@ -28,7 +28,7 @@
                                 </nav>
                             </div>
      
-                        </header><div class="ic">More Website Templates at TemplateMonster.com!</div>	
+                        <div class="ic">More Website Templates at TemplateMonster.com!</div>	
                         <!-- / header-->
                         <!-- content -->
                         <section id="content">
@@ -40,12 +40,12 @@
                                         <?php //if(($i % 3)==0)?>
                                         <article class="col1">
                                             <figure>
-                                                <a href="<?php echo $designs_url . $product['image']; ?>" class="preview" title="" width="70px" height="80px">
+                                                <a href="<?php echo url_for('product/index?product='.$product['name']) ?>" class="preview" title="" width="70px" height="80px">
                                                         <img src="<?php echo $designs_url . $product['image']; ?>" alt="" width="270px" height="280px"/></a>
                                             </figure>
                                             <div class="buynow">
                                                 <p align="center">	
-                                                    <a class="add popup" href="<?php echo url_for('category/size?product_id='.$product['product_id']) ?>">
+                                                    <a class="add popup" href="<?php echo url_for('product/size?product_id='.$product['product_id']) ?>">
                                                         <img src="<?php echo $image_url; ?>button_buyNow.png" alt=""/>
                                                     </a>
                                                 </p>

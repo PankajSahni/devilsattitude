@@ -86,6 +86,7 @@ class orderActions extends sfActions {
     $Checksum = Doctrine::getTable('Orders')->verifyChecksum($Merchant_Id, $Order_Id , $Amount,$AuthDesc,$Checksum,$WorkingKey);
     	if($Checksum=="true" && $AuthDesc=="Y")
 	{
+            Doctrine::getTable('Orders')->func_confirmOrder($Order_Id);
 		$this->message = "<p style='color: green; '>Thank you for shopping with us. Your credit card has been charged and your transaction is successful. We will be shipping your order to you soon.</p>";
 		
 		//Here you need to put in the routines for a successful 
