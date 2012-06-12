@@ -592,3 +592,621 @@ Apr 08 06:07:45 symfony [info] {sfWebDebugLogger} Action "user/index" 58.83 ms (
 Apr 08 06:07:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
 Apr 08 06:07:45 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 29.75 ms (1)
 Apr 08 06:07:45 symfony [info] {sfWebResponse} Send content (31518 o)
+Jun 12 18:59:27 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Jun 12 18:59:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 18:59:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 18:59:27 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Jun 12 18:59:27 symfony [info] {sfPHPView} Render "C:\wamp\bin\php\php5.3.5\PEAR\symfony/controller/default/templates/indexSuccess.php"
+Jun 12 18:59:27 symfony [info] {sfPHPView} Decorate content with "C:\wamp\bin\php\php5.3.5\PEAR\symfony\controller\default\templates/defaultLayout.php"
+Jun 12 18:59:27 symfony [info] {sfPHPView} Render "C:\wamp\bin\php\php5.3.5\PEAR\symfony\controller\default\templates/defaultLayout.php"
+Jun 12 18:59:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 18:59:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 18:59:27 symfony [info] {sfWebDebugLogger} Configuration 369.05 ms (9)
+Jun 12 18:59:27 symfony [info] {sfWebDebugLogger} Factories 222.11 ms (1)
+Jun 12 18:59:27 symfony [info] {sfWebDebugLogger} Action "default/index" 0.26 ms (1)
+Jun 12 18:59:27 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 40.43 ms (1)
+Jun 12 18:59:27 symfony [info] {sfWebResponse} Send content (28976 o)
+Jun 12 18:59:31 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /categories with parameters array (  'module' => 'categories',  'action' => 'index',)
+Jun 12 18:59:31 symfony [info] {sfFrontWebController} Action "categories/index" does not exist
+Jun 12 18:59:31 symfony [err] {sfError404Exception} Action "categories/index" does not exist.
+Jun 12 18:59:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 12 18:59:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 18:59:31 symfony [info] {sfWebDebugLogger} Configuration 6.88 ms (5)
+Jun 12 18:59:31 symfony [info] {sfWebDebugLogger} Factories 58.54 ms (1)
+Jun 12 18:59:39 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 18:59:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 18:59:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 18:59:39 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 18:59:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 18:59:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 18:59:39 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 18:59:39 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 18:59:39 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 18:59:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 18:59:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 18:59:39 symfony [info] {sfWebDebugLogger} Configuration 63.71 ms (10)
+Jun 12 18:59:39 symfony [info] {sfWebDebugLogger} Factories 61.24 ms (1)
+Jun 12 18:59:39 symfony [info] {sfWebDebugLogger} Action "category/index" 62.63 ms (1)
+Jun 12 18:59:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 18:59:39 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 49.43 ms (1)
+Jun 12 18:59:39 symfony [info] {sfWebResponse} Send content (30920 o)
+Jun 12 19:03:23 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 19:03:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:03:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:03:23 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 19:03:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:03:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:03:23 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 19:03:23 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:03:23 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:03:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:03:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:03:23 symfony [info] {sfWebDebugLogger} Configuration 15.10 ms (9)
+Jun 12 19:03:23 symfony [info] {sfWebDebugLogger} Factories 56.80 ms (1)
+Jun 12 19:03:23 symfony [info] {sfWebDebugLogger} Action "category/index" 53.66 ms (1)
+Jun 12 19:03:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:03:23 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 31.18 ms (1)
+Jun 12 19:03:23 symfony [info] {sfWebResponse} Send content (31106 o)
+Jun 12 19:04:13 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 19:04:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:04:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:04:13 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 19:04:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:04:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:04:13 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 19:04:13 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:04:13 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:04:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:04:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:04:13 symfony [info] {sfWebDebugLogger} Configuration 12.94 ms (9)
+Jun 12 19:04:13 symfony [info] {sfWebDebugLogger} Factories 59.12 ms (1)
+Jun 12 19:04:13 symfony [info] {sfWebDebugLogger} Action "category/index" 51.70 ms (1)
+Jun 12 19:04:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:04:13 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 30.40 ms (1)
+Jun 12 19:04:13 symfony [info] {sfWebResponse} Send content (31168 o)
+Jun 12 19:12:46 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 19:12:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:12:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:12:46 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 19:12:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:12:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:12:46 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 19:12:46 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:12:46 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:12:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:12:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:12:46 symfony [info] {sfWebDebugLogger} Configuration 14.04 ms (9)
+Jun 12 19:12:46 symfony [info] {sfWebDebugLogger} Factories 61.33 ms (1)
+Jun 12 19:12:46 symfony [info] {sfWebDebugLogger} Action "category/index" 54.33 ms (1)
+Jun 12 19:12:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:12:46 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 31.15 ms (1)
+Jun 12 19:12:46 symfony [info] {sfWebResponse} Send content (31168 o)
+Jun 12 19:12:48 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 19:12:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:12:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:12:48 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 19:12:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:12:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:12:48 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 19:12:48 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:12:48 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:12:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:12:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:12:48 symfony [info] {sfWebDebugLogger} Configuration 11.27 ms (9)
+Jun 12 19:12:48 symfony [info] {sfWebDebugLogger} Factories 55.58 ms (1)
+Jun 12 19:12:48 symfony [info] {sfWebDebugLogger} Action "category/index" 49.86 ms (1)
+Jun 12 19:12:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:12:48 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 27.29 ms (1)
+Jun 12 19:12:48 symfony [info] {sfWebResponse} Send content (31168 o)
+Jun 12 19:27:21 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 19:27:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:27:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:27:21 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 19:27:21 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:27:21 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:27:21 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 19:27:21 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:27:21 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:27:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:27:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:27:21 symfony [info] {sfWebDebugLogger} Configuration 14.22 ms (9)
+Jun 12 19:27:21 symfony [info] {sfWebDebugLogger} Factories 58.11 ms (1)
+Jun 12 19:27:21 symfony [info] {sfWebDebugLogger} Action "category/index" 50.18 ms (1)
+Jun 12 19:27:21 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:27:21 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 31.42 ms (1)
+Jun 12 19:27:21 symfony [info] {sfWebResponse} Send content (31168 o)
+Jun 12 19:28:56 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 19:28:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:28:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:28:56 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 19:28:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:28:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:28:56 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 19:28:56 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:28:56 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:28:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:28:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:28:56 symfony [info] {sfWebDebugLogger} Configuration 11.38 ms (9)
+Jun 12 19:28:56 symfony [info] {sfWebDebugLogger} Factories 55.01 ms (1)
+Jun 12 19:28:56 symfony [info] {sfWebDebugLogger} Action "category/index" 51.27 ms (1)
+Jun 12 19:28:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:28:56 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 28.91 ms (1)
+Jun 12 19:28:57 symfony [info] {sfWebResponse} Send content (31168 o)
+Jun 12 19:28:58 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 19:28:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:28:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:28:58 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 19:28:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:28:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:28:58 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 19:28:58 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:28:58 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:28:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:28:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:28:58 symfony [info] {sfWebDebugLogger} Configuration 11.39 ms (9)
+Jun 12 19:28:58 symfony [info] {sfWebDebugLogger} Factories 63.27 ms (1)
+Jun 12 19:28:58 symfony [info] {sfWebDebugLogger} Action "category/index" 60.07 ms (1)
+Jun 12 19:28:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:28:58 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 32.92 ms (1)
+Jun 12 19:28:58 symfony [info] {sfWebResponse} Send content (31168 o)
+Jun 12 19:28:59 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 19:28:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:28:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:28:59 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 19:28:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:28:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:28:59 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 19:28:59 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:28:59 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:28:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:28:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:28:59 symfony [info] {sfWebDebugLogger} Configuration 11.98 ms (9)
+Jun 12 19:28:59 symfony [info] {sfWebDebugLogger} Factories 54.81 ms (1)
+Jun 12 19:28:59 symfony [info] {sfWebDebugLogger} Action "category/index" 50.03 ms (1)
+Jun 12 19:28:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:28:59 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 33.52 ms (1)
+Jun 12 19:28:59 symfony [info] {sfWebResponse} Send content (31168 o)
+Jun 12 19:29:06 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /category/new with parameters array (  'module' => 'category',  'action' => 'new',)
+Jun 12 19:29:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:29:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:29:07 symfony [info] {categoryActions} Call "categoryActions->executeNew()"
+Jun 12 19:29:07 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/newSuccess.php"
+Jun 12 19:29:07 symfony [info] {sfPartialView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/_form.php"
+Jun 12 19:29:07 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:29:07 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:29:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:29:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:29:07 symfony [info] {sfWebDebugLogger} Configuration 13.73 ms (9)
+Jun 12 19:29:07 symfony [info] {sfWebDebugLogger} Factories 54.26 ms (1)
+Jun 12 19:29:07 symfony [info] {sfWebDebugLogger} Action "category/new" 168.90 ms (1)
+Jun 12 19:29:07 symfony [info] {sfWebDebugLogger} View "Success" for "category/new" 170.21 ms (1)
+Jun 12 19:29:07 symfony [info] {sfWebDebugLogger} Partial "category/_form" 49.57 ms (1)
+Jun 12 19:29:07 symfony [info] {sfWebResponse} Send content (31909 o)
+Jun 12 19:30:07 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /category/new with parameters array (  'module' => 'category',  'action' => 'new',)
+Jun 12 19:30:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:30:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:30:07 symfony [info] {categoryActions} Call "categoryActions->executeNew()"
+Jun 12 19:30:07 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/newSuccess.php"
+Jun 12 19:30:07 symfony [info] {sfPartialView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/_form.php"
+Jun 12 19:30:07 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:30:07 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:30:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:30:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:30:07 symfony [info] {sfWebDebugLogger} Configuration 13.60 ms (9)
+Jun 12 19:30:07 symfony [info] {sfWebDebugLogger} Factories 57.28 ms (1)
+Jun 12 19:30:07 symfony [info] {sfWebDebugLogger} Action "category/new" 46.52 ms (1)
+Jun 12 19:30:07 symfony [info] {sfWebDebugLogger} View "Success" for "category/new" 34.11 ms (1)
+Jun 12 19:30:07 symfony [info] {sfWebDebugLogger} Partial "category/_form" 8.41 ms (1)
+Jun 12 19:30:07 symfony [info] {sfWebResponse} Send content (31394 o)
+Jun 12 19:30:24 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /category/create with parameters array (  'module' => 'category',  'action' => 'create',)
+Jun 12 19:30:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:30:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:30:24 symfony [info] {categoryActions} Call "categoryActions->executeCreate()"
+Jun 12 19:30:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:30:24 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "activity_image" on "Categories"
+Jun 12 19:30:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 12 19:30:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:30:24 symfony [info] {sfWebDebugLogger} Configuration 9.32 ms (8)
+Jun 12 19:30:24 symfony [info] {sfWebDebugLogger} Factories 55.07 ms (1)
+Jun 12 19:30:24 symfony [info] {sfWebDebugLogger} Action "category/create" 240.97 ms (1)
+Jun 12 19:30:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (1)
+Jun 12 19:32:13 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 19:32:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:32:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:32:13 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 19:32:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:32:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:32:13 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 19:32:13 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:32:13 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:32:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:32:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:32:13 symfony [info] {sfWebDebugLogger} Configuration 13.38 ms (9)
+Jun 12 19:32:13 symfony [info] {sfWebDebugLogger} Factories 54.80 ms (1)
+Jun 12 19:32:13 symfony [info] {sfWebDebugLogger} Action "category/index" 49.75 ms (1)
+Jun 12 19:32:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:32:13 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 31.23 ms (1)
+Jun 12 19:32:13 symfony [info] {sfWebResponse} Send content (31136 o)
+Jun 12 19:32:19 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /category/new with parameters array (  'module' => 'category',  'action' => 'new',)
+Jun 12 19:32:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:32:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:32:19 symfony [info] {categoryActions} Call "categoryActions->executeNew()"
+Jun 12 19:32:19 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/newSuccess.php"
+Jun 12 19:32:19 symfony [info] {sfPartialView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/_form.php"
+Jun 12 19:32:19 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:32:19 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:32:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:32:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:32:19 symfony [info] {sfWebDebugLogger} Configuration 10.49 ms (9)
+Jun 12 19:32:19 symfony [info] {sfWebDebugLogger} Factories 48.39 ms (1)
+Jun 12 19:32:19 symfony [info] {sfWebDebugLogger} Action "category/new" 42.99 ms (1)
+Jun 12 19:32:19 symfony [info] {sfWebDebugLogger} View "Success" for "category/new" 29.21 ms (1)
+Jun 12 19:32:19 symfony [info] {sfWebDebugLogger} Partial "category/_form" 8.00 ms (1)
+Jun 12 19:32:19 symfony [info] {sfWebResponse} Send content (31362 o)
+Jun 12 19:32:27 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /category/create with parameters array (  'module' => 'category',  'action' => 'create',)
+Jun 12 19:32:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:32:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:32:27 symfony [info] {categoryActions} Call "categoryActions->executeCreate()"
+Jun 12 19:32:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:32:27 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO categories (name, category_image, created_at, updated_at) VALUES (?, ?, ?, ?) - (test, 1339529547_wallpaper_11250.jpg, 2012-06-12 19:32:27, 2012-06-12 19:32:27)
+Jun 12 19:32:27 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/backend_dev.php/category/edit/category_id/3"
+Jun 12 19:32:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jun 12 19:32:27 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/backend_dev.php/category/edit/category_id/3"
+Jun 12 19:32:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:32:27 symfony [info] {sfWebDebugLogger} Configuration 11.72 ms (8)
+Jun 12 19:32:27 symfony [info] {sfWebDebugLogger} Factories 56.50 ms (1)
+Jun 12 19:32:27 symfony [info] {sfWebDebugLogger} Action "category/create" 208.32 ms (1)
+Jun 12 19:32:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:32:27 symfony [info] {sfWebResponse} Send content (137 o)
+Jun 12 19:32:27 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /category/edit/category_id/3 with parameters array (  'module' => 'category',  'action' => 'edit',  'category_id' => '3',)
+Jun 12 19:32:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:32:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:32:27 symfony [info] {categoryActions} Call "categoryActions->executeEdit()"
+Jun 12 19:32:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:32:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c WHERE (c.category_id = ?) LIMIT 1 - (3)
+Jun 12 19:32:27 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/editSuccess.php"
+Jun 12 19:32:27 symfony [info] {sfPartialView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/_form.php"
+Jun 12 19:32:27 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:32:27 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:32:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:32:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:32:27 symfony [info] {sfWebDebugLogger} Configuration 14.51 ms (9)
+Jun 12 19:32:27 symfony [info] {sfWebDebugLogger} Factories 59.04 ms (1)
+Jun 12 19:32:27 symfony [info] {sfWebDebugLogger} Action "category/edit" 111.93 ms (1)
+Jun 12 19:32:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:32:27 symfony [info] {sfWebDebugLogger} View "Success" for "category/edit" 38.61 ms (1)
+Jun 12 19:32:27 symfony [info] {sfWebDebugLogger} Partial "category/_form" 11.45 ms (1)
+Jun 12 19:32:27 symfony [info] {sfWebResponse} Send content (35660 o)
+Jun 12 19:34:15 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 19:34:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:34:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:34:15 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 19:34:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:34:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:34:15 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 19:34:15 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:34:15 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:34:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:34:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:34:15 symfony [info] {sfWebDebugLogger} Configuration 12.10 ms (9)
+Jun 12 19:34:15 symfony [info] {sfWebDebugLogger} Factories 52.80 ms (1)
+Jun 12 19:34:15 symfony [info] {sfWebDebugLogger} Action "category/index" 51.16 ms (1)
+Jun 12 19:34:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:34:15 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 35.02 ms (1)
+Jun 12 19:34:15 symfony [info] {sfWebResponse} Send content (31472 o)
+Jun 12 19:39:33 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 19:39:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:39:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:39:33 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 19:39:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:39:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:39:33 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 19:39:33 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:39:33 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:39:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:39:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:39:33 symfony [info] {sfWebDebugLogger} Configuration 14.59 ms (9)
+Jun 12 19:39:33 symfony [info] {sfWebDebugLogger} Factories 59.34 ms (1)
+Jun 12 19:39:33 symfony [info] {sfWebDebugLogger} Action "category/index" 55.32 ms (1)
+Jun 12 19:39:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:39:33 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 34.98 ms (1)
+Jun 12 19:39:33 symfony [info] {sfWebResponse} Send content (31593 o)
+Jun 12 19:40:06 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 19:40:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:40:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:40:06 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 19:40:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:40:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:40:06 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 19:40:06 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:40:06 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:40:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:40:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:40:06 symfony [info] {sfWebDebugLogger} Configuration 14.68 ms (9)
+Jun 12 19:40:06 symfony [info] {sfWebDebugLogger} Factories 58.19 ms (1)
+Jun 12 19:40:06 symfony [info] {sfWebDebugLogger} Action "category/index" 65.50 ms (1)
+Jun 12 19:40:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:40:06 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 35.08 ms (1)
+Jun 12 19:40:06 symfony [info] {sfWebResponse} Send content (31671 o)
+Jun 12 19:40:19 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 19:40:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:40:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:40:19 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 19:40:19 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:40:19 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:40:19 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 19:40:19 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:40:19 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:40:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:40:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:40:19 symfony [info] {sfWebDebugLogger} Configuration 14.83 ms (9)
+Jun 12 19:40:19 symfony [info] {sfWebDebugLogger} Factories 58.81 ms (1)
+Jun 12 19:40:19 symfony [info] {sfWebDebugLogger} Action "category/index" 63.45 ms (1)
+Jun 12 19:40:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:40:19 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 34.39 ms (1)
+Jun 12 19:40:19 symfony [info] {sfWebResponse} Send content (31668 o)
+Jun 12 19:41:01 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 19:41:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:41:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:41:01 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 19:41:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:41:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:41:01 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 19:41:01 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:41:01 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:41:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:41:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:41:01 symfony [info] {sfWebDebugLogger} Configuration 15.82 ms (9)
+Jun 12 19:41:01 symfony [info] {sfWebDebugLogger} Factories 63.92 ms (1)
+Jun 12 19:41:01 symfony [info] {sfWebDebugLogger} Action "category/index" 52.90 ms (1)
+Jun 12 19:41:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:41:01 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 35.04 ms (1)
+Jun 12 19:41:01 symfony [info] {sfWebResponse} Send content (31641 o)
+Jun 12 19:41:26 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 19:41:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:41:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:41:26 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 19:41:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:41:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:41:26 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 19:41:26 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:41:26 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:41:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:41:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:41:26 symfony [info] {sfWebDebugLogger} Configuration 16.80 ms (9)
+Jun 12 19:41:26 symfony [info] {sfWebDebugLogger} Factories 61.04 ms (1)
+Jun 12 19:41:26 symfony [info] {sfWebDebugLogger} Action "category/index" 62.54 ms (1)
+Jun 12 19:41:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 12 19:41:26 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 33.12 ms (1)
+Jun 12 19:41:26 symfony [info] {sfWebResponse} Send content (31641 o)
+Jun 12 19:41:47 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 19:41:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:41:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:41:47 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 19:41:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:41:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:41:47 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 19:41:47 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:41:47 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:41:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:41:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:41:47 symfony [info] {sfWebDebugLogger} Configuration 16.11 ms (9)
+Jun 12 19:41:47 symfony [info] {sfWebDebugLogger} Factories 58.88 ms (1)
+Jun 12 19:41:47 symfony [info] {sfWebDebugLogger} Action "category/index" 53.31 ms (1)
+Jun 12 19:41:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:41:47 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 33.04 ms (1)
+Jun 12 19:41:47 symfony [info] {sfWebResponse} Send content (31652 o)
+Jun 12 19:42:01 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /category/show/category_id/3 with parameters array (  'module' => 'category',  'action' => 'show',  'category_id' => '3',)
+Jun 12 19:42:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:42:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:42:01 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+Jun 12 19:42:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:42:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c WHERE (c.category_id = ?) LIMIT 1 - (3)
+Jun 12 19:42:01 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/showSuccess.php"
+Jun 12 19:42:01 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:42:01 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:42:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:42:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:42:01 symfony [info] {sfWebDebugLogger} Configuration 12.57 ms (9)
+Jun 12 19:42:01 symfony [info] {sfWebDebugLogger} Factories 52.01 ms (1)
+Jun 12 19:42:01 symfony [info] {sfWebDebugLogger} Action "category/show" 62.11 ms (1)
+Jun 12 19:42:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:42:01 symfony [info] {sfWebDebugLogger} View "Success" for "category/show" 27.81 ms (1)
+Jun 12 19:42:01 symfony [info] {sfWebResponse} Send content (31544 o)
+Jun 12 19:42:03 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /category/edit/category_id/3 with parameters array (  'module' => 'category',  'action' => 'edit',  'category_id' => '3',)
+Jun 12 19:42:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:42:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:42:03 symfony [info] {categoryActions} Call "categoryActions->executeEdit()"
+Jun 12 19:42:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:42:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c WHERE (c.category_id = ?) LIMIT 1 - (3)
+Jun 12 19:42:03 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/editSuccess.php"
+Jun 12 19:42:03 symfony [info] {sfPartialView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/_form.php"
+Jun 12 19:42:03 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:42:03 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:42:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:42:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:42:03 symfony [info] {sfWebDebugLogger} Configuration 13.43 ms (9)
+Jun 12 19:42:03 symfony [info] {sfWebDebugLogger} Factories 55.75 ms (1)
+Jun 12 19:42:03 symfony [info] {sfWebDebugLogger} Action "category/edit" 88.92 ms (1)
+Jun 12 19:42:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:42:03 symfony [info] {sfWebDebugLogger} View "Success" for "category/edit" 36.88 ms (1)
+Jun 12 19:42:03 symfony [info] {sfWebDebugLogger} Partial "category/_form" 11.49 ms (1)
+Jun 12 19:42:03 symfony [info] {sfWebResponse} Send content (35642 o)
+Jun 12 19:42:05 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /category with parameters array (  'module' => 'category',  'action' => 'index',)
+Jun 12 19:42:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:42:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:42:05 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Jun 12 19:42:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:42:05 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:42:05 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/category/templates/indexSuccess.php"
+Jun 12 19:42:05 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:42:05 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:42:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:42:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:42:05 symfony [info] {sfWebDebugLogger} Configuration 13.22 ms (9)
+Jun 12 19:42:05 symfony [info] {sfWebDebugLogger} Factories 54.15 ms (1)
+Jun 12 19:42:05 symfony [info] {sfWebDebugLogger} Action "category/index" 50.18 ms (1)
+Jun 12 19:42:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:42:05 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 30.89 ms (1)
+Jun 12 19:42:05 symfony [info] {sfWebResponse} Send content (31620 o)
+Jun 12 19:51:18 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /products with parameters array (  'module' => 'products',  'action' => 'index',)
+Jun 12 19:51:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:51:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:51:18 symfony [info] {productsActions} Call "productsActions->executeIndex()"
+Jun 12 19:51:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:51:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM products p - ()
+Jun 12 19:51:18 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/products/templates/indexSuccess.php"
+Jun 12 19:51:18 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:51:18 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:51:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:51:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:51:18 symfony [info] {sfWebDebugLogger} Configuration 92.22 ms (10)
+Jun 12 19:51:18 symfony [info] {sfWebDebugLogger} Factories 56.29 ms (1)
+Jun 12 19:51:18 symfony [info] {sfWebDebugLogger} Action "products/index" 55.68 ms (1)
+Jun 12 19:51:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 19:51:18 symfony [info] {sfWebDebugLogger} View "Success" for "products/index" 67.59 ms (1)
+Jun 12 19:51:18 symfony [info] {sfWebResponse} Send content (34821 o)
+Jun 12 19:52:03 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /products/new with parameters array (  'module' => 'products',  'action' => 'new',)
+Jun 12 19:52:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 19:52:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 19:52:03 symfony [info] {productsActions} Call "productsActions->executeNew()"
+Jun 12 19:52:03 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/products/templates/newSuccess.php"
+Jun 12 19:52:03 symfony [info] {sfPartialView} Render "C:\wamp\www\devil\apps\backend\modules/products/templates/_form.php"
+Jun 12 19:52:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 19:52:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 19:52:03 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:52:03 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 19:52:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 19:52:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 19:52:03 symfony [info] {sfWebDebugLogger} Configuration 13.65 ms (9)
+Jun 12 19:52:03 symfony [info] {sfWebDebugLogger} Factories 58.60 ms (1)
+Jun 12 19:52:03 symfony [info] {sfWebDebugLogger} Action "products/new" 87.45 ms (1)
+Jun 12 19:52:03 symfony [info] {sfWebDebugLogger} View "Success" for "products/new" 221.09 ms (1)
+Jun 12 19:52:03 symfony [info] {sfWebDebugLogger} Partial "products/_form" 199.48 ms (1)
+Jun 12 19:52:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 12 19:52:03 symfony [info] {sfWebResponse} Send content (48234 o)
+Jun 12 20:07:34 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /products/new with parameters array (  'module' => 'products',  'action' => 'new',)
+Jun 12 20:07:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 20:07:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 20:07:34 symfony [info] {productsActions} Call "productsActions->executeNew()"
+Jun 12 20:07:34 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/products/templates/newSuccess.php"
+Jun 12 20:07:34 symfony [info] {sfPartialView} Render "C:\wamp\www\devil\apps\backend\modules/products/templates/_form.php"
+Jun 12 20:07:34 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 20:07:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 20:07:34 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 20:07:34 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 20:07:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 20:07:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 20:07:34 symfony [info] {sfWebDebugLogger} Configuration 13.37 ms (9)
+Jun 12 20:07:34 symfony [info] {sfWebDebugLogger} Factories 58.26 ms (1)
+Jun 12 20:07:34 symfony [info] {sfWebDebugLogger} Action "products/new" 57.40 ms (1)
+Jun 12 20:07:34 symfony [info] {sfWebDebugLogger} View "Success" for "products/new" 71.23 ms (1)
+Jun 12 20:07:34 symfony [info] {sfWebDebugLogger} Partial "products/_form" 47.43 ms (1)
+Jun 12 20:07:34 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 20:07:34 symfony [info] {sfWebResponse} Send content (37514 o)
+Jun 12 20:08:01 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /products/create with parameters array (  'module' => 'products',  'action' => 'create',)
+Jun 12 20:08:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 20:08:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 20:08:01 symfony [info] {productsActions} Call "productsActions->executeCreate()"
+Jun 12 20:08:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 20:08:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM categories c WHERE c.category_id = ? - (1)
+Jun 12 20:08:01 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\Products.class.php on line 29 (Undefined index: products)
+Jun 12 20:08:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM products p WHERE (p.product_id = ?) - ()
+Jun 12 20:08:01 symfony [notice] {sfWebDebugLogger}  Notice at C:\wamp\www\devil\lib\model\doctrine\Products.class.php on line 39 (Undefined offset: 0)
+Jun 12 20:08:01 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO products (featured, category_id, name, price, description, order_number, image, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) - (1, 1, punjabi one, 12, des , 2, , 2012-06-12 20:08:01, 2012-06-12 20:08:01)
+Jun 12 20:08:01 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null
+Jun 12 20:08:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 12 20:08:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 20:08:01 symfony [info] {sfWebDebugLogger} Configuration 10.51 ms (8)
+Jun 12 20:08:01 symfony [info] {sfWebDebugLogger} Factories 54.89 ms (1)
+Jun 12 20:08:01 symfony [info] {sfWebDebugLogger} Action "products/create" 277.65 ms (1)
+Jun 12 20:08:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (3)
+Jun 12 20:11:13 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /products with parameters array (  'module' => 'products',  'action' => 'index',)
+Jun 12 20:11:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 20:11:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 20:11:13 symfony [info] {productsActions} Call "productsActions->executeIndex()"
+Jun 12 20:11:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 20:11:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM products p - ()
+Jun 12 20:11:13 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/products/templates/indexSuccess.php"
+Jun 12 20:11:13 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 20:11:13 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 20:11:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 20:11:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 20:11:13 symfony [info] {sfWebDebugLogger} Configuration 13.86 ms (9)
+Jun 12 20:11:13 symfony [info] {sfWebDebugLogger} Factories 56.27 ms (1)
+Jun 12 20:11:13 symfony [info] {sfWebDebugLogger} Action "products/index" 53.00 ms (1)
+Jun 12 20:11:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 20:11:13 symfony [info] {sfWebDebugLogger} View "Success" for "products/index" 55.19 ms (1)
+Jun 12 20:11:13 symfony [info] {sfWebResponse} Send content (34819 o)
+Jun 12 20:11:19 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /products/new with parameters array (  'module' => 'products',  'action' => 'new',)
+Jun 12 20:11:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 20:11:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 20:11:19 symfony [info] {productsActions} Call "productsActions->executeNew()"
+Jun 12 20:11:19 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/products/templates/newSuccess.php"
+Jun 12 20:11:19 symfony [info] {sfPartialView} Render "C:\wamp\www\devil\apps\backend\modules/products/templates/_form.php"
+Jun 12 20:11:19 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 20:11:19 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 20:11:19 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 20:11:19 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 20:11:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 20:11:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 20:11:19 symfony [info] {sfWebDebugLogger} Configuration 13.07 ms (9)
+Jun 12 20:11:19 symfony [info] {sfWebDebugLogger} Factories 57.96 ms (1)
+Jun 12 20:11:19 symfony [info] {sfWebDebugLogger} Action "products/new" 58.66 ms (1)
+Jun 12 20:11:19 symfony [info] {sfWebDebugLogger} View "Success" for "products/new" 72.19 ms (1)
+Jun 12 20:11:19 symfony [info] {sfWebDebugLogger} Partial "products/_form" 47.64 ms (1)
+Jun 12 20:11:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 20:11:19 symfony [info] {sfWebResponse} Send content (37508 o)
+Jun 12 20:11:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /products/create with parameters array (  'module' => 'products',  'action' => 'create',)
+Jun 12 20:11:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 20:11:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 20:11:45 symfony [info] {productsActions} Call "productsActions->executeCreate()"
+Jun 12 20:11:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 20:11:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM categories c WHERE c.category_id = ? - (1)
+Jun 12 20:11:45 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO products (featured, category_id, name, price, description, order_number, image, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) - (0, 1, pun, 44, dexc, 3, 1339531905_Chrysanthemum.jpg, 2012-06-12 20:11:45, 2012-06-12 20:11:45)
+Jun 12 20:11:45 symfony [info] {sfFrontWebController} Redirect to "http://localhost/devil/backend_dev.php/products/edit/product_id/10"
+Jun 12 20:11:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jun 12 20:11:45 symfony [info] {sfWebResponse} Send header "Location: http://localhost/devil/backend_dev.php/products/edit/product_id/10"
+Jun 12 20:11:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 20:11:45 symfony [info] {sfWebDebugLogger} Configuration 10.96 ms (8)
+Jun 12 20:11:45 symfony [info] {sfWebDebugLogger} Factories 52.58 ms (1)
+Jun 12 20:11:45 symfony [info] {sfWebDebugLogger} Action "products/create" 167.11 ms (1)
+Jun 12 20:11:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (3)
+Jun 12 20:11:45 symfony [info] {sfWebResponse} Send content (137 o)
+Jun 12 20:11:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /products/edit/product_id/10 with parameters array (  'module' => 'products',  'action' => 'edit',  'product_id' => '10',)
+Jun 12 20:11:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 20:11:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 20:11:45 symfony [info] {productsActions} Call "productsActions->executeEdit()"
+Jun 12 20:11:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 20:11:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM products p WHERE (p.product_id = ?) LIMIT 1 - (10)
+Jun 12 20:11:46 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/products/templates/editSuccess.php"
+Jun 12 20:11:46 symfony [info] {sfPartialView} Render "C:\wamp\www\devil\apps\backend\modules/products/templates/_form.php"
+Jun 12 20:11:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.category_id AS c__category_id, c.name AS c__name, c.category_image AS c__category_image, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM categories c - ()
+Jun 12 20:11:46 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 20:11:46 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 20:11:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 20:11:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 20:11:46 symfony [info] {sfWebDebugLogger} Configuration 12.12 ms (9)
+Jun 12 20:11:46 symfony [info] {sfWebDebugLogger} Factories 51.83 ms (1)
+Jun 12 20:11:46 symfony [info] {sfWebDebugLogger} Action "products/edit" 104.33 ms (1)
+Jun 12 20:11:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (3)
+Jun 12 20:11:46 symfony [info] {sfWebDebugLogger} View "Success" for "products/edit" 46.83 ms (1)
+Jun 12 20:11:46 symfony [info] {sfWebDebugLogger} Partial "products/_form" 22.78 ms (1)
+Jun 12 20:11:46 symfony [info] {sfWebResponse} Send content (41049 o)
+Jun 12 20:11:48 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /products with parameters array (  'module' => 'products',  'action' => 'index',)
+Jun 12 20:11:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 12 20:11:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 12 20:11:48 symfony [info] {productsActions} Call "productsActions->executeIndex()"
+Jun 12 20:11:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 12 20:11:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.product_id AS p__product_id, p.category_id AS p__category_id, p.name AS p__name, p.image AS p__image, p.price AS p__price, p.description AS p__description, p.order_number AS p__order_number, p.featured AS p__featured, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM products p - ()
+Jun 12 20:11:48 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\modules/products/templates/indexSuccess.php"
+Jun 12 20:11:48 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 20:11:48 symfony [info] {sfPHPView} Render "C:\wamp\www\devil\apps\backend\templates/layout.php"
+Jun 12 20:11:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 12 20:11:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 12 20:11:48 symfony [info] {sfWebDebugLogger} Configuration 12.27 ms (9)
+Jun 12 20:11:48 symfony [info] {sfWebDebugLogger} Factories 52.43 ms (1)
+Jun 12 20:11:48 symfony [info] {sfWebDebugLogger} Action "products/index" 55.50 ms (1)
+Jun 12 20:11:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 12 20:11:48 symfony [info] {sfWebDebugLogger} View "Success" for "products/index" 54.85 ms (1)
+Jun 12 20:11:48 symfony [info] {sfWebResponse} Send content (35287 o)

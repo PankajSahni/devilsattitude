@@ -10,7 +10,31 @@
  * @author     Your name here
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
-class Categories extends BaseCategories
-{
+class Categories extends BaseCategories {
+
+    public function save(Doctrine_Connection $conn = null) {
+        $path = sfConfig::get('sf_root_dir') . '/';
+        $this->setName(str_replace('"', "'", $this->getName()));
+        if ($this->isNew()) {
+            $this->setCreatedAt(date('Y-m-d H:i:s', time()));
+        }
+        $this->setUpdatedAt(date('Y-m-d H:i:s', time()));
+
+        $file = $_FILES;
+        if ($file['categories']['name']['category_image'] != '') {
+            if (move_uploaded_file($file['categories']['tmp_name']['category_image'], $path . "uploads/category/" . time() . "_" . $file['categories']['name']['category_image'])) {
+                $this->setCategoryImage(time() . "_" . $file['categories']['name']['category_image']);
+            }
+        } else {
+            $category_id = $this->getCategoryId();
+            $q = Doctrine_Query::create()
+                    ->from('Categories c')
+                    ->where('c.category_id=?', array($category_id));
+            $data = $q->fetchArray();
+            $this->setCategoryImage($data[0]['category_image']);
+        }
+
+        return parent::save($conn);
+    }
 
 }

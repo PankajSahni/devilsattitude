@@ -16,7 +16,7 @@ abstract class BaseOrderSessionsForm extends BaseFormDoctrine
   {
     $this->setWidgets(array(
       'id'         => new sfWidgetFormInputHidden(),
-      'session_id' => new sfWidgetFormInputText(),
+      'session_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Orders'), 'add_empty' => false)),
       'product_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Products'), 'add_empty' => false)),
       'nos'        => new sfWidgetFormInputText(),
       'size'       => new sfWidgetFormInputText(),
@@ -26,7 +26,7 @@ abstract class BaseOrderSessionsForm extends BaseFormDoctrine
 
     $this->setValidators(array(
       'id'         => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
-      'session_id' => new sfValidatorString(array('max_length' => 225)),
+      'session_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Orders'))),
       'product_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Products'))),
       'nos'        => new sfValidatorInteger(),
       'size'       => new sfValidatorString(array('max_length' => 50)),

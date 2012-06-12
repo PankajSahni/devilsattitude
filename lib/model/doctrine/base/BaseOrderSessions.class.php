@@ -118,7 +118,7 @@ abstract class BaseOrderSessions extends sfDoctrineRecord
              'foreign' => 'product_id'));
 
         $this->hasMany('Orders', array(
-             'local' => 'id',
+             'local' => 'session_id',
              'foreign' => 'order_sessions_id'));
     }
 }

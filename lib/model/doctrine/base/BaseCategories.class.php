@@ -9,20 +9,23 @@ Doctrine_Manager::getInstance()->bindComponent('Categories', 'doctrine');
  * 
  * @property integer $category_id
  * @property string $name
+ * @property string $category_image
  * @property timestamp $created_at
  * @property timestamp $updated_at
  * @property Doctrine_Collection $Products
  * 
- * @method integer             getCategoryId()  Returns the current record's "category_id" value
- * @method string              getName()        Returns the current record's "name" value
- * @method timestamp           getCreatedAt()   Returns the current record's "created_at" value
- * @method timestamp           getUpdatedAt()   Returns the current record's "updated_at" value
- * @method Doctrine_Collection getProducts()    Returns the current record's "Products" collection
- * @method Categories          setCategoryId()  Sets the current record's "category_id" value
- * @method Categories          setName()        Sets the current record's "name" value
- * @method Categories          setCreatedAt()   Sets the current record's "created_at" value
- * @method Categories          setUpdatedAt()   Sets the current record's "updated_at" value
- * @method Categories          setProducts()    Sets the current record's "Products" collection
+ * @method integer             getCategoryId()     Returns the current record's "category_id" value
+ * @method string              getName()           Returns the current record's "name" value
+ * @method string              getCategoryImage()  Returns the current record's "category_image" value
+ * @method timestamp           getCreatedAt()      Returns the current record's "created_at" value
+ * @method timestamp           getUpdatedAt()      Returns the current record's "updated_at" value
+ * @method Doctrine_Collection getProducts()       Returns the current record's "Products" collection
+ * @method Categories          setCategoryId()     Sets the current record's "category_id" value
+ * @method Categories          setName()           Sets the current record's "name" value
+ * @method Categories          setCategoryImage()  Sets the current record's "category_image" value
+ * @method Categories          setCreatedAt()      Sets the current record's "created_at" value
+ * @method Categories          setUpdatedAt()      Sets the current record's "updated_at" value
+ * @method Categories          setProducts()       Sets the current record's "Products" collection
  * 
  * @package    devil
  * @subpackage model
@@ -50,6 +53,15 @@ abstract class BaseCategories extends sfDoctrineRecord
              'notnull' => false,
              'autoincrement' => false,
              'length' => 255,
+             ));
+        $this->hasColumn('category_image', 'string', 225, array(
+             'type' => 'string',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 225,
              ));
         $this->hasColumn('created_at', 'timestamp', 25, array(
              'type' => 'timestamp',

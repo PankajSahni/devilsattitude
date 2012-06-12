@@ -1,6 +1,9 @@
-<h1>Productss List</h1>
-
-<table>
+<h1>Products List</h1>
+<?php
+	$host = 'http://' . $_SERVER['HTTP_HOST'];
+	$uploads_url = public_path('/uploads/');
+?>
+<table border="1">
   <thead>
     <tr>
       <th>Product</th>
@@ -21,13 +24,13 @@
       <td><a href="<?php echo url_for('products/show?product_id='.$products->getProductId()) ?>"><?php echo $products->getProductId() ?></a></td>
       <td><?php echo $products->getCategoryId() ?></td>
       <td><?php echo $products->getName() ?></td>
-      <td><?php echo $products->getImage() ?></td>
+      <td><img src="<?php echo $uploads_url;?>designs/<?php echo $products->getImage(); ?>" width="90px" height="90px"/></td>
       <td><?php echo $products->getPrice() ?></td>
       <td><?php echo $products->getDescription() ?></td>
       <td><?php echo $products->getOrderNumber() ?></td>
       <td><?php echo $products->getFeatured() ?></td>
-      <td><?php echo $products->getCreatedAt() ?></td>
-      <td><?php echo $products->getUpdatedAt() ?></td>
+      <td><?php echo date("d-m-Y", strtotime($products->getCreatedAt())) ?></td>
+      <td><?php echo date("d-m-Y", strtotime($products->getUpdatedAt())) ?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>

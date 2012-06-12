@@ -1,14 +1,14 @@
 <?php
 
 /**
- * categories actions.
+ * category actions.
  *
  * @package    devil
- * @subpackage categories
+ * @subpackage category
  * @author     Your name here
  * @version    SVN: $Id: actions.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
  */
-class categoriesActions extends sfActions
+class categoryActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
@@ -63,7 +63,7 @@ class categoriesActions extends sfActions
     $this->forward404Unless($categories = Doctrine_Core::getTable('Categories')->find(array($request->getParameter('category_id'))), sprintf('Object categories does not exist (%s).', $request->getParameter('category_id')));
     $categories->delete();
 
-    $this->redirect('categories/index');
+    $this->redirect('category/index');
   }
 
   protected function processForm(sfWebRequest $request, sfForm $form)
@@ -73,7 +73,7 @@ class categoriesActions extends sfActions
     {
       $categories = $form->save();
 
-      $this->redirect('categories/edit?category_id='.$categories->getCategoryId());
+      $this->redirect('category/edit?category_id='.$categories->getCategoryId());
     }
   }
 }

@@ -15,6 +15,13 @@ Categories:
       primary: false
       notnull: false
       autoincrement: false
+    category_image:
+      type: string(225)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
     created_at:
       type: timestamp(25)
       fixed: false
@@ -135,7 +142,7 @@ OrderSessions:
       foreign: product_id
       type: one
     Orders:
-      local: id
+      local: session_id
       foreign: order_sessions_id
       type: many
 Orders:
@@ -149,7 +156,7 @@ Orders:
       primary: true
       autoincrement: true
     order_sessions_id:
-      type: integer(8)
+      type: string(225)
       fixed: false
       unsigned: false
       primary: false
@@ -191,7 +198,7 @@ Orders:
       type: one
     OrderSessions:
       local: order_sessions_id
-      foreign: id
+      foreign: session_id
       type: one
 Products:
   connection: doctrine

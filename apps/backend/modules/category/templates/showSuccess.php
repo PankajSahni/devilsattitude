@@ -9,6 +9,10 @@
       <td><?php echo $categories->getName() ?></td>
     </tr>
     <tr>
+      <th>Category image:</th>
+      <td><?php echo $categories->getCategoryImage() ?></td>
+    </tr>
+    <tr>
       <th>Created at:</th>
       <td><?php echo $categories->getCreatedAt() ?></td>
     </tr>
@@ -21,6 +25,6 @@
 
 <hr />
 
-<a href="<?php echo url_for('categories/edit?category_id='.$categories->getCategoryId()) ?>">Edit</a>
+<a href="<?php echo url_for('category/edit?category_id='.$categories->getCategoryId()) ?>">Edit</a>
 &nbsp;
-<a href="<?php echo url_for('categories/index') ?>">List</a>
+<a href="<?php echo url_for('category/index') ?>">List</a>
