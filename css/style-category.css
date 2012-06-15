@@ -7,7 +7,7 @@ mark, rp, rt, ruby, summary, time {display:inline}
 .wrapper {width:100%;overflow:hidden}
 .relative {position:relative}
 /* Global properties */
-body {background:#111;border:0;font:14px Arial, Helvetica, sans-serif;color:#0f0f0f;line-height:20px}
+body {background:#746874;border:0;font:14px Arial, Helvetica, sans-serif;color:#0f0f0f;line-height:20px}
 .ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
 .css3 {border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:0 0 4px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);position:relative}
 /* Global Structure */
@@ -19,7 +19,10 @@ body {background:#111;border:0;font:14px Arial, Helvetica, sans-serif;color:#0f0
 /* main layout */
 .buynow a {float:none !important; margin:0 auto!important; display:block !important; cursor:url(../images/cursor_img.png), pointer;}
 .buynow a:hover {padding-right:28px}
-.buynow a.active {background:url(../images/button_buyNow_disable.png)no-repeat}
+.buynow a.active {background:url(../images/checkout.jpg)no-repeat}
+.checkout {width:150px;height: 60px;margin-top: 20px; background:url(../images/checkout.jpg), pointer;}
+.checkout:hover {width:160px;height: 70px;margin-top: 20px; background:url(../images/checkout_hover.jpg), pointer;}
+.checkout:active {background:url(../images/button_buyNow_disable.png)no-repeat}
 .buynow img {padding-top :10px;padding-bottom :20px;}
 /*a:hover {text-decoration:none}*/
 h1 {padding:37px 0 0 19px;float:left}

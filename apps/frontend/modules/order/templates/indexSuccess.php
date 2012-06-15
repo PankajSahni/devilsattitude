@@ -23,7 +23,7 @@ $designs_url = $host . public_path('/uploads/designs/');
     </form>
 
 </table>
-<a href="<?php echo url_for('category/index')?>">Shop More</a>
+<a href="<?php echo url_for('category/index')?>"><img src="<?php echo $image_url.'continue_shopping.jpg';?>"/></a>
 <?php if($if_login):?>
 	<form method="post" action="https://www.ccavenue.com/shopzone/cc_details.jsp">
 	<input type=hidden name=Merchant_Id value="<?php echo $global_variables['merchant_id']; ?>">
@@ -49,8 +49,8 @@ $designs_url = $host . public_path('/uploads/designs/');
 	<input type="hidden" name="billing_zip_code" value="<?php echo '123456';?>"/>
 	<input type="hidden" name="delivery_cust_city" value="<?php echo 'NA';?>"/>
 	<input type="hidden" name="delivery_zip_code" value="<?php echo '123456';?>"/>
-	<INPUT TYPE="submit" value="submit">
+	<INPUT TYPE="image"  width="190px" height="70px" src="<?php echo $image_url.'button_online_payment.gif';?>" value="submit"/>
 	</form>
 <?php else:?>
-<a href="<?php echo url_for('user/new')?>">Proceed</a>
+<a href="<?php echo url_for('user/new')?>"><img width="190px" height="70px" src="<?php echo $image_url.'proceed.png';?>"/></a>
 <?php endif; ?>

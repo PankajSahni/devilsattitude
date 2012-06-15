@@ -6,15 +6,15 @@ default:
     content-type: text/html
 
   metas:
-    #title:        symfony project
+    title:        PLP - Administrator Area
     #description:  symfony project
     #keywords:     symfony, project
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [main.css]
+  stylesheets:    [main.css,jquery-ui-1.7.3.custom.css]
 
-  javascripts:    []
+  javascripts:    [jquery-1.7.1.min.js,jquery.ui.datepicker.js,jquery.ui.core.js,registration.js]
 
   has_layout:     true
   layout:         layout
