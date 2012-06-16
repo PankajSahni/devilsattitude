@@ -45,7 +45,7 @@ class orderActions extends sfActions {
             $this->user_info = Doctrine::getTable('User')->func_getUserAndOrderId($this->getUser()->getAttribute('user_id'));
             $this->total = 0;
             foreach ($this->current_session_products as $value) {
-               echo $this->total = $this->total + $value['Products']['price'] * $value['nos'];
+                $this->total = $this->total + $value['Products']['price'] * $value['nos'];
             }
             $this->checksum = Doctrine::getTable('Orders')->getCheckSum($this->global_variables['merchant_id'], $this->total, $this->user_info[0]['Orders'][0]['order_id'], $this->global_variables['redirect_url'], $this->global_variables['working_key']);
         }
