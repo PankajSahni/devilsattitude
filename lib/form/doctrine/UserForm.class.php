@@ -28,7 +28,7 @@ class UserForm extends BaseUserForm {
             'pass' => new sfValidatorString(array('required' => true)),
             'pass' => new sfValidatorString(array('min_length' => 4)),
             'confirm_password' => new sfValidatorString(array('required' => true)),
-            'name' => new sfValidatorString(array('min_length' => 4)),
+            'name' => new sfValidatorString(array('min_length' => 1)),
             'mobile' => new sfValidatorString(array('required' => true)),
             'address' => new sfValidatorString(array('required' => true)),
             'email' => new sfValidatorEmail()));

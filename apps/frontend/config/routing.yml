@@ -4,7 +4,7 @@
 # default rules
 homepage:
   url:   /
-  param: { module: default, action: index }
+  param: { module: home, action: index }
 
 # generic rules
 # please, remove them by adding more specific rules
@@ -14,3 +14,8 @@ default_index:
 
 default:
   url:   /:module/:action/*
+tshirts:
+  url:     /tshirts/:product
+  param:   { module: tshirts, action: index }
+  class:   sfDoctrineRoute
+  options: { model: Products, type: object }

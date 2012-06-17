@@ -4,13 +4,19 @@
 # default rules
 homepage:
   url:   /
-  param: { module: default, action: index }
+  param: { module: user, action: login }
+logout:
+  url:     /logout
+  param:   { module: user, action: logout }
+login:
+  url:   /
+  param: { module: user, action: login }
 
 # generic rules
 # please, remove them by adding more specific rules
 default_index:
-  url:   /:module
-  param: { action: index }
+  url:   /:user
+  param: { action: login }
 
 default:
   url:   /:module/:action/*

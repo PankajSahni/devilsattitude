@@ -7,14 +7,12 @@ mark, rp, rt, ruby, summary, time {display:inline}
 .wrapper {width:100%;overflow:hidden}
 .relative {position:relative}
 /* Global properties */
-body {background:#746874;border:0;font:14px Arial, Helvetica, sans-serif;color:#0f0f0f;line-height:20px}
 .ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
 .css3 {border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:0 0 4px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);position:relative}
 /* Global Structure */
 .main {margin:0 auto;width:916px;}
 /*.body1 {background:url(../images/bg_img2.jpg) center 560px no-repeat #eaeaea}
 .body2 {background:url(../images/bg_top_repeat.jpg) top repeat-x}*/
-/*.body3 {background:url(../images/bg1.jpg) top center repeat-x;background-attachment: fixed;}*/
 .body4 {background:url(../images/bg_content.gif) top repeat-x #363636}
 /* main layout */
 .buynow a {float:none !important; margin:0 auto!important; display:block !important; cursor:url(../images/cursor_img.png), pointer;}

@@ -23,6 +23,13 @@ class UserTable extends Doctrine_Table {
                 ->fetchArray();
         return $q;
     }
+        public function func_checkLoginBackend($post_values) {
+        $q = $this->createQuery('u')
+                ->where('u.email = ?  ', $post_values['email'])
+                ->andWhere('u.pass = ?', $post_values['password'])
+                ->fetchArray();
+        return $q;
+    }
     
 
     public function func_getUser($user_id) {

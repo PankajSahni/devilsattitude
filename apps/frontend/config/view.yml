@@ -12,7 +12,7 @@ default:
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [layout.css,reset.css,style-category.css,style-user.css]
+  stylesheets:    [layout.css,style-category.css,style-user-no-background.css]
 
   javascripts:    [jquery-1.7.1.min.js,slidercarousel.js,jquery.anythingslider.js,account_setting.js,jquery.popup.js]
 

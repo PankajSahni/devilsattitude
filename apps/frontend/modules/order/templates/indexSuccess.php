@@ -5,7 +5,7 @@ $image_url = $host . public_path('/images/');
 $designs_url = $host . public_path('/uploads/designs/');
 ?>
 <?php $this->i = 0; ?>
-<table width="70%" border="0" cellspacing="0" cellpadding="0" align="center">
+<table width="70%" border="0" cellspacing="0" cellpadding="0" style="margin-left: 140px">
     <tr>
         <td width="193" height="25" bgcolor="#1B94E0"  align="center"><strong>Name</strong></td>
         <td width="193" bgcolor="#1B94E0"  align="center"><strong>Product</strong></td>
@@ -35,10 +35,12 @@ $designs_url = $host . public_path('/uploads/designs/');
             <?php $this->i++; ?> 
         <?php endforeach; ?>
     </form>
-
-
+<?php if($total != ""):?>
+    <tr><td colspan="6" align="right"><h1><?php echo 'Total:Rs '. $total;?></h1></td></tr>
+<?php endif;?>
     <tr>
-        <td colspan="3"><a href="<?php echo url_for('category/index') ?>"><img src="<?php echo $image_url . 'continue_shopping.jpg'; ?>"/></a></td>
+        <td colspan="3"><a href="<?php echo url_for('category/index') ?>"><img style="margin-top:10px;margin-left:100px;" src="<?php echo $image_url . 'continue_shopping.jpg'; ?>"/></a></td>
+        
 <?php if ($if_login): ?>
     <form method="post" action="https://www.ccavenue.com/shopzone/cc_details.jsp">
         <input type=hidden name=Merchant_Id value="<?php echo $global_variables['merchant_id']; ?>">
