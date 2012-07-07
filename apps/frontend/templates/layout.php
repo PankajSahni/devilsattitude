@@ -24,12 +24,12 @@ $designs_url = $host . public_path('/uploads/designs/');
                 <h1><a href="<?php echo $website_link;?>" id="logo"></a></h1>
                 <nav>
                     <ul id="menu">
-                        <li id="active"><a href="">Home</a></li>
+                        <!--<li id="active"><a href="">Home</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Folio</a></li>
                         <li><a href="">Services</a></li>
                         <li><a href="">News</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="">Contact</a></li>-->
 
                     </ul>
                 </nav>

@@ -78,8 +78,9 @@
 
                                     <ul>
 
-                                        <li><a href="<?php echo url_for('category/index') ?>">Category Management</a></li>
+                                        <li><a href="<?php echo url_for('categories/index') ?>">Category Management</a></li>
                                         <li><a href="<?php echo url_for('products/index') ?>">Products Management</a></li>
+                                        <li><a href="<?php echo url_for('orders/index') ?>">Orders Management</a></li>
 
                                     </ul>
 

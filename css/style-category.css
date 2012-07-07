@@ -29,7 +29,7 @@ h2 span {color:#13c5ff}
 p {padding-bottom:20px}
 /* header */
 header {height:645px}
-#logo {display:block;background:url(../images/logo.png) 0 0 no-repeat;width:276px;height:94px;text-indent:-9999px}
+#logo {display:block;background:url(../images/logo.png) 0 0 no-repeat;width:300px;height:94px;text-indent:-9999px}
 #search {float:right;padding:41px 20px 0 0;width:600px}
 #search .input {float:right;width:148px;padding:5px 8px;font:14px Arial, Helvetica, sans-serif;background:#fff;color:#999;height:16px}
 #search .submit {display:block;cursor:pointer;background:url(../images/search.gif) 0 0 no-repeat;width:26px;height:26px;float:right;margin-left:4px}

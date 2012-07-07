@@ -24,6 +24,7 @@ test:
 
 all:
   .settings:
+    enabled_modules:      [categories,orders,products,adminuser]
     # Form security secret (CSRF protection)
     csrf_secret:            1535b3e611b65965c0634dc88a34f652839f4029
 

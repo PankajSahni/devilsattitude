@@ -6,7 +6,7 @@ default:
     content-type: text/html
 
   metas:
-    title:        PLP - Administrator Area
+    title:        Administrator Area
     #description:  symfony project
     #keywords:     symfony, project
     #language:     en

@@ -24,6 +24,7 @@ test:
 
 all:
   .settings:
+    enabled_modules:      [default,category,home,order,user,tshirts]
     # Form security secret (CSRF protection)
     csrf_secret:            32c3bf4cd8decff998c448a478d8e242699383eb
 
